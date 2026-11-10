@@ -1,12 +1,11 @@
-/* Buttons - Phase 1 §6. Fixed heights: sm 40 / md 48 / lg 56. Radius 4. */
+/* Buttons - Phase 1 §6. Heights from tokens: sm 40 / md 48 / lg 56. Radius 4.
+   Roles: md = hero, section and form-submit CTAs; sm = card, header and dashboard actions; lg = reserved. */
 @layer components {
   .btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    height: 48px;
-    padding-inline: 24px;
     border: 1.5px solid transparent;
     border-radius: var(--r-sm);
     font-family: var(--font-sans);
@@ -20,9 +19,20 @@
   }
   .btn:active { transform: translateY(1px); }
   .btn:disabled, .btn[aria-disabled="true"] { opacity: 0.45; cursor: not-allowed; pointer-events: none; }
-  .btn-sm { height: 40px; padding-inline: 18px; }
-  .btn-lg { height: 56px; padding-inline: 32px; font-size: 1rem; }
+  /* Size variants come from the shared tokens (tokens.css). Pages must not set their own button heights. */
+  .btn { --btn-h: var(--btn-h-md); height: var(--btn-h); padding-inline: var(--btn-px-md); }
+  .btn-sm { --btn-h: var(--btn-h-sm); padding-inline: var(--btn-px-sm); }
+  .btn-lg { --btn-h: var(--btn-h-lg); padding-inline: var(--btn-px-lg); font-size: 1rem; }
   .btn-block { width: 100%; }
+  /* Fluid: the label may wrap in narrow cards. Keeps the variant's minimum height; parents align the row. */
+  .btn-fluid { height: auto; min-height: var(--btn-h); padding-block: 8px; padding-inline: var(--btn-px-fluid); white-space: normal; line-height: 1.25; text-align: center; }
+
+  /* Mobile CTA rule (all pages, portal and dashboard): every CTA spans its container, so it is centred,
+     and grouped CTAs stack with equal widths and equal spacing. Text links and icon controls are unaffected. */
+  @media (max-width: 47.99rem) {
+    .btn:not(.btn-link) { width: 100%; }
+    .btn-row { flex-direction: column; align-items: stretch; gap: 12px; width: 100%; align-self: stretch; justify-self: stretch; }
+  }
 
   .btn-primary { background: var(--primary); color: var(--primary-fg); }
   .btn-primary:hover { background: var(--primary-hover); }

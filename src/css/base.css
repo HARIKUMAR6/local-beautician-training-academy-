@@ -79,15 +79,18 @@
 }
 
 @layer components {
+  /* The global content container: header, footer and all section content align to these boundaries.
+     Section backgrounds may run full width; their content sits in .container-x. */
   .container-x {
     width: 100%;
-    max-width: calc(1200px + 2 * var(--gutter));
+    max-width: calc(var(--container-max) + 2 * var(--gutter));
     margin-inline: auto;
     padding-inline: var(--gutter);
   }
+  /* Reserved for intentionally wide media only (not used by any public section). */
   .container-wide {
     width: 100%;
-    max-width: calc(1440px + 2 * var(--gutter));
+    max-width: calc(var(--container-wide-max) + 2 * var(--gutter));
     margin-inline: auto;
     padding-inline: var(--gutter);
   }

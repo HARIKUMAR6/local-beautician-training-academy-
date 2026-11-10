@@ -1,7 +1,7 @@
 <a class="skip-link" href="#main">Skip to main content</a>
 
 <header class="site-header" data-site-header>
-  <div class="site-header__bar container-wide">
+  <div class="site-header__bar container-x">
     <!--@include brand-->
 
     <nav class="site-nav hidden xl:flex" aria-label="Primary">
@@ -28,19 +28,16 @@
 </header>
 
 <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Main menu" data-mobile-menu hidden>
-  <div class="mobile-menu__bar container-wide">
+  <div class="mobile-menu__bar container-x">
     <!--@include brand-->
     <div class="site-header__actions">
-      <button type="button" class="icon-btn" data-theme-toggle aria-label="Switch to dark theme">
-        {{icon:sun theme-icon-sun}}{{icon:moon theme-icon-moon}}
-      </button>
       <button type="button" class="icon-btn" data-menu-close aria-label="Close menu">
         {{icon:close}}
       </button>
     </div>
   </div>
 
-  <div class="mobile-menu__body container-wide">
+  <div class="mobile-menu__body container-x">
     <nav aria-label="Mobile">
       <ol class="m-list">
         {{@nav-mobile}}
@@ -48,7 +45,14 @@
     </nav>
   </div>
 
-  <div class="mobile-menu__foot container-wide">
+  <div class="mobile-menu__foot container-x">
+    <!-- The menu's theme toggle (moved here from the menu's top bar). The phone header shows no theme toggle. -->
+    <div class="mobile-menu__row">
+      <span class="folio">Theme</span>
+      <button type="button" class="icon-btn" data-theme-toggle aria-label="Switch to dark theme">
+        {{icon:sun theme-icon-sun}}{{icon:moon theme-icon-moon}}
+      </button>
+    </div>
     <div class="mobile-menu__row md:hidden">
       <span class="folio">Layout</span>
       <!--@include dir-toggle-->

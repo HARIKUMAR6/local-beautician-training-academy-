@@ -33,7 +33,6 @@
   .ab-hero .lede { font-size: clamp(1rem, 0.9rem + 0.45vw, 1.1875rem); }
   @media (max-width: 47.99rem) {
     .ab-hero__panel { width: 100%; padding-inline-end: 0; border-start-end-radius: var(--r-md); }
-    .ab-hero .btn { height: 44px; padding-inline: 18px; }
   }
   @media (max-width: 47.99rem) and (max-height: 700px) { .ab-hero .lede { display: none; } }
   @media (min-width: 48rem) and (max-height: 720px) { .ab-hero .lede { display: none; } }

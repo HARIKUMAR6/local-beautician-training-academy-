@@ -68,13 +68,14 @@
   @media (min-width: 48rem) {
     .site-footer__grid { grid-template-columns: repeat(12, 1fr); }
     .site-footer__brand { grid-column: 1 / -1; }
-    .f-col-nav, .f-col-courses { grid-column: span 4; }
-    .f-col-contact { grid-column: span 4; }
+    /* the contact column gets the widest track so the email address fits on one line */
+    .f-col-nav, .f-col-courses { grid-column: span 3; }
+    .f-col-contact { grid-column: span 6; }
   }
   @media (min-width: 64rem) {
-    .site-footer__brand { grid-column: span 5; }
+    .site-footer__brand { grid-column: span 4; }
     .f-col-nav, .f-col-courses { grid-column: span 2; }
-    .f-col-contact { grid-column: span 3; }
+    .f-col-contact { grid-column: span 4; }
   }
 }
 

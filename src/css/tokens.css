@@ -46,6 +46,20 @@
   --inner-hero-peek: clamp(40px, 8svh, 88px);
   --inner-hero-h: clamp(440px, calc(100svh - var(--header-h) - var(--inner-hero-peek)), 720px);
   --gutter: clamp(16px, 4vw, 48px);
+  /* Global container system: ONE content width for the header, every section and the footer (.container-x).
+     --container-wide-max is kept only for intentionally wide media; no public section currently uses it. */
+  --container-max: 1200px;
+  --container-wide-max: 1440px;
+  /* Student dashboard: one content width shared by its top bar and its views */
+  --app-max: 1320px;
+  /* Button sizing system (buttons.css): sm = card / compact actions, md = page CTAs and form submits, lg = reserved */
+  --btn-h-sm: 40px;
+  --btn-h-md: 48px;
+  --btn-h-lg: 56px;
+  --btn-px-sm: 18px;
+  --btn-px-md: 24px;
+  --btn-px-lg: 32px;
+  --btn-px-fluid: 12px; /* wrapping card buttons in very narrow columns */
   --r-sm: 4px;
   --r-md: 8px;
   --r-lg: 16px;

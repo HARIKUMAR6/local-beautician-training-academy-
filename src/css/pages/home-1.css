@@ -31,7 +31,6 @@
   .h1-hero__foot .note { margin: 0; }
   @media (max-width: 47.99rem) {
     .meta-strip { display: none; }
-    .h1-hero .btn { height: 44px; }
   }
   @media (max-height: 700px) and (min-width: 64rem) { .meta-strip { display: none; } }
 

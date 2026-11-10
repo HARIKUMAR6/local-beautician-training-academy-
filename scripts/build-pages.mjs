@@ -81,9 +81,10 @@ const generators = {
       .join('\n        '),
 
   'footer-nav': (page) => {
-    const flat = site.nav.flatMap((it) => (it.children ? it.children : [it]));
+    // the header's Dashboard link is represented in the footer by the existing "Student Dashboard" entry (listed once)
+    const flat = site.nav.filter((it) => !(site.actions.dashboard && it.href === site.actions.dashboard.href)).flatMap((it) => (it.children ? it.children : [it]));
     flat.push(site.actions.login);
-    if (site.actions.dashboard && !flat.some((x) => x.href === site.actions.dashboard.href)) flat.push(site.actions.dashboard);
+    if (site.actions.dashboard) flat.push(site.actions.dashboard);
     return flat.map((it) => `<li><a href="${href(it.href)}"${cur(page, it.key)}>${esc(it.label)}</a></li>`).join('\n          ');
   },
 

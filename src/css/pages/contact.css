@@ -71,14 +71,16 @@
 
   /* ---------- 3 Discipline tiles ---------- */
   .tiles { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(12px, 2vw, 20px); }
-  .tile { display: flex; flex-direction: column; background: var(--bg); border: 1px solid var(--line); border-radius: var(--r-md); overflow: hidden; }
-  .tile__img { aspect-ratio: 1; border-radius: 0; }
+  /* Each tile is a 4-row subgrid (photo, title, text, button), so titles, texts and buttons line up across a row
+     and buttons in a row share one height even when a label wraps (.btn-fluid). */
+  .tile { display: grid; grid-row: span 4; grid-template-rows: subgrid; row-gap: 0; background: var(--bg); border: 1px solid var(--line); border-radius: var(--r-md); overflow: hidden; }
+  .tile__img { grid-row: 1; aspect-ratio: 1; border-radius: 0; min-width: 0; }
   .tile--wide { grid-column: span 2; }
   .tile--wide .tile__img { aspect-ratio: 16 / 9; }
-  .tile__body { flex: 1; display: flex; flex-direction: column; align-items: flex-start; gap: 6px; padding: clamp(12px, 2vw, 18px); }
+  .tile__body { min-width: 0; grid-row: 2 / span 3; display: grid; grid-template-rows: subgrid; row-gap: 6px; align-items: start; justify-items: start; padding: clamp(12px, 2vw, 18px); }
   .tile__body h3 { margin: 0; font-size: var(--text-h4); line-height: 1.25; }
   .tile__body p { margin: 0 0 8px; font-size: 0.9375rem; line-height: 1.5; color: var(--muted); }
-  .tile .btn { margin-block-start: auto; width: 100%; height: auto; min-height: 40px; padding: 8px 12px; white-space: normal; line-height: 1.2; text-align: center; }
+  .tile__body .btn { width: 100%; align-self: stretch; }
   @media (max-width: 29.99rem) { .tile__body p { font-size: 0.875rem; } }
   @media (min-width: 64rem) {
     .tiles { grid-template-columns: repeat(5, minmax(0, 1fr)); }
@@ -107,7 +109,6 @@
   .eq__status { font-size: 0.9375rem; line-height: 1.55; border-radius: var(--r-sm); }
   .eq__status.is-ok { padding: 14px 16px; background: var(--surface-alt); border-inline-start: 4px solid var(--success); color: var(--fg); }
   .eq__status.is-error { color: var(--danger); font-weight: 600; }
-  @media (max-width: 29.99rem) { .eq__foot .btn { width: 100%; } }
 
   /* ---------- 5 Map: the section holds nothing but the interactive map ---------- */
   .ct-map { padding-block: clamp(20px, 3vw, 40px); background: var(--surface-alt); }
@@ -138,7 +139,7 @@
   /* directory items and tiles contain h3 headings, which are centred in RTL, so their whole content centres with them */
   [dir="rtl"] .page-contact .directory__item { justify-items: center; text-align: center; }
   [dir="rtl"] .page-contact .directory__item p { text-align: center; }
-  [dir="rtl"] .page-contact .tile__body { align-items: center; }
+  [dir="rtl"] .page-contact .tile__body { justify-items: center; }
   [dir="rtl"] .page-contact .ct-visit__head :where(p, h2) { text-align: center; }
   /* English placeholders keep their reading order in RTL (no leading ellipsis), aligned to the mirrored edge */
   [dir="rtl"] .page-contact :where(.input, .textarea):not([dir="auto"])::placeholder { unicode-bidi: plaintext; text-align: right; } /* physical-ok: RTL mirror */

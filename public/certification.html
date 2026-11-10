@@ -29,7 +29,7 @@
   <a class="skip-link" href="#main">Skip to main content</a>
 
 <header class="site-header" data-site-header>
-  <div class="site-header__bar container-wide">
+  <div class="site-header__bar container-x">
     <a class="brand" href="index.html" dir="ltr" aria-label="Sorrel Academy of Beauty, home">
   <svg class="brand__logo" viewBox="0 0 190 40" aria-hidden="true" focusable="false"><circle class="logo-ink-stroke" cx="20" cy="20" r="18.5" fill="none" stroke-width="1.5"/>
     <path class="logo-ink-stroke" d="M26.2 14.3C24.6 12.3 21.6 11.5 19.1 12.2 15.9 13.1 15.3 16.7 18.2 18.5L22 20.9C24.9 22.7 24.1 26.8 20.9 27.7 18 28.5 15.1 27.6 13.7 25.7" transform="translate(20 20) scale(1.2) translate(-20 -20)" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -72,7 +72,7 @@
 </header>
 
 <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Main menu" data-mobile-menu hidden>
-  <div class="mobile-menu__bar container-wide">
+  <div class="mobile-menu__bar container-x">
     <a class="brand" href="index.html" dir="ltr" aria-label="Sorrel Academy of Beauty, home">
   <svg class="brand__logo" viewBox="0 0 190 40" aria-hidden="true" focusable="false"><circle class="logo-ink-stroke" cx="20" cy="20" r="18.5" fill="none" stroke-width="1.5"/>
     <path class="logo-ink-stroke" d="M26.2 14.3C24.6 12.3 21.6 11.5 19.1 12.2 15.9 13.1 15.3 16.7 18.2 18.5L22 20.9C24.9 22.7 24.1 26.8 20.9 27.7 18 28.5 15.1 27.6 13.7 25.7" transform="translate(20 20) scale(1.2) translate(-20 -20)" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -82,16 +82,13 @@
 </a>
 
     <div class="site-header__actions">
-      <button type="button" class="icon-btn" data-theme-toggle aria-label="Switch to dark theme">
-        <svg class="icon theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg><svg class="icon theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-      </button>
       <button type="button" class="icon-btn" data-menu-close aria-label="Close menu">
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg>
       </button>
     </div>
   </div>
 
-  <div class="mobile-menu__body container-wide">
+  <div class="mobile-menu__body container-x">
     <nav aria-label="Mobile">
       <ol class="m-list">
         <li class="m-item"><button type="button" class="m-link" data-accordion-trigger aria-expanded="false" aria-controls="m-home"><span class="folio">01</span>Home <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></button><ul class="m-sub" id="m-home" data-accordion-panel hidden><li><a href="index.html">Home 1</a></li><li><a href="home-2.html">Home 2</a></li></ul></li>
@@ -104,7 +101,14 @@
     </nav>
   </div>
 
-  <div class="mobile-menu__foot container-wide">
+  <div class="mobile-menu__foot container-x">
+    <!-- The menu's theme toggle (moved here from the menu's top bar). The phone header shows no theme toggle. -->
+    <div class="mobile-menu__row">
+      <span class="folio">Theme</span>
+      <button type="button" class="icon-btn" data-theme-toggle aria-label="Switch to dark theme">
+        <svg class="icon theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg><svg class="icon theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </div>
     <div class="mobile-menu__row md:hidden">
       <span class="folio">Layout</span>
       <div class="dir-toggle" dir="ltr" role="group" aria-label="Page layout direction: LTR or RTL" data-dir-toggle>
@@ -294,7 +298,7 @@
 
   <!-- Contact details and social handles are FICTIONAL demonstration data from src/config/site.json -->
 <footer class="site-footer" data-site-footer>
-  <div class="site-footer__inner container-wide">
+  <div class="site-footer__inner container-x">
     <div class="site-footer__grid">
       <div class="site-footer__brand">
         <a class="brand" href="index.html" dir="ltr" aria-label="Sorrel Academy of Beauty, home">
@@ -323,8 +327,8 @@
           <li><a href="courses.html">Courses</a></li>
           <li><a href="certification.html" aria-current="page">Certification</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="dashboard.html">Dashboard</a></li>
           <li><a href="login.html">Student Login</a></li>
+          <li><a href="dashboard.html">Student Dashboard</a></li>
         </ul>
       </nav>
 
