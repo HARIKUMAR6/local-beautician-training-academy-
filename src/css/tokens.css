@@ -1,0 +1,136 @@
+/* Design tokens - Phase 1 §4 (colour), §5 (type), §7 (layout).
+   Semantic tokens flip with [data-theme]; Tailwind utilities read them via @theme inline. */
+
+:root {
+  color-scheme: light;
+
+  /* Surfaces */
+  --bg: #f6f1ea;
+  --surface: #fbf8f3;
+  --surface-raised: #ffffff;
+  --surface-alt: #ece4d8;
+  --surface-brand: #12403b;
+
+  /* Text */
+  --fg: #1a1f1e;
+  --muted: #54605e;
+  --on-brand: #f6f1ea;
+  --on-brand-muted: #b9cbc7;
+  --on-brand-line: rgb(246 241 234 / 0.22);
+  --on-brand-accent: #d9b466;
+  --on-brand-dot: #e8957a; /* logo swatch dot on the teal footer band */
+
+  /* Lines */
+  --line: #cfc3b3;
+  --line-input: #857a6b;
+
+  /* Interactive */
+  --primary: #12403b;
+  --primary-fg: #f6f1ea;
+  --primary-hover: #0a2926;
+  --accent: #a8472b;
+  --accent-fg: #ffffff;
+  --accent-hover: #8a3a22;
+  --brass: #7a5c1e;
+  --ring: #12403b;
+  --success: #2f6b3a;
+  --danger: #a3262a;
+
+  /* Layout */
+  --header-h: 72px;
+  /* Shared by BOTH homepage heroes: the first screen below the header (and Home 2's 48px section index) */
+  --hero-chrome: 48px;
+  --hero-h: clamp(520px, calc(100svh - var(--header-h) - var(--hero-chrome)), 820px);
+  /* Shared by ALL inner pages (About, Contact and later ones): the first screen below the header, minus a
+     "peek" so the next section shows and the hero never overflows the first viewport. Use via .inner-hero. */
+  --inner-hero-peek: clamp(40px, 8svh, 88px);
+  --inner-hero-h: clamp(440px, calc(100svh - var(--header-h) - var(--inner-hero-peek)), 720px);
+  --gutter: clamp(16px, 4vw, 48px);
+  --r-sm: 4px;
+  --r-md: 8px;
+  --r-lg: 16px;
+  --shadow-pop: 0 12px 32px -12px rgb(10 41 38 / 0.35);
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --bg: #0e1413;
+  --surface: #151d1c;
+  --surface-raised: #1c2726;
+  --surface-alt: #121a19;
+  --surface-brand: #0a2926;
+
+  --fg: #eee8de;
+  --muted: #a3b0ac;
+  --on-brand: #eee8de;
+  --on-brand-muted: #a9bdb8;
+  --on-brand-line: rgb(238 232 222 / 0.2);
+  --on-brand-accent: #d9b466;
+
+  --line: #3a4b48;
+  --line-input: #6b7c78;
+
+  --primary: #8fd0c2;
+  --primary-fg: #0e1413;
+  --primary-hover: #a9ddd2;
+  --accent: #e8957a;
+  --accent-fg: #0e1413;
+  --accent-hover: #f2ae97;
+  --brass: #d9b466;
+  --ring: #8fd0c2;
+  --success: #7fd18f;
+  --danger: #ff8e8a;
+
+  --shadow-pop: 0 12px 32px -12px rgb(0 0 0 / 0.7);
+}
+
+@media (min-width: 48rem) {
+  :root { --header-h: 80px; }
+}
+
+@theme inline {
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-sans: "Instrument Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+
+  --breakpoint-sm: 30rem;   /* 480 */
+  --breakpoint-md: 48rem;   /* 768 */
+  --breakpoint-lg: 64rem;   /* 1024 */
+  --breakpoint-xl: 80rem;   /* 1280 */
+  --breakpoint-2xl: 96rem;  /* 1536 */
+
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-raised: var(--surface-raised);
+  --color-alt: var(--surface-alt);
+  --color-brand: var(--surface-brand);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-on-brand: var(--on-brand);
+  --color-line: var(--line);
+  --color-line-input: var(--line-input);
+  --color-primary: var(--primary);
+  --color-primary-fg: var(--primary-fg);
+  --color-accent: var(--accent);
+  --color-accent-fg: var(--accent-fg);
+  --color-brass: var(--brass);
+  --color-success: var(--success);
+  --color-danger: var(--danger);
+
+  /* Fluid type scale - Phase 1 §5.1 */
+  --text-display: clamp(2.75rem, 1.6rem + 5vw, 6rem);
+  --text-display--line-height: 1;
+  --text-h1: clamp(2.25rem, 1.4rem + 3.4vw, 4rem);
+  --text-h1--line-height: 1.05;
+  --text-h2: clamp(1.75rem, 1.2rem + 2.2vw, 2.75rem);
+  --text-h2--line-height: 1.12;
+  --text-h3: clamp(1.375rem, 1.1rem + 1.1vw, 1.875rem);
+  --text-h3--line-height: 1.2;
+  --text-h4: 1.25rem;
+  --text-h4--line-height: 1.3;
+  --text-body-lg: 1.1875rem;
+  --text-body-lg--line-height: 1.65;
+  --text-label: 0.75rem;
+  --text-label--line-height: 1.2;
+}

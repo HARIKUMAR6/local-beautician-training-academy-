@@ -1,0 +1,156 @@
+/* About - "The Atelier": editorial storytelling. Each section has its own composition:
+   1 cover photo with a notched panel, 2 stacked prints + pull statement, 3 rising staircase of frames,
+   4 floor plan on the brand band, 5 mentoring ledger + two frames, 6 route line + vision card over a wide photo. */
+@layer components {
+  /* ---------- 1 Hero ---------- */
+  .ab-hero__frame { position: relative; display: grid; min-height: 0; }
+  .ab-hero__media { grid-area: 1 / 1; min-height: 0; height: 100%; border-radius: var(--r-lg); }
+  .ab-hero__media img { object-position: 58% 30%; }
+  .ab-hero__cap { inset-block-start: 16px; inset-block-end: auto; inset-inline-start: auto; inset-inline-end: calc(var(--gutter) + 16px); }
+  .ab-hero__panel {
+    grid-area: 1 / 1;
+    align-self: end;
+    justify-self: start;
+    z-index: 1;
+    width: min(100%, 620px);
+    display: grid;
+    gap: clamp(10px, 2svh, 20px);
+    justify-items: start;
+    padding-block: clamp(18px, 3svh, 40px) 0;
+    padding-inline: 0 clamp(18px, 3vw, 48px);
+    background: var(--bg);
+    border-start-end-radius: var(--r-lg);
+  }
+  .ab-hero__panel .eyebrow { margin: 0; }
+  .ab-hero__title {
+    margin: 0;
+    font-size: clamp(2rem, min(1rem + 4vw, 8svh), 4.5rem);
+    line-height: 1.02;
+    letter-spacing: -0.015em;
+    max-width: 14ch;
+  }
+  .ab-hero__title em { font-style: italic; color: var(--accent); }
+  .ab-hero .lede { font-size: clamp(1rem, 0.9rem + 0.45vw, 1.1875rem); }
+  @media (max-width: 47.99rem) {
+    .ab-hero__panel { width: 100%; padding-inline-end: 0; border-start-end-radius: var(--r-md); }
+    .ab-hero .btn { height: 44px; padding-inline: 18px; }
+  }
+  @media (max-width: 47.99rem) and (max-height: 700px) { .ab-hero .lede { display: none; } }
+  @media (min-width: 48rem) and (max-height: 720px) { .ab-hero .lede { display: none; } }
+
+  /* ---------- 2 Identity ---------- */
+  .ab-id__grid { display: grid; gap: clamp(40px, 6vw, 88px); align-items: center; }
+  @media (min-width: 64rem) { .ab-id__grid { grid-template-columns: 5fr 7fr; } }
+  .ab-id__prints { position: relative; padding-block-end: 16%; padding-inline-end: 18%; width: min(100%, 480px); justify-self: center; }
+  .ab-id__prints figure { margin: 0; }
+  .ab-id__tall .media { aspect-ratio: 4 / 5; border-radius: var(--r-lg); }
+  .ab-id__small { position: absolute; inset-inline-end: 0; inset-block-end: 0; width: 56%; }
+  .ab-id__small .media { aspect-ratio: 4 / 3; border: 8px solid var(--bg); border-radius: var(--r-lg); }
+  .ab-id__copy { display: grid; justify-items: start; }
+  .ab-id__quote { margin: 0 0 20px; font-size: clamp(1.75rem, 1rem + 2.6vw, 3.25rem); line-height: 1.12; font-weight: 400; max-width: 18ch; }
+  .ab-id__quote em { font-style: italic; color: var(--accent); }
+  .beliefs { list-style: none; margin: clamp(28px, 4vw, 44px) 0 0; padding: 0; width: 100%; display: grid; }
+  .beliefs li { display: grid; grid-template-columns: 48px minmax(0, 1fr); column-gap: 12px; padding-block: 16px; border-block-start: 1px solid var(--line); }
+  .beliefs__n { grid-row: span 2; font-family: var(--font-display); font-style: italic; font-size: 1.5rem; line-height: 1.1; color: var(--accent); }
+  .beliefs b { font-family: var(--font-display); font-weight: 500; font-size: 1.25rem; line-height: 1.3; }
+  .beliefs li > span:last-child { color: var(--muted); }
+
+  /* ---------- 3 Method: rising staircase ---------- */
+  .stairs { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px clamp(12px, 2vw, 24px); align-items: start; }
+  .stairs__img { aspect-ratio: 4 / 5; }
+  .stairs__txt { display: grid; gap: 4px; justify-items: start; padding-block-start: 14px; margin-block-start: 14px; border-block-start: 1px solid var(--line); }
+  .stairs__txt .folio { color: var(--brass); }
+  .stairs__txt h3 { margin: 0; font-size: var(--text-h4); line-height: 1.3; }
+  .stairs__txt p { margin: 0; color: var(--muted); font-size: 0.9375rem; line-height: 1.5; }
+  @media (min-width: 64rem) {
+    .stairs { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .stairs__step:nth-child(1) { margin-block-start: 120px; }
+    .stairs__step:nth-child(2) { margin-block-start: 80px; }
+    .stairs__step:nth-child(3) { margin-block-start: 40px; }
+  }
+  @media (max-width: 29.99rem) { .stairs__img { aspect-ratio: 1; } .stairs__txt p { font-size: 0.875rem; } }
+
+  /* ---------- 4 Studio floor plan (brand band) ---------- */
+  .plan { display: grid; gap: clamp(14px, 2vw, 20px); grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .plan__room { margin: 0; display: grid; grid-template-rows: minmax(0, 1fr) auto; gap: 12px; min-height: 0; }
+  .plan__room .media { min-height: 0; }
+  .plan__room--a, .plan__room--d { grid-column: span 2; }
+  .plan__room--a .media, .plan__room--d .media { aspect-ratio: 16 / 9; }
+  .plan__room--b .media, .plan__room--c .media { aspect-ratio: 1; }
+  .plan__room--b img { object-position: 50% 60%; }
+  .plan figcaption { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 10px; }
+  .plan figcaption .folio { color: var(--on-brand-accent); }
+  .plan figcaption b { font-family: var(--font-display); font-weight: 500; font-size: 1.1875rem; color: var(--on-brand); }
+  .plan figcaption span:last-child { flex-basis: 100%; font-size: 0.9375rem; color: var(--on-brand-muted); }
+  .ab-rooms .media { background: rgb(255 255 255 / 0.08); }
+  .ab-rooms .lede { color: var(--on-brand-muted); }
+  @media (min-width: 64rem) {
+    .plan { grid-template-columns: 2fr 1fr 1fr; grid-template-rows: repeat(2, clamp(220px, 21vw, 290px)); }
+    .plan__room--a { grid-column: 1; grid-row: 1 / 3; }
+    .plan__room--b { grid-column: 2; grid-row: 1 / 3; }
+    .plan__room--c { grid-column: 3; grid-row: 1; }
+    .plan__room--d { grid-column: 3; grid-row: 2; }
+    .plan__room .media { aspect-ratio: auto !important; height: 100%; }
+    .plan__room--c figcaption span:last-child, .plan__room--d figcaption span:last-child { display: none; }
+  }
+
+  /* ---------- 5 Mentors ---------- */
+  .ab-mentor__grid { display: grid; gap: clamp(40px, 6vw, 80px); align-items: center; }
+  @media (min-width: 64rem) { .ab-mentor__grid { grid-template-columns: 5fr 7fr; } }
+  .ab-mentor__copy { display: grid; gap: 0; justify-items: start; }
+  .mentor-list { margin: clamp(28px, 4vw, 40px) 0 0; width: 100%; }
+  .mentor-list > div { display: grid; gap: 4px 24px; padding-block: 18px; border-block-start: 1px solid var(--line); }
+  .mentor-list > div:last-child { border-block-end: 1px solid var(--line); }
+  .mentor-list dt { font-family: var(--font-display); font-size: 1.25rem; line-height: 1.3; }
+  .mentor-list dd { margin: 0; color: var(--muted); }
+  @media (min-width: 48rem) { .mentor-list > div { grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); align-items: baseline; } }
+  .ab-mentor__frames { display: grid; grid-template-columns: minmax(0, 1.75fr) minmax(0, 1fr); gap: clamp(12px, 2vw, 20px); align-items: end; }
+  .ab-mentor__frames figure { margin: 0; }
+  .ab-mentor__wide .media { aspect-ratio: 4 / 3; }
+  .ab-mentor__tall { margin-block-end: clamp(32px, 6vw, 72px) !important; }
+  .ab-mentor__tall .media { aspect-ratio: 3 / 5; border-radius: 999px 999px var(--r-md) var(--r-md); }
+  .ab-mentor__tall img { object-position: 30% 50%; }
+
+  /* ---------- 6 Journey + vision ---------- */
+  .route { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; position: relative; }
+  .route li { position: relative; display: grid; gap: 2px; padding-block: 0 24px; padding-inline-start: 36px; }
+  .route li::before { content: ""; position: absolute; inset-inline-start: 7px; inset-block: 18px 0; width: 1px; background: var(--line-input); }
+  .route li:last-child::before { display: none; }
+  .route__dot { position: absolute; inset-inline-start: 0; inset-block-start: 4px; width: 15px; height: 15px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px var(--surface-alt), 0 0 0 5px var(--accent); }
+  .route li:last-child .route__dot { background: var(--primary); box-shadow: 0 0 0 4px var(--surface-alt), 0 0 0 5px var(--primary); }
+  .route b { font-family: var(--font-display); font-weight: 500; font-size: 1.25rem; line-height: 1.3; }
+  .route li > span:last-child { color: var(--muted); font-size: 0.9375rem; }
+  @media (min-width: 48rem) {
+    .route { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 20px; }
+    .route li { padding-inline-start: 0; padding-block: 36px 0; }
+    .route li::before { inset-inline-start: 22px; inset-inline-end: -20px; inset-block-start: 7px; inset-block-end: auto; width: auto; height: 1px; }
+  }
+  .vision { display: grid; margin-block-start: clamp(48px, 6vw, 80px); }
+  .vision__img { aspect-ratio: 4 / 3; border-radius: var(--r-lg); }
+  .vision__card {
+    --band: #12403b; --on-brand: #f6f1ea; --on-brand-muted: #b9cbc7; --on-brand-accent: #d9b466; --on-brand-dot: #e8957a;
+    position: relative;
+    margin: -48px 12px 0;
+    padding: clamp(24px, 3vw, 40px);
+    display: grid;
+    gap: 16px;
+    justify-items: start;
+    background: var(--band);
+    color: var(--on-brand);
+    border-radius: var(--r-lg);
+  }
+  .vision__card .eyebrow { margin: 0; color: var(--on-brand-accent); }
+  .vision__card .eyebrow .chip { background: var(--on-brand-dot); }
+  .vision__text { margin: 0; font-family: var(--font-display); font-size: clamp(1.5rem, 1rem + 1.6vw, 2.25rem); line-height: 1.18; color: var(--on-brand); max-width: 20ch; }
+  .vision__btn { color: var(--on-brand); border-color: var(--on-brand); }
+  .vision__btn:hover { background: var(--on-brand); color: var(--band); }
+  @media (min-width: 64rem) {
+    .vision__img { grid-area: 1 / 1; aspect-ratio: 21 / 9; }
+    .vision__card { grid-area: 1 / 1; align-self: end; justify-self: end; width: min(480px, 46%); margin: 0 28px 28px; }
+  }
+
+  /* RTL: structured lists keep their mirrored, right-aligned rows (no centring inside numbered rows) */
+  [dir="rtl"] .page-about :where(.beliefs, .mentor-list, .route) :where(li, b, span, dt, dd) { text-align: right; } /* physical-ok: RTL mirror */
+  [dir="rtl"] .page-about .stairs__txt { justify-items: center; }
+  [dir="rtl"] .page-about .plan figcaption { justify-content: flex-start; }
+}

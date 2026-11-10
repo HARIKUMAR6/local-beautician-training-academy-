@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <!--@include head-->
+  <title>Certification | {{site.fullName}}</title>
+  <meta name="description" content="What you need to complete, how practical work is assessed and what your {{site.fullName}} certificate of completion shows.">
+</head>
+<body data-page="certification">
+  <!--@include header-->
+
+  <main id="main" tabindex="-1" class="page-cert">
+
+    <!-- 1 · Hero: statement beside a tall photo stamped with a rotating certificate seal (inner-page hero height) -->
+    <section class="inner-hero ce-hero" aria-labelledby="ce-title">
+      <div class="container-x ce-hero__grid">
+        <div class="ce-hero__copy rtl-center">
+          <p class="eyebrow"><span class="chip" aria-hidden="true"></span>Certification</p>
+          <h1 id="ce-title" class="ce-hero__title">Certified by what you can <em>do.</em></h1>
+          <p class="lede">Complete your course, log your practice and pass a practical assessment to receive your Sorrel certificate of completion.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="#requirements">See the requirements {{icon:arrow-right icon-dir}}</a>
+            <a class="btn btn-outline" href="{{root}}courses.html">Browse courses</a>
+          </div>
+        </div>
+        <div class="ce-hero__art">
+          <figure class="media ce-hero__photo">{{img:ce-hero|eager|sizes=(min-width:1024px) 40vw, 92vw}}</figure>
+          <div class="seal" aria-hidden="true">
+            <svg class="seal__ring" viewBox="0 0 200 200" focusable="false">
+              <defs><path id="seal-path" d="M100,100 m-76,0 a76,76 0 1,1 152,0 a76,76 0 1,1 -152,0"/></defs>
+              <circle cx="100" cy="100" r="97" class="seal__bg"/>
+              <circle cx="100" cy="100" r="58" class="seal__inner"/>
+              <text class="seal__text"><textPath href="#seal-path">SORREL ACADEMY OF BEAUTY · CERTIFICATE OF COMPLETION ·</textPath></text>
+            </svg>
+            <!--@include logo-mark-->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 · Requirements: four large checklist rows beside a practice photo -->
+    <section id="requirements" class="hs hs--alt ce-req" aria-labelledby="ce-req-title">
+      <div class="container-x">
+        <div class="sec-head ab-split-head rtl-center">
+          <div>
+            <p class="eyebrow"><span class="chip" aria-hidden="true"></span>02 · Requirements</p>
+            <h2 id="ce-req-title" class="sec-title">What you need to complete.</h2>
+          </div>
+          <p class="lede">Four things, checked by your trainers as you go.</p>
+        </div>
+        <div class="ce-req__grid">
+          <ol class="checks">
+            <li><span class="checks__tick">{{icon:check}}</span><span class="checks__n folio">01</span><b>Attend</b><span class="checks__t">At least 90% of scheduled sessions.</span></li>
+            <li><span class="checks__tick">{{icon:check}}</span><span class="checks__n folio">02</span><b>Log your practice</b><span class="checks__t">Every required practical hour, signed off by a trainer.</span></li>
+            <li><span class="checks__tick">{{icon:check}}</span><span class="checks__n folio">03</span><b>Build a portfolio</b><span class="checks__t">Photographed finished work covering the course looks.</span></li>
+            <li><span class="checks__tick">{{icon:check}}</span><span class="checks__n folio">04</span><b>Pass the practical</b><span class="checks__t">A final assessment on a live model.</span></li>
+          </ol>
+          <figure class="ce-req__fig">
+            <div class="media">{{img:ce-req|sizes=(min-width:1024px) 38vw, 92vw}}</div>
+            <figcaption class="note">Exact hours and portfolio pieces are set in each course handbook (provisional).</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 · Assessment day: three photo stages joined by arrows -->
+    <section class="hs ce-assess" aria-labelledby="ce-assess-title">
+      <div class="container-x">
+        <div class="sec-head rtl-center">
+          <p class="eyebrow"><span class="chip" aria-hidden="true"></span>03 · Assessment</p>
+          <h2 id="ce-assess-title" class="sec-title">How the practical is assessed.</h2>
+          <p class="lede">One session, on a live model, observed by Sorrel trainers.</p>
+        </div>
+        <ol class="stages">
+          <li class="stage"><span class="stage__n" aria-hidden="true">1</span><div class="media">{{img:ce-assess-prepare|sizes=(min-width:1024px) 30vw, 90vw}}</div><h3>Prepare</h3><p>Plan the look and set up a clean, safe station.</p></li>
+          <li class="stage"><span class="stage__n" aria-hidden="true">2</span><div class="media">{{img:ce-assess-perform|sizes=(min-width:1024px) 30vw, 90vw}}</div><h3>Perform</h3><p>Carry out the work within the set time.</p></li>
+          <li class="stage"><span class="stage__n" aria-hidden="true">3</span><div class="media">{{img:ce-assess-review|sizes=(min-width:1024px) 30vw, 90vw}}</div><h3>Review</h3><p>Talk the assessor through your choices and the finish.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 4 · Criteria: a rubric with a pass zone beside a detail photo -->
+    <section class="hs hs--alt ce-crit" aria-labelledby="ce-crit-title">
+      <div class="container-x ce-crit__grid">
+        <figure class="ce-crit__fig">
+          <div class="media">{{img:ce-criteria|sizes=(min-width:1024px) 34vw, 92vw}}</div>
+          <figcaption class="note">Finish is judged up close</figcaption>
+        </figure>
+        <div class="ce-crit__copy rtl-center">
+          <p class="eyebrow"><span class="chip" aria-hidden="true"></span>04 · Criteria</p>
+          <h2 id="ce-crit-title" class="sec-title">What the assessor looks for.</h2>
+          <p class="lede">You pass at Competent or above in every criterion.</p>
+          <table class="rubric">
+            <caption class="sr-only">Assessment criteria and the level needed to pass</caption>
+            <thead><tr><th scope="col">Criterion</th><th scope="col"><span class="rubric__lvl">Developing</span></th><th scope="col"><span class="rubric__lvl">Competent</span></th><th scope="col"><span class="rubric__lvl">Excellent</span></th></tr></thead>
+            <tbody>
+              <tr><th scope="row"><b>Hygiene and safety</b><span>Clean tools, safe products, tidy station.</span></th><td><span class="dot" aria-hidden="true"></span><span class="sr-only">Not yet a pass</span></td><td class="pass"><span class="dot dot--on" aria-hidden="true"></span><span class="sr-only">Pass</span></td><td class="pass"><span class="dot dot--on" aria-hidden="true"></span><span class="sr-only">Pass</span></td></tr>
+              <tr><th scope="row"><b>Technique</b><span>Correct method for each step.</span></th><td><span class="dot" aria-hidden="true"></span><span class="sr-only">Not yet a pass</span></td><td class="pass"><span class="dot dot--on" aria-hidden="true"></span><span class="sr-only">Pass</span></td><td class="pass"><span class="dot dot--on" aria-hidden="true"></span><span class="sr-only">Pass</span></td></tr>
+              <tr><th scope="row"><b>Finish</b><span>Even, blended, long-wearing result.</span></th><td><span class="dot" aria-hidden="true"></span><span class="sr-only">Not yet a pass</span></td><td class="pass"><span class="dot dot--on" aria-hidden="true"></span><span class="sr-only">Pass</span></td><td class="pass"><span class="dot dot--on" aria-hidden="true"></span><span class="sr-only">Pass</span></td></tr>
+              <tr><th scope="row"><b>Timing</b><span>Completed within the set time.</span></th><td><span class="dot" aria-hidden="true"></span><span class="sr-only">Not yet a pass</span></td><td class="pass"><span class="dot dot--on" aria-hidden="true"></span><span class="sr-only">Pass</span></td><td class="pass"><span class="dot dot--on" aria-hidden="true"></span><span class="sr-only">Pass</span></td></tr>
+              <tr><th scope="row"><b>Client care</b><span>Consultation, comfort and aftercare advice.</span></th><td><span class="dot" aria-hidden="true"></span><span class="sr-only">Not yet a pass</span></td><td class="pass"><span class="dot dot--on" aria-hidden="true"></span><span class="sr-only">Pass</span></td><td class="pass"><span class="dot dot--on" aria-hidden="true"></span><span class="sr-only">Pass</span></td></tr>
+            </tbody>
+          </table>
+          <p class="ce-small">Not there yet? You can re-sit the practical after more supervised practice.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 · After you pass: milestone track + annotated certificate + what it is and is not -->
+    <section class="hs ce-doc" aria-labelledby="ce-doc-title">
+      <div class="container-x">
+        <div class="sec-head ab-split-head rtl-center">
+          <div>
+            <p class="eyebrow"><span class="chip" aria-hidden="true"></span>05 · Your certificate</p>
+            <h2 id="ce-doc-title" class="sec-title">After you pass.</h2>
+          </div>
+          <p class="lede">Timings below are provisional until confirmed by the academy.</p>
+        </div>
+        <ol class="track">
+          <li><span class="track__dot" aria-hidden="true"></span><b>Result</b><span>Confirmed after the assessment review.</span></li>
+          <li><span class="track__dot" aria-hidden="true"></span><b>Certificate</b><span>Printed copy plus a digital PDF.</span></li>
+          <li><span class="track__dot" aria-hidden="true"></span><b>Record</b><span>Kept on file by the academy.</span></li>
+          <li><span class="track__dot" aria-hidden="true"></span><b>Check</b><span>Employers can confirm it with us using its ID.</span></li>
+        </ol>
+        <div class="anatomy">
+          <div class="doc" role="img" aria-label="Sample certificate layout with six numbered parts">
+            <div class="doc__inner">
+              <div class="doc__top"><!--@include logo-mark--><span class="doc__kicker">{{site.fullName}}</span></div>
+              <p class="doc__title">Certificate of Completion</p>
+              <p class="doc__name"><span class="pinmark">1</span>Student Name</p>
+              <p class="doc__course"><span class="pinmark">2</span>Professional Makeup Artistry</p>
+              <div class="doc__row">
+                <span><span class="pinmark">3</span>Practical hours: 000</span>
+                <span><span class="pinmark">4</span>Date: DD Month YYYY</span>
+              </div>
+              <div class="doc__row doc__row--foot">
+                <span><span class="pinmark">5</span>ID: SRL-0000-0000</span>
+                <span class="doc__sign"><span class="pinmark">6</span>Academy director</span>
+              </div>
+              <span class="doc__sample">Sample</span>
+            </div>
+          </div>
+          <div class="anatomy__side rtl-center">
+            <ol class="legend">
+              <li><span class="pinmark">1</span>Your full name</li>
+              <li><span class="pinmark">2</span>Course and discipline</li>
+              <li><span class="pinmark">3</span>Practical hours completed</li>
+              <li><span class="pinmark">4</span>Date of completion</li>
+              <li><span class="pinmark">5</span>Unique verification ID</li>
+              <li><span class="pinmark">6</span>Signature of the academy director</li>
+            </ol>
+            <div class="isnot">
+              <p><b>It is</b> proof that you completed a Sorrel course and passed its practical assessment.</p>
+              <p><b>It is not</b> a government-regulated qualification or a licence to practise. Check the rules where you plan to work.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 · Invitation: framed portrait with a brass offset beside the call to action -->
+    <section class="hs hs--alt ce-cta" aria-labelledby="ce-cta-title">
+      <div class="container-x ce-cta__grid">
+        <figure class="ce-cta__fig"><div class="media">{{img:ce-cta|sizes=(min-width:1024px) 30vw, 70vw}}</div></figure>
+        <div class="ce-cta__copy rtl-center">
+          <p class="eyebrow"><span class="chip" aria-hidden="true"></span>06 · Start</p>
+          <h2 id="ce-cta-title" class="ce-cta__title">Your certificate starts with the first lesson.</h2>
+          <p class="lede">Choose a course, or ask us how assessment works for your discipline.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="{{root}}courses.html">Choose a course {{icon:arrow-right icon-dir}}</a>
+            <a class="btn btn-outline" href="{{root}}contact.html#enquiry">Ask admissions</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!--@include footer-->
+  <!--@include scroll-top-->
+</body>
+</html>

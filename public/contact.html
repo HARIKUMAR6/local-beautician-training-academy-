@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/brand/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/instrument-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/styles.css">
+<script>
+  /* Runs before first paint: applies the saved (or system) theme and saved direction so there is no flash. */
+  (function () {
+    var d = document.documentElement, t, r;
+    try { t = localStorage.getItem('aca-theme'); r = localStorage.getItem('aca-dir'); } catch (e) {}
+    if (t !== 'light' && t !== 'dark') { t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+    d.setAttribute('data-theme', t);
+    d.setAttribute('dir', r === 'rtl' ? 'rtl' : 'ltr');
+  })();
+</script>
+<script type="module" src="assets/js/main.js"></script>
+
+  <title>Contact | Sorrel Academy of Beauty</title>
+  <meta name="description" content="Call, email or visit Sorrel Academy of Beauty, or send a course enquiry.">
+  <script type="module" src="assets/js/pages/contact.js"></script>
+</head>
+<body data-page="contact">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header" data-site-header>
+  <div class="site-header__bar container-wide">
+    <a class="brand" href="index.html" dir="ltr" aria-label="Sorrel Academy of Beauty, home">
+  <svg class="brand__logo" viewBox="0 0 190 40" aria-hidden="true" focusable="false"><circle class="logo-ink-stroke" cx="20" cy="20" r="18.5" fill="none" stroke-width="1.5"/>
+    <path class="logo-ink-stroke" d="M26.2 14.3C24.6 12.3 21.6 11.5 19.1 12.2 15.9 13.1 15.3 16.7 18.2 18.5L22 20.9C24.9 22.7 24.1 26.8 20.9 27.7 18 28.5 15.1 27.6 13.7 25.7" transform="translate(20 20) scale(1.2) translate(-20 -20)" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle class="logo-accent" cx="32.2" cy="7.9" r="3.1"/>
+    <path class="logo-ink" d="M59.93 20.87Q58.95 20.87 58.24 20.64Q57.53 20.40 57.08 20.18Q56.63 19.95 56.42 19.95Q56.18 19.95 56.02 20.09Q55.86 20.24 55.73 20.42Q55.59 20.61 55.43 20.75Q55.28 20.90 55.05 20.90Q54.80 20.90 54.63 20.75Q54.47 20.60 54.41 20.25L53.58 16.34Q53.54 16.07 53.65 15.88Q53.76 15.69 54.03 15.60Q54.32 15.51 54.53 15.62Q54.75 15.72 54.90 16.04Q55.59 17.38 56.36 18.17Q57.14 18.96 57.98 19.30Q58.82 19.64 59.69 19.64Q60.92 19.64 61.62 19Q62.33 18.36 62.33 17.30Q62.34 16.60 62.02 16.04Q61.70 15.48 60.80 14.96Q59.90 14.43 58.13 13.85Q56.31 13.26 55.21 12.49Q54.11 11.72 53.62 10.68Q53.13 9.65 53.13 8.28Q53.13 6.83 53.82 5.73Q54.51 4.62 55.76 4.01Q57.02 3.39 58.70 3.39Q59.78 3.39 60.48 3.61Q61.19 3.83 61.65 4.06Q62.10 4.29 62.40 4.29Q62.67 4.29 62.81 4.05Q62.96 3.82 63.12 3.59Q63.29 3.35 63.63 3.35Q63.89 3.35 64.07 3.52Q64.24 3.69 64.37 4.14L65.50 8.08Q65.60 8.39 65.48 8.64Q65.37 8.88 65.09 8.97Q64.82 9.06 64.59 8.95Q64.37 8.84 64.23 8.56Q63.48 7.07 62.64 6.21Q61.79 5.36 60.89 4.98Q59.99 4.61 59.07 4.61Q57.84 4.61 57.12 5.31Q56.39 6.02 56.39 7.14Q56.39 7.83 56.71 8.42Q57.03 9 57.92 9.56Q58.80 10.12 60.48 10.74Q62.34 11.40 63.44 12.17Q64.54 12.94 65.01 13.91Q65.49 14.87 65.49 16.12Q65.49 17.43 64.83 18.51Q64.17 19.59 62.93 20.23Q61.70 20.87 59.93 20.87M73.56 8.86Q75.42 8.86 76.83 9.62Q78.23 10.37 79.02 11.72Q79.80 13.07 79.80 14.86Q79.80 16.55 78.99 17.90Q78.18 19.24 76.76 20.02Q75.33 20.80 73.44 20.80Q71.60 20.80 70.20 20.03Q68.80 19.26 68.01 17.91Q67.22 16.56 67.22 14.80Q67.22 13.08 68.03 11.75Q68.84 10.41 70.26 9.63Q71.69 8.86 73.56 8.86M74.42 19.54Q75.23 19.42 75.73 18.79Q76.23 18.16 76.37 17.06Q76.50 15.95 76.22 14.40Q75.94 12.86 75.41 11.85Q74.88 10.85 74.16 10.41Q73.44 9.96 72.60 10.11Q71.78 10.24 71.28 10.87Q70.78 11.50 70.65 12.60Q70.53 13.70 70.80 15.26Q71.08 16.79 71.61 17.79Q72.14 18.80 72.86 19.24Q73.58 19.68 74.42 19.54M85.88 9.69L86.01 11.57Q86.07 11.39 86.14 11.22Q86.63 10.05 87.44 9.45Q88.24 8.86 89.16 8.86Q90.30 8.86 90.93 9.51Q91.55 10.16 91.55 11.37Q91.55 12.45 91.11 12.98Q90.66 13.50 89.96 13.50Q89.24 13.50 88.86 13.12Q88.49 12.74 88.49 12.05L88.49 11.62Q88.48 11.24 88.31 11.05Q88.14 10.86 87.76 10.86Q87.34 10.86 86.95 11.21Q86.56 11.56 86.31 12.27Q86.07 12.98 86.07 14.08L86.07 18.57Q86.07 18.92 86.21 19.08Q86.34 19.24 86.70 19.30L87.74 19.46Q88.01 19.50 88.15 19.64Q88.29 19.77 88.29 20Q88.29 20.24 88.11 20.37Q87.94 20.50 87.62 20.50L82.01 20.50Q81.68 20.50 81.52 20.37Q81.36 20.24 81.36 20.01Q81.36 19.83 81.47 19.70Q81.58 19.58 81.81 19.49L82.28 19.37Q82.49 19.30 82.59 19.13Q82.70 18.95 82.70 18.58L82.70 11.73Q82.70 11.42 82.61 11.28Q82.52 11.15 82.31 11.12L81.68 11.07Q81.46 11.02 81.36 10.91Q81.27 10.80 81.27 10.64Q81.27 10.43 81.39 10.31Q81.51 10.19 81.82 10.07L84 9.28Q84.59 9.05 84.87 8.99Q85.14 8.92 85.30 8.92Q85.56 8.92 85.70 9.09Q85.83 9.27 85.88 9.69M97.12 9.69L97.25 11.57Q97.31 11.39 97.38 11.22Q97.88 10.05 98.68 9.45Q99.48 8.86 100.41 8.86Q101.55 8.86 102.17 9.51Q102.80 10.16 102.80 11.37Q102.80 12.45 102.35 12.98Q101.91 13.50 101.20 13.50Q100.48 13.50 100.11 13.12Q99.74 12.74 99.74 12.05L99.74 11.62Q99.72 11.24 99.56 11.05Q99.39 10.86 99 10.86Q98.58 10.86 98.19 11.21Q97.80 11.56 97.56 12.27Q97.31 12.98 97.31 14.08L97.31 18.57Q97.31 18.92 97.45 19.08Q97.59 19.24 97.95 19.30L98.98 19.46Q99.26 19.50 99.39 19.64Q99.53 19.77 99.53 20Q99.53 20.24 99.36 20.37Q99.18 20.50 98.86 20.50L93.26 20.50Q92.92 20.50 92.76 20.37Q92.61 20.24 92.61 20.01Q92.61 19.83 92.72 19.70Q92.82 19.58 93.05 19.49L93.52 19.37Q93.74 19.30 93.84 19.13Q93.94 18.95 93.94 18.58L93.94 11.73Q93.94 11.42 93.85 11.28Q93.76 11.15 93.56 11.12L92.92 11.07Q92.70 11.02 92.61 10.91Q92.51 10.80 92.51 10.64Q92.51 10.43 92.63 10.31Q92.75 10.19 93.06 10.07L95.25 9.28Q95.84 9.05 96.11 8.99Q96.39 8.92 96.54 8.92Q96.81 8.92 96.94 9.09Q97.07 9.27 97.12 9.69M114.86 13.41Q114.86 14.04 114.50 14.39Q114.14 14.73 113.44 14.73L106.85 14.73Q107.02 16.40 107.90 17.32Q108.98 18.48 110.79 18.48Q111.84 18.48 112.64 18.06Q113.44 17.64 113.88 16.86Q114.10 16.62 114.23 16.54Q114.35 16.46 114.48 16.46Q114.68 16.46 114.76 16.63Q114.84 16.80 114.84 17.04Q114.80 18.05 114.12 18.91Q113.45 19.77 112.31 20.28Q111.17 20.80 109.70 20.80Q107.96 20.80 106.61 20.09Q105.27 19.37 104.51 18.08Q103.74 16.79 103.74 15.06Q103.74 13.25 104.47 11.85Q105.20 10.44 106.55 9.65Q107.91 8.86 109.79 8.86Q111.40 8.86 112.53 9.44Q113.67 10.02 114.26 11.05Q114.86 12.08 114.86 13.41M106.80 13.82L110.86 13.82Q111.47 13.82 111.47 13.26Q111.47 11.68 110.90 10.86Q110.32 10.04 109.35 10.04Q108.60 10.04 108.03 10.49Q107.45 10.95 107.13 11.79Q106.80 12.63 106.80 13.82M121.12 3.42L121.12 18.58Q121.12 18.95 121.22 19.13Q121.32 19.30 121.54 19.37L122 19.49Q122.22 19.56 122.33 19.69Q122.44 19.82 122.44 20.01Q122.44 20.24 122.28 20.37Q122.13 20.50 121.78 20.50L117.05 20.50Q116.72 20.50 116.56 20.37Q116.40 20.24 116.40 20.01Q116.40 19.83 116.51 19.70Q116.62 19.58 116.85 19.49L117.32 19.37Q117.53 19.29 117.63 19.12Q117.74 18.95 117.74 18.58L117.74 5.44Q117.74 5.14 117.65 5.01Q117.56 4.88 117.35 4.84L116.72 4.79Q116.50 4.73 116.40 4.62Q116.31 4.52 116.31 4.35Q116.31 4.16 116.43 4.04Q116.55 3.92 116.86 3.80L119.09 2.98Q119.57 2.80 119.85 2.73Q120.12 2.66 120.33 2.66Q120.72 2.66 120.92 2.87Q121.12 3.08 121.12 3.42"/>
+    <path class="logo-tag" d="M54.18 36L52.97 36L55.02 27.97L56.58 27.97L58.63 36L57.43 36L56.94 33.97L54.67 33.97L54.18 36M55.44 30.65L54.89 32.99L56.71 32.99L56.16 30.66Q56.02 30.05 55.93 29.59Q55.83 29.14 55.80 28.97Q55.77 29.14 55.68 29.59Q55.59 30.05 55.44 30.65M63.98 36.11Q63.24 36.11 62.68 35.83Q62.13 35.55 61.82 35.02Q61.52 34.48 61.52 33.77L61.52 30.20Q61.52 29.48 61.82 28.95Q62.13 28.42 62.68 28.14Q63.24 27.86 63.98 27.86Q64.73 27.86 65.28 28.15Q65.83 28.43 66.13 28.95Q66.44 29.48 66.44 30.20L65.25 30.20Q65.25 29.58 64.92 29.25Q64.59 28.92 63.98 28.92Q63.38 28.92 63.04 29.25Q62.71 29.58 62.71 30.19L62.71 33.77Q62.71 34.38 63.04 34.72Q63.38 35.05 63.98 35.05Q64.59 35.05 64.92 34.72Q65.25 34.38 65.25 33.77L66.44 33.77Q66.44 34.48 66.13 35.01Q65.83 35.54 65.28 35.82Q64.73 36.11 63.98 36.11M70.46 36L69.25 36L71.30 27.97L72.86 27.97L74.91 36L73.71 36L73.22 33.97L70.95 33.97L70.46 36M71.72 30.65L71.17 32.99L72.99 32.99L72.44 30.66Q72.30 30.05 72.21 29.59Q72.11 29.14 72.08 28.97Q72.05 29.14 71.96 29.59Q71.87 30.05 71.72 30.65M80.08 36L77.83 36L77.83 27.97L80.08 27.97Q80.87 27.97 81.45 28.27Q82.03 28.57 82.36 29.13Q82.68 29.68 82.68 30.42L82.68 33.54Q82.68 34.27 82.36 34.83Q82.03 35.40 81.45 35.70Q80.87 36 80.08 36M79.02 29.05L79.02 34.92L80.08 34.92Q80.74 34.92 81.12 34.55Q81.50 34.19 81.50 33.54L81.50 30.42Q81.50 29.79 81.12 29.42Q80.74 29.05 80.08 29.05M90.81 36L86.09 36L86.09 27.97L90.81 27.97L90.81 29.03L87.26 29.03L87.26 31.30L90.43 31.30L90.43 32.35L87.26 32.35L87.26 34.94L90.81 34.94M95.05 36L93.93 36L93.93 27.97L95.39 27.97L96.19 30.54Q96.31 30.91 96.40 31.24Q96.49 31.58 96.52 31.74Q96.57 31.58 96.65 31.24Q96.73 30.91 96.84 30.54L97.61 27.97L99.07 27.97L99.07 36L97.95 36L97.95 33.29Q97.95 32.78 97.98 32.14Q98.01 31.51 98.06 30.87Q98.12 30.23 98.17 29.64Q98.23 29.05 98.27 28.61L97.08 32.51L95.94 32.51L94.73 28.61Q94.78 29.04 94.84 29.60Q94.89 30.17 94.94 30.81Q94.98 31.45 95.02 32.09Q95.05 32.73 95.05 33.29M105.23 36L104.05 36L104.05 33.04L101.66 27.97L102.89 27.97L104.31 31.01Q104.45 31.30 104.54 31.56Q104.63 31.82 104.66 31.96Q104.68 31.82 104.78 31.56Q104.87 31.30 105 31.01L106.39 27.97L107.62 27.97L105.23 33.04M120.92 36.11Q120.17 36.11 119.63 35.83Q119.08 35.55 118.79 35.02Q118.50 34.48 118.50 33.77L118.50 30.20Q118.50 29.48 118.79 28.95Q119.08 28.42 119.63 28.14Q120.17 27.86 120.92 27.86Q121.67 27.86 122.21 28.14Q122.76 28.42 123.05 28.95Q123.34 29.48 123.34 30.19L123.34 33.77Q123.34 34.48 123.05 35.02Q122.76 35.55 122.21 35.83Q121.67 36.11 120.92 36.11M120.92 35.05Q121.53 35.05 121.84 34.72Q122.15 34.38 122.15 33.77L122.15 30.20Q122.15 29.58 121.84 29.25Q121.53 28.92 120.92 28.92Q120.33 28.92 120.01 29.25Q119.69 29.58 119.69 30.20L119.69 33.77Q119.69 34.38 120.01 34.72Q120.33 35.05 120.92 35.05M127.91 36L126.73 36L126.73 27.96L131.58 27.96L131.58 29.06L127.88 29.06L127.88 31.46L131.29 31.46L131.29 32.56L127.91 32.56M145.49 36L142.98 36L142.98 27.97L145.34 27.97Q146.48 27.97 147.13 28.52Q147.78 29.07 147.78 30.04Q147.78 30.59 147.55 30.99Q147.31 31.39 146.89 31.61Q146.69 31.71 146.46 31.77Q146.74 31.82 146.98 31.94Q147.44 32.18 147.71 32.65Q147.97 33.11 147.97 33.74Q147.97 34.43 147.67 34.94Q147.36 35.45 146.81 35.73Q146.25 36 145.49 36M144.13 32.33L144.13 34.98L145.40 34.98Q146.03 34.98 146.41 34.64Q146.78 34.30 146.78 33.69Q146.78 33.07 146.41 32.70Q146.03 32.33 145.40 32.33L144.13 32.33M144.13 28.99L144.13 31.34L145.33 31.34Q145.92 31.34 146.26 31.02Q146.61 30.70 146.61 30.16Q146.61 29.62 146.26 29.31Q145.92 28.99 145.34 28.99M155.93 36L151.21 36L151.21 27.97L155.93 27.97L155.93 29.03L152.38 29.03L152.38 31.30L155.55 31.30L155.55 32.35L152.38 32.35L152.38 34.94L155.93 34.94M160 36L158.79 36L160.84 27.97L162.40 27.97L164.45 36L163.25 36L162.76 33.97L160.49 33.97L160 36M161.26 30.65L160.71 32.99L162.53 32.99L161.98 30.66Q161.84 30.05 161.75 29.59Q161.65 29.14 161.62 28.97Q161.59 29.14 161.50 29.59Q161.41 30.05 161.26 30.65M169.76 36.11Q168.60 36.11 167.98 35.48Q167.35 34.84 167.35 33.76L167.35 27.97L168.54 27.97L168.54 33.76Q168.54 34.36 168.84 34.71Q169.14 35.06 169.76 35.06Q170.36 35.06 170.67 34.71Q170.98 34.36 170.98 33.76L170.98 27.97L172.17 27.97L172.17 33.76Q172.17 34.84 171.54 35.48Q170.91 36.11 169.76 36.11M178.49 36L177.31 36L177.31 29.06L175.16 29.06L175.16 27.96L180.64 27.96L180.64 29.06L178.49 29.06M186.63 36L185.45 36L185.45 33.04L183.06 27.97L184.29 27.97L185.71 31.01Q185.85 31.30 185.94 31.56Q186.03 31.82 186.06 31.96Q186.08 31.82 186.18 31.56Q186.27 31.30 186.40 31.01L187.79 27.97L189.02 27.97L186.63 33.04"/></svg>
+</a>
+
+
+    <nav class="site-nav hidden xl:flex" aria-label="Primary">
+      <ul class="nav-list">
+        <li class="nav-dd" data-dropdown><button type="button" class="nav-link" data-dropdown-trigger aria-expanded="false" aria-controls="dd-home">Home <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></button><ul class="nav-dd__panel" id="dd-home" data-dropdown-panel hidden><li><a class="nav-dd__link" href="index.html">Home 1</a></li><li><a class="nav-dd__link" href="home-2.html">Home 2</a></li></ul></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="courses.html">Courses</a></li>
+        <li><a class="nav-link" href="certification.html">Certification</a></li>
+        <li><a class="nav-link" href="contact.html" aria-current="page">Contact</a></li>
+        <li><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+      </ul>
+    </nav>
+
+    <div class="site-header__actions">
+      <button type="button" class="icon-btn hidden md:inline-grid" data-theme-toggle aria-label="Switch to dark theme">
+        <svg class="icon theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg><svg class="icon theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+
+      <span class="hidden md:inline-flex"><div class="dir-toggle" dir="ltr" role="group" aria-label="Page layout direction: LTR or RTL" data-dir-toggle>
+  <button type="button" data-dir-set="ltr" aria-pressed="true">LTR</button>
+  <button type="button" data-dir-set="rtl" aria-pressed="false">RTL</button>
+</div>
+</span>
+
+      <a class="btn btn-sm btn-outline hidden xl:inline-flex" href="login.html">Student Login</a>
+      <a class="btn btn-sm btn-primary hidden xl:inline-flex" href="contact.html">Enquire <svg class="icon icon-dir" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+
+      <button type="button" class="icon-btn menu-btn xl:hidden" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Main menu" data-mobile-menu hidden>
+  <div class="mobile-menu__bar container-wide">
+    <a class="brand" href="index.html" dir="ltr" aria-label="Sorrel Academy of Beauty, home">
+  <svg class="brand__logo" viewBox="0 0 190 40" aria-hidden="true" focusable="false"><circle class="logo-ink-stroke" cx="20" cy="20" r="18.5" fill="none" stroke-width="1.5"/>
+    <path class="logo-ink-stroke" d="M26.2 14.3C24.6 12.3 21.6 11.5 19.1 12.2 15.9 13.1 15.3 16.7 18.2 18.5L22 20.9C24.9 22.7 24.1 26.8 20.9 27.7 18 28.5 15.1 27.6 13.7 25.7" transform="translate(20 20) scale(1.2) translate(-20 -20)" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle class="logo-accent" cx="32.2" cy="7.9" r="3.1"/>
+    <path class="logo-ink" d="M59.93 20.87Q58.95 20.87 58.24 20.64Q57.53 20.40 57.08 20.18Q56.63 19.95 56.42 19.95Q56.18 19.95 56.02 20.09Q55.86 20.24 55.73 20.42Q55.59 20.61 55.43 20.75Q55.28 20.90 55.05 20.90Q54.80 20.90 54.63 20.75Q54.47 20.60 54.41 20.25L53.58 16.34Q53.54 16.07 53.65 15.88Q53.76 15.69 54.03 15.60Q54.32 15.51 54.53 15.62Q54.75 15.72 54.90 16.04Q55.59 17.38 56.36 18.17Q57.14 18.96 57.98 19.30Q58.82 19.64 59.69 19.64Q60.92 19.64 61.62 19Q62.33 18.36 62.33 17.30Q62.34 16.60 62.02 16.04Q61.70 15.48 60.80 14.96Q59.90 14.43 58.13 13.85Q56.31 13.26 55.21 12.49Q54.11 11.72 53.62 10.68Q53.13 9.65 53.13 8.28Q53.13 6.83 53.82 5.73Q54.51 4.62 55.76 4.01Q57.02 3.39 58.70 3.39Q59.78 3.39 60.48 3.61Q61.19 3.83 61.65 4.06Q62.10 4.29 62.40 4.29Q62.67 4.29 62.81 4.05Q62.96 3.82 63.12 3.59Q63.29 3.35 63.63 3.35Q63.89 3.35 64.07 3.52Q64.24 3.69 64.37 4.14L65.50 8.08Q65.60 8.39 65.48 8.64Q65.37 8.88 65.09 8.97Q64.82 9.06 64.59 8.95Q64.37 8.84 64.23 8.56Q63.48 7.07 62.64 6.21Q61.79 5.36 60.89 4.98Q59.99 4.61 59.07 4.61Q57.84 4.61 57.12 5.31Q56.39 6.02 56.39 7.14Q56.39 7.83 56.71 8.42Q57.03 9 57.92 9.56Q58.80 10.12 60.48 10.74Q62.34 11.40 63.44 12.17Q64.54 12.94 65.01 13.91Q65.49 14.87 65.49 16.12Q65.49 17.43 64.83 18.51Q64.17 19.59 62.93 20.23Q61.70 20.87 59.93 20.87M73.56 8.86Q75.42 8.86 76.83 9.62Q78.23 10.37 79.02 11.72Q79.80 13.07 79.80 14.86Q79.80 16.55 78.99 17.90Q78.18 19.24 76.76 20.02Q75.33 20.80 73.44 20.80Q71.60 20.80 70.20 20.03Q68.80 19.26 68.01 17.91Q67.22 16.56 67.22 14.80Q67.22 13.08 68.03 11.75Q68.84 10.41 70.26 9.63Q71.69 8.86 73.56 8.86M74.42 19.54Q75.23 19.42 75.73 18.79Q76.23 18.16 76.37 17.06Q76.50 15.95 76.22 14.40Q75.94 12.86 75.41 11.85Q74.88 10.85 74.16 10.41Q73.44 9.96 72.60 10.11Q71.78 10.24 71.28 10.87Q70.78 11.50 70.65 12.60Q70.53 13.70 70.80 15.26Q71.08 16.79 71.61 17.79Q72.14 18.80 72.86 19.24Q73.58 19.68 74.42 19.54M85.88 9.69L86.01 11.57Q86.07 11.39 86.14 11.22Q86.63 10.05 87.44 9.45Q88.24 8.86 89.16 8.86Q90.30 8.86 90.93 9.51Q91.55 10.16 91.55 11.37Q91.55 12.45 91.11 12.98Q90.66 13.50 89.96 13.50Q89.24 13.50 88.86 13.12Q88.49 12.74 88.49 12.05L88.49 11.62Q88.48 11.24 88.31 11.05Q88.14 10.86 87.76 10.86Q87.34 10.86 86.95 11.21Q86.56 11.56 86.31 12.27Q86.07 12.98 86.07 14.08L86.07 18.57Q86.07 18.92 86.21 19.08Q86.34 19.24 86.70 19.30L87.74 19.46Q88.01 19.50 88.15 19.64Q88.29 19.77 88.29 20Q88.29 20.24 88.11 20.37Q87.94 20.50 87.62 20.50L82.01 20.50Q81.68 20.50 81.52 20.37Q81.36 20.24 81.36 20.01Q81.36 19.83 81.47 19.70Q81.58 19.58 81.81 19.49L82.28 19.37Q82.49 19.30 82.59 19.13Q82.70 18.95 82.70 18.58L82.70 11.73Q82.70 11.42 82.61 11.28Q82.52 11.15 82.31 11.12L81.68 11.07Q81.46 11.02 81.36 10.91Q81.27 10.80 81.27 10.64Q81.27 10.43 81.39 10.31Q81.51 10.19 81.82 10.07L84 9.28Q84.59 9.05 84.87 8.99Q85.14 8.92 85.30 8.92Q85.56 8.92 85.70 9.09Q85.83 9.27 85.88 9.69M97.12 9.69L97.25 11.57Q97.31 11.39 97.38 11.22Q97.88 10.05 98.68 9.45Q99.48 8.86 100.41 8.86Q101.55 8.86 102.17 9.51Q102.80 10.16 102.80 11.37Q102.80 12.45 102.35 12.98Q101.91 13.50 101.20 13.50Q100.48 13.50 100.11 13.12Q99.74 12.74 99.74 12.05L99.74 11.62Q99.72 11.24 99.56 11.05Q99.39 10.86 99 10.86Q98.58 10.86 98.19 11.21Q97.80 11.56 97.56 12.27Q97.31 12.98 97.31 14.08L97.31 18.57Q97.31 18.92 97.45 19.08Q97.59 19.24 97.95 19.30L98.98 19.46Q99.26 19.50 99.39 19.64Q99.53 19.77 99.53 20Q99.53 20.24 99.36 20.37Q99.18 20.50 98.86 20.50L93.26 20.50Q92.92 20.50 92.76 20.37Q92.61 20.24 92.61 20.01Q92.61 19.83 92.72 19.70Q92.82 19.58 93.05 19.49L93.52 19.37Q93.74 19.30 93.84 19.13Q93.94 18.95 93.94 18.58L93.94 11.73Q93.94 11.42 93.85 11.28Q93.76 11.15 93.56 11.12L92.92 11.07Q92.70 11.02 92.61 10.91Q92.51 10.80 92.51 10.64Q92.51 10.43 92.63 10.31Q92.75 10.19 93.06 10.07L95.25 9.28Q95.84 9.05 96.11 8.99Q96.39 8.92 96.54 8.92Q96.81 8.92 96.94 9.09Q97.07 9.27 97.12 9.69M114.86 13.41Q114.86 14.04 114.50 14.39Q114.14 14.73 113.44 14.73L106.85 14.73Q107.02 16.40 107.90 17.32Q108.98 18.48 110.79 18.48Q111.84 18.48 112.64 18.06Q113.44 17.64 113.88 16.86Q114.10 16.62 114.23 16.54Q114.35 16.46 114.48 16.46Q114.68 16.46 114.76 16.63Q114.84 16.80 114.84 17.04Q114.80 18.05 114.12 18.91Q113.45 19.77 112.31 20.28Q111.17 20.80 109.70 20.80Q107.96 20.80 106.61 20.09Q105.27 19.37 104.51 18.08Q103.74 16.79 103.74 15.06Q103.74 13.25 104.47 11.85Q105.20 10.44 106.55 9.65Q107.91 8.86 109.79 8.86Q111.40 8.86 112.53 9.44Q113.67 10.02 114.26 11.05Q114.86 12.08 114.86 13.41M106.80 13.82L110.86 13.82Q111.47 13.82 111.47 13.26Q111.47 11.68 110.90 10.86Q110.32 10.04 109.35 10.04Q108.60 10.04 108.03 10.49Q107.45 10.95 107.13 11.79Q106.80 12.63 106.80 13.82M121.12 3.42L121.12 18.58Q121.12 18.95 121.22 19.13Q121.32 19.30 121.54 19.37L122 19.49Q122.22 19.56 122.33 19.69Q122.44 19.82 122.44 20.01Q122.44 20.24 122.28 20.37Q122.13 20.50 121.78 20.50L117.05 20.50Q116.72 20.50 116.56 20.37Q116.40 20.24 116.40 20.01Q116.40 19.83 116.51 19.70Q116.62 19.58 116.85 19.49L117.32 19.37Q117.53 19.29 117.63 19.12Q117.74 18.95 117.74 18.58L117.74 5.44Q117.74 5.14 117.65 5.01Q117.56 4.88 117.35 4.84L116.72 4.79Q116.50 4.73 116.40 4.62Q116.31 4.52 116.31 4.35Q116.31 4.16 116.43 4.04Q116.55 3.92 116.86 3.80L119.09 2.98Q119.57 2.80 119.85 2.73Q120.12 2.66 120.33 2.66Q120.72 2.66 120.92 2.87Q121.12 3.08 121.12 3.42"/>
+    <path class="logo-tag" d="M54.18 36L52.97 36L55.02 27.97L56.58 27.97L58.63 36L57.43 36L56.94 33.97L54.67 33.97L54.18 36M55.44 30.65L54.89 32.99L56.71 32.99L56.16 30.66Q56.02 30.05 55.93 29.59Q55.83 29.14 55.80 28.97Q55.77 29.14 55.68 29.59Q55.59 30.05 55.44 30.65M63.98 36.11Q63.24 36.11 62.68 35.83Q62.13 35.55 61.82 35.02Q61.52 34.48 61.52 33.77L61.52 30.20Q61.52 29.48 61.82 28.95Q62.13 28.42 62.68 28.14Q63.24 27.86 63.98 27.86Q64.73 27.86 65.28 28.15Q65.83 28.43 66.13 28.95Q66.44 29.48 66.44 30.20L65.25 30.20Q65.25 29.58 64.92 29.25Q64.59 28.92 63.98 28.92Q63.38 28.92 63.04 29.25Q62.71 29.58 62.71 30.19L62.71 33.77Q62.71 34.38 63.04 34.72Q63.38 35.05 63.98 35.05Q64.59 35.05 64.92 34.72Q65.25 34.38 65.25 33.77L66.44 33.77Q66.44 34.48 66.13 35.01Q65.83 35.54 65.28 35.82Q64.73 36.11 63.98 36.11M70.46 36L69.25 36L71.30 27.97L72.86 27.97L74.91 36L73.71 36L73.22 33.97L70.95 33.97L70.46 36M71.72 30.65L71.17 32.99L72.99 32.99L72.44 30.66Q72.30 30.05 72.21 29.59Q72.11 29.14 72.08 28.97Q72.05 29.14 71.96 29.59Q71.87 30.05 71.72 30.65M80.08 36L77.83 36L77.83 27.97L80.08 27.97Q80.87 27.97 81.45 28.27Q82.03 28.57 82.36 29.13Q82.68 29.68 82.68 30.42L82.68 33.54Q82.68 34.27 82.36 34.83Q82.03 35.40 81.45 35.70Q80.87 36 80.08 36M79.02 29.05L79.02 34.92L80.08 34.92Q80.74 34.92 81.12 34.55Q81.50 34.19 81.50 33.54L81.50 30.42Q81.50 29.79 81.12 29.42Q80.74 29.05 80.08 29.05M90.81 36L86.09 36L86.09 27.97L90.81 27.97L90.81 29.03L87.26 29.03L87.26 31.30L90.43 31.30L90.43 32.35L87.26 32.35L87.26 34.94L90.81 34.94M95.05 36L93.93 36L93.93 27.97L95.39 27.97L96.19 30.54Q96.31 30.91 96.40 31.24Q96.49 31.58 96.52 31.74Q96.57 31.58 96.65 31.24Q96.73 30.91 96.84 30.54L97.61 27.97L99.07 27.97L99.07 36L97.95 36L97.95 33.29Q97.95 32.78 97.98 32.14Q98.01 31.51 98.06 30.87Q98.12 30.23 98.17 29.64Q98.23 29.05 98.27 28.61L97.08 32.51L95.94 32.51L94.73 28.61Q94.78 29.04 94.84 29.60Q94.89 30.17 94.94 30.81Q94.98 31.45 95.02 32.09Q95.05 32.73 95.05 33.29M105.23 36L104.05 36L104.05 33.04L101.66 27.97L102.89 27.97L104.31 31.01Q104.45 31.30 104.54 31.56Q104.63 31.82 104.66 31.96Q104.68 31.82 104.78 31.56Q104.87 31.30 105 31.01L106.39 27.97L107.62 27.97L105.23 33.04M120.92 36.11Q120.17 36.11 119.63 35.83Q119.08 35.55 118.79 35.02Q118.50 34.48 118.50 33.77L118.50 30.20Q118.50 29.48 118.79 28.95Q119.08 28.42 119.63 28.14Q120.17 27.86 120.92 27.86Q121.67 27.86 122.21 28.14Q122.76 28.42 123.05 28.95Q123.34 29.48 123.34 30.19L123.34 33.77Q123.34 34.48 123.05 35.02Q122.76 35.55 122.21 35.83Q121.67 36.11 120.92 36.11M120.92 35.05Q121.53 35.05 121.84 34.72Q122.15 34.38 122.15 33.77L122.15 30.20Q122.15 29.58 121.84 29.25Q121.53 28.92 120.92 28.92Q120.33 28.92 120.01 29.25Q119.69 29.58 119.69 30.20L119.69 33.77Q119.69 34.38 120.01 34.72Q120.33 35.05 120.92 35.05M127.91 36L126.73 36L126.73 27.96L131.58 27.96L131.58 29.06L127.88 29.06L127.88 31.46L131.29 31.46L131.29 32.56L127.91 32.56M145.49 36L142.98 36L142.98 27.97L145.34 27.97Q146.48 27.97 147.13 28.52Q147.78 29.07 147.78 30.04Q147.78 30.59 147.55 30.99Q147.31 31.39 146.89 31.61Q146.69 31.71 146.46 31.77Q146.74 31.82 146.98 31.94Q147.44 32.18 147.71 32.65Q147.97 33.11 147.97 33.74Q147.97 34.43 147.67 34.94Q147.36 35.45 146.81 35.73Q146.25 36 145.49 36M144.13 32.33L144.13 34.98L145.40 34.98Q146.03 34.98 146.41 34.64Q146.78 34.30 146.78 33.69Q146.78 33.07 146.41 32.70Q146.03 32.33 145.40 32.33L144.13 32.33M144.13 28.99L144.13 31.34L145.33 31.34Q145.92 31.34 146.26 31.02Q146.61 30.70 146.61 30.16Q146.61 29.62 146.26 29.31Q145.92 28.99 145.34 28.99M155.93 36L151.21 36L151.21 27.97L155.93 27.97L155.93 29.03L152.38 29.03L152.38 31.30L155.55 31.30L155.55 32.35L152.38 32.35L152.38 34.94L155.93 34.94M160 36L158.79 36L160.84 27.97L162.40 27.97L164.45 36L163.25 36L162.76 33.97L160.49 33.97L160 36M161.26 30.65L160.71 32.99L162.53 32.99L161.98 30.66Q161.84 30.05 161.75 29.59Q161.65 29.14 161.62 28.97Q161.59 29.14 161.50 29.59Q161.41 30.05 161.26 30.65M169.76 36.11Q168.60 36.11 167.98 35.48Q167.35 34.84 167.35 33.76L167.35 27.97L168.54 27.97L168.54 33.76Q168.54 34.36 168.84 34.71Q169.14 35.06 169.76 35.06Q170.36 35.06 170.67 34.71Q170.98 34.36 170.98 33.76L170.98 27.97L172.17 27.97L172.17 33.76Q172.17 34.84 171.54 35.48Q170.91 36.11 169.76 36.11M178.49 36L177.31 36L177.31 29.06L175.16 29.06L175.16 27.96L180.64 27.96L180.64 29.06L178.49 29.06M186.63 36L185.45 36L185.45 33.04L183.06 27.97L184.29 27.97L185.71 31.01Q185.85 31.30 185.94 31.56Q186.03 31.82 186.06 31.96Q186.08 31.82 186.18 31.56Q186.27 31.30 186.40 31.01L187.79 27.97L189.02 27.97L186.63 33.04"/></svg>
+</a>
+
+    <div class="site-header__actions">
+      <button type="button" class="icon-btn" data-theme-toggle aria-label="Switch to dark theme">
+        <svg class="icon theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg><svg class="icon theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button type="button" class="icon-btn" data-menu-close aria-label="Close menu">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu__body container-wide">
+    <nav aria-label="Mobile">
+      <ol class="m-list">
+        <li class="m-item"><button type="button" class="m-link" data-accordion-trigger aria-expanded="false" aria-controls="m-home"><span class="folio">01</span>Home <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></button><ul class="m-sub" id="m-home" data-accordion-panel hidden><li><a href="index.html">Home 1</a></li><li><a href="home-2.html">Home 2</a></li></ul></li>
+        <li class="m-item"><a class="m-link" href="about.html"><span class="folio">02</span>About</a></li>
+        <li class="m-item"><a class="m-link" href="courses.html"><span class="folio">03</span>Courses</a></li>
+        <li class="m-item"><a class="m-link" href="certification.html"><span class="folio">04</span>Certification</a></li>
+        <li class="m-item"><a class="m-link" href="contact.html" aria-current="page"><span class="folio">05</span>Contact</a></li>
+        <li class="m-item"><a class="m-link" href="dashboard.html"><span class="folio">06</span>Dashboard</a></li>
+      </ol>
+    </nav>
+  </div>
+
+  <div class="mobile-menu__foot container-wide">
+    <div class="mobile-menu__row md:hidden">
+      <span class="folio">Layout</span>
+      <div class="dir-toggle" dir="ltr" role="group" aria-label="Page layout direction: LTR or RTL" data-dir-toggle>
+  <button type="button" data-dir-set="ltr" aria-pressed="true">LTR</button>
+  <button type="button" data-dir-set="rtl" aria-pressed="false">RTL</button>
+</div>
+
+    </div>
+    <a class="btn btn-outline btn-block" href="login.html">Student Login</a>
+    <a class="btn btn-primary btn-block" href="contact.html">Enquire <svg class="icon icon-dir" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</div>
+
+
+  <main id="main" tabindex="-1" class="page-contact">
+
+    <!-- 1 · Hero: copy with three direct channels beside a framed reception photo (inner-page hero height) -->
+    <section class="inner-hero ct-hero" aria-labelledby="ct-title">
+      <div class="container-x ct-hero__grid">
+        <div class="ct-hero__copy rtl-center">
+          <p class="eyebrow"><span class="chip" aria-hidden="true"></span>Contact</p>
+          <h1 id="ct-title" class="ct-hero__title">Let&rsquo;s talk about your <em>training.</em></h1>
+          <p class="lede">Ask about a course, book a studio visit or check the next intake.</p>
+          <ul class="quick">
+            <li><a href="tel:+442079460173"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span><span class="folio">Call</span><b>+44 20 7946 0173</b></span></a></li>
+            <li><a href="mailto:admissions@sorrelacademy.example"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span><span class="folio">Email</span><b>admissions@sorrelacademy.example</b></span></a></li>
+            <li><a href="#enquiry"><svg class="icon icon-dir" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg><span><span class="folio">Online</span><b>Send an enquiry</b></span></a></li>
+          </ul>
+        </div>
+        <div class="ct-hero__art">
+          <figure class="media ct-hero__main"><img src="assets/images/contact/hero-800.webp" srcset="assets/images/contact/hero-800.webp 800w, assets/images/contact/hero.webp 1600w" sizes="(min-width:1024px) 46vw, 92vw" width="1600" height="1200" alt="Beauty studio reception with red velvet chairs, a wall clock and flowers" loading="eager" fetchpriority="high" decoding="async"></figure>
+          <figure class="media ct-hero__inset"><img src="assets/images/contact/hero-detail-800.webp" srcset="assets/images/contact/hero-detail-800.webp 800w, assets/images/contact/hero-detail.webp 1600w" sizes="(min-width:1024px) 16vw, 34vw" width="1600" height="1067" alt="" loading="lazy" decoding="async"></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 · Contact information: a directory of four channels beside a tall photo -->
+    <section class="hs ct-info" aria-labelledby="ct-info-title">
+      <div class="container-x ct-info__grid">
+        <div class="ct-info__main">
+          <div class="sec-head rtl-center">
+            <p class="eyebrow"><span class="chip" aria-hidden="true"></span>02 · Reach us</p>
+            <h2 id="ct-info-title" class="sec-title">Four ways to get in touch.</h2>
+          </div>
+          <div class="directory">
+            <div class="directory__item">
+              <span class="directory__ico"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+              <h3>Visit</h3>
+              <p>Unit 3, Larkspur Yard, 21 Quill Street, Aldermere ZZ1 0AA, United Kingdom</p>
+              <a class="btn btn-link" href="#visit">Plan a visit <svg class="icon icon-dir" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+            <div class="directory__item">
+              <span class="directory__ico"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span>
+              <h3>Call</h3>
+              <p dir="ltr" class="directory__value">+44 20 7946 0173</p>
+              <a class="btn btn-link" href="tel:+442079460173">Call admissions <svg class="icon icon-dir" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+            <div class="directory__item">
+              <span class="directory__ico"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+              <h3>Email</h3>
+              <p class="directory__value">admissions@sorrelacademy.example</p>
+              <a class="btn btn-link" href="mailto:admissions@sorrelacademy.example">Write to us <svg class="icon icon-dir" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+            <div class="directory__item">
+              <span class="directory__ico"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+              <h3>Opening hours</h3>
+              <p>Mon to Fri 9:00 to 18:00, Sat 10:00 to 16:00, Sun closed</p>
+              <a class="btn btn-link" href="#enquiry">Ask a question <svg class="icon icon-dir" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </div>
+          <ul class="handles" aria-label="Social media"><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="0.9" fill="currentColor" stroke="none"/></svg><span><b>Instagram</b> @sorrel.academy</span></li><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path fill="currentColor" stroke="none" d="M13.6 21v-8.1h2.7l.5-3.3h-3.2V7.5c0-.9.4-1.7 1.8-1.7h1.5V3c-.3 0-1.2-.2-2.3-.2-2.4 0-4 1.5-4 4.1v2.7H7.9v3.3h2.7V21z"/></svg><span><b>Facebook</b> Sorrel Academy of Beauty</span></li><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path fill="currentColor" stroke="none" d="M10 9.3v5.4l4.7-2.7z"/></svg><span><b>YouTube</b> @SorrelAcademy</span></li><li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10.5V16M11.5 16v-5.5M11.5 13c0-1.6 1-2.6 2.4-2.6s2.1 1 2.1 2.6V16"/><circle cx="8" cy="7.9" r="0.9" fill="currentColor" stroke="none"/></svg><span><b>LinkedIn</b> Sorrel Academy of Beauty</span></li></ul>
+        </div>
+        <figure class="ct-info__fig">
+          <div class="media"><img src="assets/images/contact/info-800.webp" srcset="assets/images/contact/info-800.webp 800w, assets/images/contact/info.webp 1600w" sizes="(min-width:1024px) 30vw, 92vw" width="1600" height="2397" alt="Hand choosing a shade from a large eyeshadow palette at a makeup station" loading="lazy" decoding="async"></div>
+          <figcaption class="note">Colour station</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 3 · Course enquiry guidance: five discipline tiles that pre-fill the form -->
+    <section class="hs hs--alt ct-guide" aria-labelledby="ct-guide-title">
+      <div class="container-x">
+        <div class="sec-head ab-split-head rtl-center">
+          <div>
+            <p class="eyebrow"><span class="chip" aria-hidden="true"></span>03 · Before you ask</p>
+            <h2 id="ct-guide-title" class="sec-title">Not sure which course? Start with a discipline.</h2>
+          </div>
+          <p class="lede">Pick one and we&rsquo;ll add it to your enquiry. Ask about intakes, kit and practice hours.</p>
+        </div>
+        <ul class="tiles">
+          <li class="tile">
+            <div class="media tile__img"><img src="assets/images/contact/guide-makeup-800.webp" srcset="assets/images/contact/guide-makeup-800.webp 800w, assets/images/contact/guide-makeup.webp 1600w" sizes="(min-width:1024px) 22vw, (min-width:480px) 46vw, 92vw" width="1600" height="1067" alt="Artist applying highlighter and powder to a model with long braids" loading="lazy" decoding="async"></div>
+            <div class="tile__body rtl-center"><h3>Makeup Artistry</h3><p>Ask about kit lists and studio hours.</p>
+            <button type="button" class="btn btn-outline btn-sm" data-ask="Makeup Artistry">Ask about makeup <svg class="icon icon-dir" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+          </li>
+          <li class="tile">
+            <div class="media tile__img"><img src="assets/images/contact/guide-skin-800.webp" srcset="assets/images/contact/guide-skin-800.webp 800w, assets/images/contact/guide-skin.webp 1600w" sizes="(min-width:1024px) 22vw, (min-width:480px) 46vw, 92vw" width="1600" height="2400" alt="Woman applying serum from a dropper, wearing under-eye patches" loading="lazy" decoding="async"></div>
+            <div class="tile__body rtl-center"><h3>Skin Care</h3><p>Ask about treatments and the skin lab.</p>
+            <button type="button" class="btn btn-outline btn-sm" data-ask="Skin Care">Ask about skin <svg class="icon icon-dir" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+          </li>
+          <li class="tile">
+            <div class="media tile__img"><img src="assets/images/contact/guide-hair-800.webp" srcset="assets/images/contact/guide-hair-800.webp 800w, assets/images/contact/guide-hair.webp 1600w" sizes="(min-width:1024px) 22vw, (min-width:480px) 46vw, 92vw" width="1600" height="1067" alt="Trainees in grey tunics watching hair colour being applied to a client" loading="lazy" decoding="async"></div>
+            <div class="tile__body rtl-center"><h3>Hair Styling</h3><p>Ask about colour, cutting and models.</p>
+            <button type="button" class="btn btn-outline btn-sm" data-ask="Hair Styling">Ask about hair <svg class="icon icon-dir" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+          </li>
+          <li class="tile">
+            <div class="media tile__img"><img src="assets/images/contact/guide-nails-800.webp" srcset="assets/images/contact/guide-nails-800.webp 800w, assets/images/contact/guide-nails.webp 1600w" sizes="(min-width:1024px) 22vw, (min-width:480px) 46vw, 92vw" width="1600" height="1773" alt="Hand with periwinkle nails painted with small red flowers" loading="lazy" decoding="async"></div>
+            <div class="tile__body rtl-center"><h3>Nail Technology</h3><p>Ask about structure and nail art.</p>
+            <button type="button" class="btn btn-outline btn-sm" data-ask="Nail Technology">Ask about nails <svg class="icon icon-dir" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+          </li>
+          <li class="tile tile--wide">
+            <div class="media tile__img"><img src="assets/images/contact/guide-bridal-800.webp" srcset="assets/images/contact/guide-bridal-800.webp 800w, assets/images/contact/guide-bridal.webp 1600w" sizes="(min-width:1024px) 22vw, 92vw" width="1600" height="1103" alt="Black-and-white photo of a stylist setting a bride's hair in a makeup studio" loading="lazy" decoding="async"></div>
+            <div class="tile__body rtl-center"><h3>Bridal Artistry</h3><p>Ask about entry skills and trials.</p>
+            <button type="button" class="btn btn-outline btn-sm" data-ask="Bridal Artistry">Ask about bridal <svg class="icon icon-dir" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 4 · Enquiry form (front-end only: validates in the browser, sends nothing) -->
+    <section id="enquiry" class="hs ct-form" aria-labelledby="ct-form-title">
+      <div class="container-x ct-form__grid">
+        <div class="ct-form__side rtl-center">
+          <p class="eyebrow"><span class="chip" aria-hidden="true"></span>04 · Enquiry</p>
+          <h2 id="ct-form-title" class="sec-title">Send us your questions.</h2>
+          <figure class="media ct-form__img"><img src="assets/images/contact/form-800.webp" srcset="assets/images/contact/form-800.webp 800w, assets/images/contact/form.webp 1600w" sizes="(min-width:1024px) 34vw, 92vw" width="1600" height="1067" alt="Makeup brush resting on pink and peach pressed powders" loading="lazy" decoding="async"></figure>
+          <ol class="next">
+            <li><b>Tell us your interest</b><span>Choose a course and add your questions.</span></li>
+            <li><b>Admissions replies</b><span>With dates, fees and a visit time.</span></li>
+            <li><b>Visit the studio</b><span>Meet a trainer before you enrol.</span></li>
+          </ol>
+        </div>
+
+        <form class="eq" data-contact-form novalidate aria-labelledby="ct-form-title">
+          <p class="eq__intro">All fields are required.</p>
+          <div class="eq__row">
+            <div class="field">
+              <label class="field-label" for="cf-name">Full name</label>
+              <input class="input" id="cf-name" name="name" type="text" autocomplete="name" placeholder="e.g. Amara Okafor" required aria-describedby="cf-name-err">
+              <span class="field-error" id="cf-name-err" hidden>Please enter your full name.</span>
+            </div>
+            <div class="field">
+              <label class="field-label" for="cf-email">Email address</label>
+              <input class="input" id="cf-email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="name@example.com" dir="auto" required aria-describedby="cf-email-err">
+              <span class="field-error" id="cf-email-err" hidden>Please enter a valid email address, like name@example.com.</span>
+            </div>
+          </div>
+          <div class="eq__row">
+            <div class="field">
+              <label class="field-label" for="cf-phone">Phone number</label>
+              <input class="input" id="cf-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="e.g. +44 20 7946 0000" dir="auto" required aria-describedby="cf-phone-err">
+              <span class="field-error" id="cf-phone-err" hidden>Please enter a phone number (7 to 15 digits).</span>
+            </div>
+            <div class="field">
+              <label class="field-label" for="cf-course">Course of interest</label>
+              <div class="select"><select class="select-input" id="cf-course" name="course" required aria-describedby="cf-course-err">
+                <option value="" selected disabled>Choose a course</option>
+                <option value="Makeup Artistry">Makeup Artistry</option><option value="Skin Care">Skin Care</option><option value="Hair Styling">Hair Styling</option><option value="Nail Technology">Nail Technology</option><option value="Bridal Artistry">Bridal Artistry</option>
+                <option value="Not sure yet">Not sure yet</option>
+              </select></div>
+              <span class="field-error" id="cf-course-err" hidden>Please choose a course, or &ldquo;Not sure yet&rdquo;.</span>
+            </div>
+          </div>
+          <div class="field">
+            <label class="field-label" for="cf-msg">Message</label>
+            <textarea class="textarea" id="cf-msg" name="message" rows="5" placeholder="What would you like to know? Intake dates, fees, kit, visits&hellip;" required aria-describedby="cf-msg-err"></textarea>
+            <span class="field-error" id="cf-msg-err" hidden>Please write a short message (at least 10 characters).</span>
+          </div>
+          <div class="eq__foot">
+            <button type="submit" class="btn btn-primary btn-lg">Send enquiry <svg class="icon icon-dir" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+            <p class="eq__note">Demonstration form: it checks your details in this browser only. Nothing is sent or stored.</p>
+          </div>
+          <div class="eq__status" role="status" aria-live="polite" data-contact-status></div>
+        </form>
+      </div>
+    </section>
+
+    <!-- 5 · Map: heading above an interactive OpenStreetMap -->
+    <section class="ct-map" aria-labelledby="ct-map-title">
+      <div class="container-wide">
+        <div class="sec-head ct-map__head rtl-center">
+          <h2 id="ct-map-title" class="sec-title">Find Our Location</h2>
+        </div>
+        <div class="ct-map__frame">
+          <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-0.1420%2C51.5060%2C-0.1080%2C51.5220&amp;layer=mapnik" title="Interactive street map from OpenStreetMap" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 · Final call to action: centred invitation over a panoramic studio photo -->
+    <section id="visit" class="hs ct-visit" aria-labelledby="ct-visit-title">
+      <div class="container-x">
+        <div class="ct-visit__head">
+          <p class="eyebrow"><span class="chip" aria-hidden="true"></span>06 · Visit</p>
+          <h2 id="ct-visit-title" class="ct-visit__title">Your first class starts with a conversation.</h2>
+          <p class="ct-visit__lede">Come and see the rooms, meet a trainer and ask anything.</p>
+          <div class="btn-row ct-visit__btns">
+            <a class="btn btn-accent" href="#enquiry">Book a visit <svg class="icon icon-dir" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="btn btn-outline ct-visit__call" href="tel:+442079460173"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg> Call us</a>
+          </div>
+        </div>
+        <div class="ct-visit__pano">
+          <div class="media"><img src="assets/images/contact/visit-800.webp" srcset="assets/images/contact/visit-800.webp 800w, assets/images/contact/visit.webp 1600w" sizes="(min-width:1280px) 1200px, 100vw" width="1600" height="1043" alt="Compact salon room with a styling chair, mirror and wood-panelled walls" loading="lazy" decoding="async"></div>
+          <dl class="ct-visit__tab">
+            <div><dt>Hours</dt><dd>Mon to Fri 9:00 to 18:00, Sat 10:00 to 16:00, Sun closed</dd></div>
+            <div><dt>Address</dt><dd>Unit 3, Larkspur Yard, 21 Quill Street, Aldermere ZZ1 0AA, United Kingdom</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Contact details and social handles are FICTIONAL demonstration data from src/config/site.json -->
+<footer class="site-footer" data-site-footer>
+  <div class="site-footer__inner container-wide">
+    <div class="site-footer__grid">
+      <div class="site-footer__brand">
+        <a class="brand" href="index.html" dir="ltr" aria-label="Sorrel Academy of Beauty, home">
+  <svg class="brand__logo" viewBox="0 0 190 40" aria-hidden="true" focusable="false"><circle class="logo-ink-stroke" cx="20" cy="20" r="18.5" fill="none" stroke-width="1.5"/>
+    <path class="logo-ink-stroke" d="M26.2 14.3C24.6 12.3 21.6 11.5 19.1 12.2 15.9 13.1 15.3 16.7 18.2 18.5L22 20.9C24.9 22.7 24.1 26.8 20.9 27.7 18 28.5 15.1 27.6 13.7 25.7" transform="translate(20 20) scale(1.2) translate(-20 -20)" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle class="logo-accent" cx="32.2" cy="7.9" r="3.1"/>
+    <path class="logo-ink" d="M59.93 20.87Q58.95 20.87 58.24 20.64Q57.53 20.40 57.08 20.18Q56.63 19.95 56.42 19.95Q56.18 19.95 56.02 20.09Q55.86 20.24 55.73 20.42Q55.59 20.61 55.43 20.75Q55.28 20.90 55.05 20.90Q54.80 20.90 54.63 20.75Q54.47 20.60 54.41 20.25L53.58 16.34Q53.54 16.07 53.65 15.88Q53.76 15.69 54.03 15.60Q54.32 15.51 54.53 15.62Q54.75 15.72 54.90 16.04Q55.59 17.38 56.36 18.17Q57.14 18.96 57.98 19.30Q58.82 19.64 59.69 19.64Q60.92 19.64 61.62 19Q62.33 18.36 62.33 17.30Q62.34 16.60 62.02 16.04Q61.70 15.48 60.80 14.96Q59.90 14.43 58.13 13.85Q56.31 13.26 55.21 12.49Q54.11 11.72 53.62 10.68Q53.13 9.65 53.13 8.28Q53.13 6.83 53.82 5.73Q54.51 4.62 55.76 4.01Q57.02 3.39 58.70 3.39Q59.78 3.39 60.48 3.61Q61.19 3.83 61.65 4.06Q62.10 4.29 62.40 4.29Q62.67 4.29 62.81 4.05Q62.96 3.82 63.12 3.59Q63.29 3.35 63.63 3.35Q63.89 3.35 64.07 3.52Q64.24 3.69 64.37 4.14L65.50 8.08Q65.60 8.39 65.48 8.64Q65.37 8.88 65.09 8.97Q64.82 9.06 64.59 8.95Q64.37 8.84 64.23 8.56Q63.48 7.07 62.64 6.21Q61.79 5.36 60.89 4.98Q59.99 4.61 59.07 4.61Q57.84 4.61 57.12 5.31Q56.39 6.02 56.39 7.14Q56.39 7.83 56.71 8.42Q57.03 9 57.92 9.56Q58.80 10.12 60.48 10.74Q62.34 11.40 63.44 12.17Q64.54 12.94 65.01 13.91Q65.49 14.87 65.49 16.12Q65.49 17.43 64.83 18.51Q64.17 19.59 62.93 20.23Q61.70 20.87 59.93 20.87M73.56 8.86Q75.42 8.86 76.83 9.62Q78.23 10.37 79.02 11.72Q79.80 13.07 79.80 14.86Q79.80 16.55 78.99 17.90Q78.18 19.24 76.76 20.02Q75.33 20.80 73.44 20.80Q71.60 20.80 70.20 20.03Q68.80 19.26 68.01 17.91Q67.22 16.56 67.22 14.80Q67.22 13.08 68.03 11.75Q68.84 10.41 70.26 9.63Q71.69 8.86 73.56 8.86M74.42 19.54Q75.23 19.42 75.73 18.79Q76.23 18.16 76.37 17.06Q76.50 15.95 76.22 14.40Q75.94 12.86 75.41 11.85Q74.88 10.85 74.16 10.41Q73.44 9.96 72.60 10.11Q71.78 10.24 71.28 10.87Q70.78 11.50 70.65 12.60Q70.53 13.70 70.80 15.26Q71.08 16.79 71.61 17.79Q72.14 18.80 72.86 19.24Q73.58 19.68 74.42 19.54M85.88 9.69L86.01 11.57Q86.07 11.39 86.14 11.22Q86.63 10.05 87.44 9.45Q88.24 8.86 89.16 8.86Q90.30 8.86 90.93 9.51Q91.55 10.16 91.55 11.37Q91.55 12.45 91.11 12.98Q90.66 13.50 89.96 13.50Q89.24 13.50 88.86 13.12Q88.49 12.74 88.49 12.05L88.49 11.62Q88.48 11.24 88.31 11.05Q88.14 10.86 87.76 10.86Q87.34 10.86 86.95 11.21Q86.56 11.56 86.31 12.27Q86.07 12.98 86.07 14.08L86.07 18.57Q86.07 18.92 86.21 19.08Q86.34 19.24 86.70 19.30L87.74 19.46Q88.01 19.50 88.15 19.64Q88.29 19.77 88.29 20Q88.29 20.24 88.11 20.37Q87.94 20.50 87.62 20.50L82.01 20.50Q81.68 20.50 81.52 20.37Q81.36 20.24 81.36 20.01Q81.36 19.83 81.47 19.70Q81.58 19.58 81.81 19.49L82.28 19.37Q82.49 19.30 82.59 19.13Q82.70 18.95 82.70 18.58L82.70 11.73Q82.70 11.42 82.61 11.28Q82.52 11.15 82.31 11.12L81.68 11.07Q81.46 11.02 81.36 10.91Q81.27 10.80 81.27 10.64Q81.27 10.43 81.39 10.31Q81.51 10.19 81.82 10.07L84 9.28Q84.59 9.05 84.87 8.99Q85.14 8.92 85.30 8.92Q85.56 8.92 85.70 9.09Q85.83 9.27 85.88 9.69M97.12 9.69L97.25 11.57Q97.31 11.39 97.38 11.22Q97.88 10.05 98.68 9.45Q99.48 8.86 100.41 8.86Q101.55 8.86 102.17 9.51Q102.80 10.16 102.80 11.37Q102.80 12.45 102.35 12.98Q101.91 13.50 101.20 13.50Q100.48 13.50 100.11 13.12Q99.74 12.74 99.74 12.05L99.74 11.62Q99.72 11.24 99.56 11.05Q99.39 10.86 99 10.86Q98.58 10.86 98.19 11.21Q97.80 11.56 97.56 12.27Q97.31 12.98 97.31 14.08L97.31 18.57Q97.31 18.92 97.45 19.08Q97.59 19.24 97.95 19.30L98.98 19.46Q99.26 19.50 99.39 19.64Q99.53 19.77 99.53 20Q99.53 20.24 99.36 20.37Q99.18 20.50 98.86 20.50L93.26 20.50Q92.92 20.50 92.76 20.37Q92.61 20.24 92.61 20.01Q92.61 19.83 92.72 19.70Q92.82 19.58 93.05 19.49L93.52 19.37Q93.74 19.30 93.84 19.13Q93.94 18.95 93.94 18.58L93.94 11.73Q93.94 11.42 93.85 11.28Q93.76 11.15 93.56 11.12L92.92 11.07Q92.70 11.02 92.61 10.91Q92.51 10.80 92.51 10.64Q92.51 10.43 92.63 10.31Q92.75 10.19 93.06 10.07L95.25 9.28Q95.84 9.05 96.11 8.99Q96.39 8.92 96.54 8.92Q96.81 8.92 96.94 9.09Q97.07 9.27 97.12 9.69M114.86 13.41Q114.86 14.04 114.50 14.39Q114.14 14.73 113.44 14.73L106.85 14.73Q107.02 16.40 107.90 17.32Q108.98 18.48 110.79 18.48Q111.84 18.48 112.64 18.06Q113.44 17.64 113.88 16.86Q114.10 16.62 114.23 16.54Q114.35 16.46 114.48 16.46Q114.68 16.46 114.76 16.63Q114.84 16.80 114.84 17.04Q114.80 18.05 114.12 18.91Q113.45 19.77 112.31 20.28Q111.17 20.80 109.70 20.80Q107.96 20.80 106.61 20.09Q105.27 19.37 104.51 18.08Q103.74 16.79 103.74 15.06Q103.74 13.25 104.47 11.85Q105.20 10.44 106.55 9.65Q107.91 8.86 109.79 8.86Q111.40 8.86 112.53 9.44Q113.67 10.02 114.26 11.05Q114.86 12.08 114.86 13.41M106.80 13.82L110.86 13.82Q111.47 13.82 111.47 13.26Q111.47 11.68 110.90 10.86Q110.32 10.04 109.35 10.04Q108.60 10.04 108.03 10.49Q107.45 10.95 107.13 11.79Q106.80 12.63 106.80 13.82M121.12 3.42L121.12 18.58Q121.12 18.95 121.22 19.13Q121.32 19.30 121.54 19.37L122 19.49Q122.22 19.56 122.33 19.69Q122.44 19.82 122.44 20.01Q122.44 20.24 122.28 20.37Q122.13 20.50 121.78 20.50L117.05 20.50Q116.72 20.50 116.56 20.37Q116.40 20.24 116.40 20.01Q116.40 19.83 116.51 19.70Q116.62 19.58 116.85 19.49L117.32 19.37Q117.53 19.29 117.63 19.12Q117.74 18.95 117.74 18.58L117.74 5.44Q117.74 5.14 117.65 5.01Q117.56 4.88 117.35 4.84L116.72 4.79Q116.50 4.73 116.40 4.62Q116.31 4.52 116.31 4.35Q116.31 4.16 116.43 4.04Q116.55 3.92 116.86 3.80L119.09 2.98Q119.57 2.80 119.85 2.73Q120.12 2.66 120.33 2.66Q120.72 2.66 120.92 2.87Q121.12 3.08 121.12 3.42"/>
+    <path class="logo-tag" d="M54.18 36L52.97 36L55.02 27.97L56.58 27.97L58.63 36L57.43 36L56.94 33.97L54.67 33.97L54.18 36M55.44 30.65L54.89 32.99L56.71 32.99L56.16 30.66Q56.02 30.05 55.93 29.59Q55.83 29.14 55.80 28.97Q55.77 29.14 55.68 29.59Q55.59 30.05 55.44 30.65M63.98 36.11Q63.24 36.11 62.68 35.83Q62.13 35.55 61.82 35.02Q61.52 34.48 61.52 33.77L61.52 30.20Q61.52 29.48 61.82 28.95Q62.13 28.42 62.68 28.14Q63.24 27.86 63.98 27.86Q64.73 27.86 65.28 28.15Q65.83 28.43 66.13 28.95Q66.44 29.48 66.44 30.20L65.25 30.20Q65.25 29.58 64.92 29.25Q64.59 28.92 63.98 28.92Q63.38 28.92 63.04 29.25Q62.71 29.58 62.71 30.19L62.71 33.77Q62.71 34.38 63.04 34.72Q63.38 35.05 63.98 35.05Q64.59 35.05 64.92 34.72Q65.25 34.38 65.25 33.77L66.44 33.77Q66.44 34.48 66.13 35.01Q65.83 35.54 65.28 35.82Q64.73 36.11 63.98 36.11M70.46 36L69.25 36L71.30 27.97L72.86 27.97L74.91 36L73.71 36L73.22 33.97L70.95 33.97L70.46 36M71.72 30.65L71.17 32.99L72.99 32.99L72.44 30.66Q72.30 30.05 72.21 29.59Q72.11 29.14 72.08 28.97Q72.05 29.14 71.96 29.59Q71.87 30.05 71.72 30.65M80.08 36L77.83 36L77.83 27.97L80.08 27.97Q80.87 27.97 81.45 28.27Q82.03 28.57 82.36 29.13Q82.68 29.68 82.68 30.42L82.68 33.54Q82.68 34.27 82.36 34.83Q82.03 35.40 81.45 35.70Q80.87 36 80.08 36M79.02 29.05L79.02 34.92L80.08 34.92Q80.74 34.92 81.12 34.55Q81.50 34.19 81.50 33.54L81.50 30.42Q81.50 29.79 81.12 29.42Q80.74 29.05 80.08 29.05M90.81 36L86.09 36L86.09 27.97L90.81 27.97L90.81 29.03L87.26 29.03L87.26 31.30L90.43 31.30L90.43 32.35L87.26 32.35L87.26 34.94L90.81 34.94M95.05 36L93.93 36L93.93 27.97L95.39 27.97L96.19 30.54Q96.31 30.91 96.40 31.24Q96.49 31.58 96.52 31.74Q96.57 31.58 96.65 31.24Q96.73 30.91 96.84 30.54L97.61 27.97L99.07 27.97L99.07 36L97.95 36L97.95 33.29Q97.95 32.78 97.98 32.14Q98.01 31.51 98.06 30.87Q98.12 30.23 98.17 29.64Q98.23 29.05 98.27 28.61L97.08 32.51L95.94 32.51L94.73 28.61Q94.78 29.04 94.84 29.60Q94.89 30.17 94.94 30.81Q94.98 31.45 95.02 32.09Q95.05 32.73 95.05 33.29M105.23 36L104.05 36L104.05 33.04L101.66 27.97L102.89 27.97L104.31 31.01Q104.45 31.30 104.54 31.56Q104.63 31.82 104.66 31.96Q104.68 31.82 104.78 31.56Q104.87 31.30 105 31.01L106.39 27.97L107.62 27.97L105.23 33.04M120.92 36.11Q120.17 36.11 119.63 35.83Q119.08 35.55 118.79 35.02Q118.50 34.48 118.50 33.77L118.50 30.20Q118.50 29.48 118.79 28.95Q119.08 28.42 119.63 28.14Q120.17 27.86 120.92 27.86Q121.67 27.86 122.21 28.14Q122.76 28.42 123.05 28.95Q123.34 29.48 123.34 30.19L123.34 33.77Q123.34 34.48 123.05 35.02Q122.76 35.55 122.21 35.83Q121.67 36.11 120.92 36.11M120.92 35.05Q121.53 35.05 121.84 34.72Q122.15 34.38 122.15 33.77L122.15 30.20Q122.15 29.58 121.84 29.25Q121.53 28.92 120.92 28.92Q120.33 28.92 120.01 29.25Q119.69 29.58 119.69 30.20L119.69 33.77Q119.69 34.38 120.01 34.72Q120.33 35.05 120.92 35.05M127.91 36L126.73 36L126.73 27.96L131.58 27.96L131.58 29.06L127.88 29.06L127.88 31.46L131.29 31.46L131.29 32.56L127.91 32.56M145.49 36L142.98 36L142.98 27.97L145.34 27.97Q146.48 27.97 147.13 28.52Q147.78 29.07 147.78 30.04Q147.78 30.59 147.55 30.99Q147.31 31.39 146.89 31.61Q146.69 31.71 146.46 31.77Q146.74 31.82 146.98 31.94Q147.44 32.18 147.71 32.65Q147.97 33.11 147.97 33.74Q147.97 34.43 147.67 34.94Q147.36 35.45 146.81 35.73Q146.25 36 145.49 36M144.13 32.33L144.13 34.98L145.40 34.98Q146.03 34.98 146.41 34.64Q146.78 34.30 146.78 33.69Q146.78 33.07 146.41 32.70Q146.03 32.33 145.40 32.33L144.13 32.33M144.13 28.99L144.13 31.34L145.33 31.34Q145.92 31.34 146.26 31.02Q146.61 30.70 146.61 30.16Q146.61 29.62 146.26 29.31Q145.92 28.99 145.34 28.99M155.93 36L151.21 36L151.21 27.97L155.93 27.97L155.93 29.03L152.38 29.03L152.38 31.30L155.55 31.30L155.55 32.35L152.38 32.35L152.38 34.94L155.93 34.94M160 36L158.79 36L160.84 27.97L162.40 27.97L164.45 36L163.25 36L162.76 33.97L160.49 33.97L160 36M161.26 30.65L160.71 32.99L162.53 32.99L161.98 30.66Q161.84 30.05 161.75 29.59Q161.65 29.14 161.62 28.97Q161.59 29.14 161.50 29.59Q161.41 30.05 161.26 30.65M169.76 36.11Q168.60 36.11 167.98 35.48Q167.35 34.84 167.35 33.76L167.35 27.97L168.54 27.97L168.54 33.76Q168.54 34.36 168.84 34.71Q169.14 35.06 169.76 35.06Q170.36 35.06 170.67 34.71Q170.98 34.36 170.98 33.76L170.98 27.97L172.17 27.97L172.17 33.76Q172.17 34.84 171.54 35.48Q170.91 36.11 169.76 36.11M178.49 36L177.31 36L177.31 29.06L175.16 29.06L175.16 27.96L180.64 27.96L180.64 29.06L178.49 29.06M186.63 36L185.45 36L185.45 33.04L183.06 27.97L184.29 27.97L185.71 31.01Q185.85 31.30 185.94 31.56Q186.03 31.82 186.06 31.96Q186.08 31.82 186.18 31.56Q186.27 31.30 186.40 31.01L187.79 27.97L189.02 27.97L186.63 33.04"/></svg>
+</a>
+
+        <ul class="f-socials" aria-label="Social media">
+          <li><a class="f-ico" href="#" data-unlinked aria-label="Instagram (profile link not set up yet)"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="0.9" fill="currentColor" stroke="none"/></svg></a></li>
+          <li><a class="f-ico" href="#" data-unlinked aria-label="Facebook (profile link not set up yet)"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path fill="currentColor" stroke="none" d="M13.6 21v-8.1h2.7l.5-3.3h-3.2V7.5c0-.9.4-1.7 1.8-1.7h1.5V3c-.3 0-1.2-.2-2.3-.2-2.4 0-4 1.5-4 4.1v2.7H7.9v3.3h2.7V21z"/></svg></a></li>
+          <li><a class="f-ico" href="#" data-unlinked aria-label="YouTube (profile link not set up yet)"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path fill="currentColor" stroke="none" d="M10 9.3v5.4l4.7-2.7z"/></svg></a></li>
+          <li><a class="f-ico" href="#" data-unlinked aria-label="LinkedIn (profile link not set up yet)"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10.5V16M11.5 16v-5.5M11.5 13c0-1.6 1-2.6 2.4-2.6s2.1 1 2.1 2.6V16"/><circle cx="8" cy="7.9" r="0.9" fill="currentColor" stroke="none"/></svg></a></li>
+        </ul>
+        <p class="site-footer__intro">Professional training in makeup, skin, hair and nail artistry. Learned at the bench, certified on the record.</p>
+      </div>
+
+      <nav class="f-col-nav" aria-labelledby="f-nav-title">
+        <p class="f-title" id="f-nav-title"><span class="folio">01</span> Explore</p>
+        <ul class="f-list">
+          <li><a href="index.html">Home 1</a></li>
+          <li><a href="home-2.html">Home 2</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="certification.html">Certification</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="login.html">Student Login</a></li>
+        </ul>
+      </nav>
+
+      <nav class="f-col-courses" aria-labelledby="f-courses-title">
+        <p class="f-title" id="f-courses-title"><span class="folio">02</span> Courses</p>
+        <ul class="f-list">
+          <li><a href="courses.html#makeup">Makeup Artistry</a></li>
+          <li><a href="courses.html#skin">Skin Care</a></li>
+          <li><a href="courses.html#hair">Hair Styling</a></li>
+          <li><a href="courses.html#nails">Nail Technology</a></li>
+          <li><a href="courses.html#bridal">Bridal Artistry</a></li>
+        </ul>
+      </nav>
+
+      <div class="f-col-contact">
+        <p class="f-title"><span class="folio">03</span> Visit &amp; contact</p>
+        <dl class="f-contact">
+          <div><dt><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Address</dt><dd>Unit 3, Larkspur Yard, 21 Quill Street, Aldermere ZZ1 0AA, United Kingdom</dd></div>
+          <div><dt><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Phone</dt><dd><bdi>+44 20 7946 0173</bdi></dd></div>
+          <div><dt><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Email</dt><dd><bdi>admissions@sorrelacademy.example</bdi></dd></div>
+          <div><dt><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Hours</dt><dd>Mon to Fri 9:00 to 18:00, Sat 10:00 to 16:00, Sun closed</dd></div>
+        </dl>
+
+      </div>
+    </div>
+
+    <div class="site-footer__base">
+      <p>&copy; 2026 Sorrel Academy of Beauty. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+  <button type="button" class="scroll-top" data-scroll-top aria-label="Back to top">
+  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+/* Aurelle Academy of Beauty - global stylesheet entry (Tailwind CSS v4).
+   Compile: npm run build:css */
+@import "tailwindcss";
+@import "./tokens.css";
+@import "./base.css";
+@import "./components/buttons.css";
+@import "./components/forms.css";
+@import "./components/header.css";
+@import "./components/footer.css";
+@import "./components/scroll-top.css";
+@import "./components/sections.css";
+@import "./pages/home-1.css";
+@import "./pages/home-2.css";
+@import "./components/inner-hero.css";
+@import "./pages/about.css";
+@import "./pages/contact.css";
+@import "./pages/courses.css";
+@import "./pages/certification.css";
+@import "./pages/login.css";
+@import "./pages/dashboard.css";

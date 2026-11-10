@@ -1,0 +1,124 @@
+/* Certification - "The Record": 1 statement + tall photo stamped with a seal, 2 checklist of requirements, 3 three-stage
+   assessment strip, 4 rubric with a pass zone, 5 milestone track + annotated certificate + is / is not, 6 framed invitation. */
+@layer components {
+  /* ---------- 1 Hero (height = shared --inner-hero-h via .inner-hero) ---------- */
+  .ce-hero__grid { display: grid; grid-template-rows: minmax(0, 1fr) auto; gap: clamp(12px, 2.2svh, 22px); min-height: 0; }
+  .ce-hero__copy { grid-row: 2; display: grid; gap: clamp(10px, 1.8svh, 20px); justify-items: start; align-content: center; min-height: 0; }
+  .ce-hero__copy .eyebrow { margin: 0; }
+  .ce-hero__title { margin: 0; font-size: clamp(2rem, min(1rem + 4vw, 8svh), 4.75rem); line-height: 1.02; letter-spacing: -0.015em; max-width: 12ch; }
+  .ce-hero__title em { font-style: italic; color: var(--accent); }
+  .ce-hero .lede { font-size: clamp(1rem, 0.9rem + 0.45vw, 1.1875rem); max-width: 42ch; }
+  .ce-hero__art { grid-row: 1; position: relative; min-height: 0; padding-inline-start: clamp(40px, 9vw, 72px); }
+  .ce-hero__photo { height: 100%; border-radius: var(--r-md); }
+  .ce-hero__photo img { object-position: 50% 40%; }
+  .seal { position: absolute; inset-inline-start: 0; inset-block-end: 8%; width: clamp(116px, 26vw, 150px); aspect-ratio: 1; display: grid; place-items: center; filter: drop-shadow(0 10px 18px rgb(0 0 0 / 0.25)); }
+  .seal__ring { position: absolute; inset: 0; width: 100%; height: 100%; animation: seal-spin 40s linear infinite; }
+  .seal__bg { fill: var(--surface-brand); }
+  .seal__inner { fill: none; stroke: var(--on-brand-accent); stroke-width: 1; }
+  .seal__text { fill: var(--on-brand); font-family: var(--font-mono); font-size: 12.5px; letter-spacing: 1.6px; }
+  .seal .cert__mark { position: relative; width: 38%; height: 38%; color: var(--on-brand); }
+  .seal .logo-accent { fill: var(--on-brand-dot); }
+  @keyframes seal-spin { to { transform: rotate(360deg); } }
+  @media (max-width: 47.99rem) { .ce-hero .btn-row .btn-outline { display: none; } }
+  @media (min-width: 64rem) {
+    .ce-hero__grid { grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); grid-template-rows: 100%; column-gap: clamp(48px, 6vw, 96px); align-items: center; }
+    .ce-hero__copy { grid-row: 1; }
+    .ce-hero__art { grid-row: 1; height: 100%; padding-inline-start: 0; }
+    .seal { inset-inline-start: -70px; inset-block-end: 12%; width: 150px; }
+  }
+
+  /* ---------- 2 Requirements checklist ---------- */
+  .ce-req__grid { display: grid; gap: 40px; align-items: start; }
+  .checks { list-style: none; margin: 0; padding: 0; border-block-start: 1px solid var(--fg); }
+  .checks li { display: grid; grid-template-columns: auto auto 1fr; grid-template-areas: "tick n title" "tick . text"; gap: 4px 14px; align-items: baseline; padding-block: 22px; border-block-end: 1px solid var(--line); }
+  .checks__tick { grid-area: tick; align-self: start; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--primary); color: var(--primary-fg); }
+  .checks__tick .icon { width: 20px; height: 20px; }
+  .checks__n { grid-area: n; color: var(--muted); }
+  .checks b { grid-area: title; font-family: var(--font-display); font-weight: 500; font-size: clamp(1.375rem, 1.1rem + 0.8vw, 1.75rem); line-height: 1.15; }
+  .checks__t { grid-area: text; color: var(--muted); }
+  .ce-req__fig { margin: 0; }
+  .ce-req__fig .media { aspect-ratio: 4 / 3; }
+  @media (min-width: 64rem) { .ce-req__grid { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 72px; align-items: center; } .ce-req__fig .media { aspect-ratio: 1 / 1; } }
+
+  /* ---------- 3 Assessment stages ---------- */
+  .stages { list-style: none; margin: 0; padding: 0; display: grid; gap: 40px; counter-reset: st; }
+  .stage { position: relative; display: grid; gap: 10px; align-content: start; }
+  .stage .media { aspect-ratio: 4 / 5; }
+  .stage__n { position: absolute; z-index: 1; inset-block-start: -18px; inset-inline-start: 14px; display: grid; place-items: center; width: 48px; height: 48px; border-radius: 50%; background: var(--accent); color: var(--accent-fg); font-family: var(--font-display); font-size: 1.375rem; box-shadow: 0 0 0 6px var(--bg); }
+  .stage h3 { margin: 8px 0 0; font-size: 1.5rem; line-height: 1.15; }
+  .stage p { margin: 0; color: var(--muted); }
+  @media (min-width: 48rem) {
+    .stages { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px; }
+    .stage:nth-child(2) { margin-block-start: 48px; }
+    .stage + .stage::before { content: ""; position: absolute; inset-block-start: 30%; inset-inline-end: calc(100% + 8px); width: 24px; height: 2px; background: var(--line-input); }
+  }
+
+  /* ---------- 4 Rubric ---------- */
+  .ce-crit__grid { display: grid; gap: 40px; align-items: start; }
+  .ce-crit__fig { margin: 0; }
+  .ce-crit__fig .media { aspect-ratio: 4 / 3; }
+  .ce-crit__copy { display: grid; gap: 14px; justify-items: start; min-width: 0; }
+  .ce-crit__copy .eyebrow { margin: 0; }
+  .rubric { width: 100%; border-collapse: collapse; margin-block-start: 8px; }
+  .rubric thead th { padding: 10px 6px; font-family: var(--font-mono); font-size: 0.625rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 500; text-align: center; vertical-align: bottom; }
+  .rubric thead th:first-child { text-align: start; }
+  .rubric tbody th { padding: 14px 10px 14px 0; text-align: start; font-weight: 400; }
+  .rubric tbody th b { display: block; font-weight: 600; }
+  .rubric tbody th span { display: block; color: var(--muted); font-size: 0.875rem; }
+  .rubric tbody tr { border-block-start: 1px solid var(--line); }
+  .rubric td { width: 18%; text-align: center; vertical-align: middle; }
+  .rubric td.pass { background: color-mix(in srgb, var(--success) 12%, transparent); }
+  .dot { display: inline-block; width: 14px; height: 14px; border-radius: 50%; border: 2px solid var(--line-input); }
+  .dot--on { background: var(--success); border-color: var(--success); }
+  .ce-small { margin: 0; font-size: 0.875rem; color: var(--muted); }
+  @media (max-width: 29.99rem) { .rubric td { width: 16%; } .rubric thead th { font-size: 0.5625rem; letter-spacing: 0.04em; padding-inline: 2px; } }
+  @media (min-width: 64rem) { .ce-crit__grid { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 72px; align-items: center; } .ce-crit__fig .media { aspect-ratio: 4 / 5; } }
+
+  /* ---------- 5 Milestones + annotated certificate ---------- */
+  .track { list-style: none; margin: 0 0 56px; padding: 0; display: grid; gap: 18px; }
+  .track li { position: relative; display: grid; gap: 4px; padding-inline-start: 28px; }
+  .track li::before { content: ""; position: absolute; inset-block: 14px -18px; inset-inline-start: 6px; width: 2px; background: var(--line-input); }
+  .track li:last-child::before { display: none; }
+  .track__dot { position: absolute; inset-block-start: 4px; inset-inline-start: 0; width: 14px; height: 14px; border-radius: 50%; background: var(--accent); }
+  .track b { font-family: var(--font-display); font-weight: 500; font-size: 1.25rem; }
+  .track span:last-child { color: var(--muted); font-size: 0.9375rem; }
+  @media (min-width: 48rem) {
+    .track { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; border-block-start: 2px solid var(--line-input); }
+    .track li { padding: 22px 0 0; }
+    .track li::before { display: none; }
+    .track__dot { inset-block-start: -8px; }
+  }
+  .anatomy { display: grid; gap: 40px; align-items: center; }
+  .doc { padding: 12px; border-radius: 4px; background: var(--surface-raised); box-shadow: var(--shadow-pop), 0 0 0 1px var(--line); min-width: 0; }
+  .doc__inner { position: relative; display: grid; gap: 12px; justify-items: center; text-align: center; padding: clamp(18px, 4vw, 40px) clamp(14px, 3vw, 36px); border: 1px solid var(--brass); outline: 1px solid var(--brass); outline-offset: -7px; }
+  .doc__top { display: grid; justify-items: center; gap: 6px; }
+  .doc__top .cert__mark { width: 44px; height: 44px; color: var(--fg); }
+  .doc__kicker { font-family: var(--font-mono); font-size: 0.6875rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--brass); }
+  .doc__title { margin: 0; font-family: var(--font-display); font-size: clamp(1.375rem, 1rem + 1.6vw, 2.25rem); line-height: 1.1; }
+  .doc__name { margin: 0; padding: 0 16px 6px; border-block-end: 1px solid var(--fg); font-family: var(--font-display); font-style: italic; font-size: clamp(1.375rem, 1rem + 1.4vw, 2rem); }
+  .doc__course { margin: 0; font-family: var(--font-display); font-size: 1.125rem; }
+  .doc__row { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 28px; font-size: 0.8125rem; color: var(--muted); }
+  .doc__row--foot { width: 100%; justify-content: space-between; padding-block-start: 10px; border-block-start: 1px dashed var(--line-input); }
+  .doc__sign { font-family: var(--font-display); font-style: italic; color: var(--fg); }
+  .doc__sample { position: absolute; inset-block-start: -10px; inset-inline-end: 16px; padding: 3px 10px; border-radius: 3px; background: var(--accent); color: var(--accent-fg); font-family: var(--font-mono); font-size: 0.625rem; letter-spacing: 0.12em; text-transform: uppercase; }
+  .pinmark { display: inline-grid; place-items: center; flex: none; width: 22px; height: 22px; margin-inline-end: 8px; border-radius: 50%; background: var(--accent); color: var(--accent-fg); font-family: var(--font-mono); font-size: 0.6875rem; font-style: normal; font-weight: 600; vertical-align: middle; }
+  .anatomy__side { display: grid; gap: 24px; justify-items: start; }
+  .legend { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; width: 100%; border-block-start: 1px solid var(--fg); }
+  .legend li { display: flex; align-items: center; padding-block: 10px; border-block-end: 1px solid var(--line); }
+  .isnot { display: grid; gap: 10px; width: 100%; padding: 16px 18px; border-inline-start: 3px solid var(--brass); background: var(--surface-alt); border-radius: var(--r-sm); }
+  .isnot p { margin: 0; font-size: 0.9375rem; color: var(--muted); }
+  .isnot b { color: var(--fg); }
+  @media (min-width: 64rem) { .anatomy { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 64px; } }
+
+  /* ---------- 6 Invitation ---------- */
+  .ce-cta__grid { display: grid; gap: 48px; align-items: center; }
+  .ce-cta__fig { position: relative; margin: 0 auto; width: min(100%, 420px); padding-block-end: 18px; padding-inline-end: 18px; }
+  .ce-cta__fig::before { content: ""; position: absolute; inset: 18px 0 0 18px; border: 2px solid var(--brass); border-radius: var(--r-md); }
+  .ce-cta__fig .media { position: relative; aspect-ratio: 3 / 4; }
+  .ce-cta__copy { display: grid; gap: 16px; justify-items: start; }
+  .ce-cta__copy .eyebrow { margin: 0; }
+  .ce-cta__title { margin: 0; font-size: clamp(2rem, 1.3rem + 2.6vw, 3.5rem); line-height: 1.05; max-width: 16ch; }
+  @media (min-width: 64rem) { .ce-cta__grid { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 80px; } }
+
+  [dir="rtl"] .page-cert .rtl-center { justify-items: center; }
+}

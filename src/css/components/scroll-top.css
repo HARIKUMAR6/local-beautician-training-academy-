@@ -1,0 +1,33 @@
+/* Scroll-to-top - fixed to the inline-end corner; visibility (not display) so it is out of tab order when hidden */
+@layer components {
+  .scroll-top {
+    position: fixed;
+    z-index: 60;
+    inset-inline-end: 16px;
+    inset-block-end: calc(16px + env(safe-area-inset-bottom, 0px));
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    border: 1.5px solid var(--line-input);
+    border-radius: 50%;
+    background: var(--surface-raised);
+    color: var(--fg);
+    box-shadow: var(--shadow-pop);
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition: opacity 0.2s, transform 0.2s, visibility 0s linear 0.2s, background-color 0.18s;
+  }
+  .scroll-top.is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    transition-delay: 0s;
+  }
+  .scroll-top:hover { background: var(--primary); color: var(--primary-fg); border-color: var(--primary); }
+  @media (min-width: 48rem) {
+    .scroll-top { inset-inline-end: 24px; inset-block-end: calc(24px + env(safe-area-inset-bottom, 0px)); }
+  }
+}

@@ -1,0 +1,1358 @@
+{
+  "h1-hero": {
+    "file": "assets/images/home-1/hero",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Makeup artist blending blue eyeshadow on a model seen in profile",
+    "page": "home-1",
+    "section": 1,
+    "source": {
+      "title": "Makeup artist in Ghana.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Makeup_artist_in_Ghana.jpg",
+      "author": "Fquasie",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "attributionRequired": true
+  },
+  "h1-philosophy-brushes": {
+    "file": "assets/images/home-1/philosophy-brushes",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Five rose-gold makeup brushes standing upright against a white background",
+    "page": "home-1",
+    "section": 2,
+    "source": {
+      "title": "Makeup Brushes (51825380981).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Makeup_Brushes_(51825380981).jpg",
+      "author": "ajay_suresh",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "attributionRequired": true
+  },
+  "h1-philosophy-eye": {
+    "file": "assets/images/home-1/philosophy-eye",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Close-up of an eye with copper and brown smoky eyeshadow",
+    "page": "home-1",
+    "section": 2,
+    "source": {
+      "title": "A woman wearing Eye Shadow.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:A_woman_wearing_Eye_Shadow.jpg",
+      "author": "wilkernet",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    "attributionRequired": false
+  },
+  "h1-course-makeup": {
+    "file": "assets/images/home-1/course-makeup",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Makeup artist applying foundation to a client in a studio",
+    "page": "home-1",
+    "section": 3,
+    "source": {
+      "title": "Makeup Artist in Ghana 5.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Makeup_Artist_in_Ghana_5.jpg",
+      "author": "Fquasie",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "attributionRequired": true
+  },
+  "h1-course-skin": {
+    "file": "assets/images/home-1/course-skin",
+    "w": 1600,
+    "h": 2400,
+    "alt": "Client in a white robe lying back for a facial with eye pads",
+    "page": "home-1",
+    "section": 3,
+    "source": {
+      "title": "SPA SKIN CARE.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:SPA_SKIN_CARE.jpg",
+      "author": "Keyfwellness",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    "attributionRequired": false
+  },
+  "h1-course-hair": {
+    "file": "assets/images/home-1/course-hair",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Stylist blow-drying a client hair in a bright salon",
+    "page": "home-1",
+    "section": 3,
+    "source": {
+      "title": "Seven Sisters hairdresser at work.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Seven_Sisters_hairdresser_at_work.jpg",
+      "author": "James Ó Nuanáin",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "attributionRequired": true
+  },
+  "h1-course-nails": {
+    "file": "assets/images/home-1/course-nails",
+    "w": 1488,
+    "h": 2000,
+    "alt": "Hand with dark grey nails finished with a half-moon design",
+    "page": "home-1",
+    "section": 3,
+    "source": {
+      "title": "Nail Art Strass.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Nail_Art_Strass.jpg",
+      "author": "Maëlyne.Nagel",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "attributionRequired": true
+  },
+  "h1-course-bridal": {
+    "file": "assets/images/home-1/course-bridal",
+    "w": 1600,
+    "h": 1600,
+    "alt": "Bride with a styled updo, gold jewellery and a red outfit",
+    "page": "home-1",
+    "section": 3,
+    "source": {
+      "title": "Bridal makeup .jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Bridal_makeup_.jpg",
+      "author": "Sparkles Makeover Studio",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "attributionRequired": true
+  },
+  "h1-practice-studio": {
+    "file": "assets/images/home-1/practice-studio",
+    "w": 1600,
+    "h": 1068,
+    "alt": "Trainer guiding a student applying makeup beside lit studio mirrors",
+    "page": "home-1",
+    "section": 4,
+    "source": {
+      "title": "Makeup artist in Dubai.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Makeup_artist_in_Dubai.jpg",
+      "author": "Homesalondubai",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "attributionRequired": true
+  },
+  "h1-practice-hair": {
+    "file": "assets/images/home-1/practice-hair",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Hairdresser cutting a section of hair with scissors, mirror behind",
+    "page": "home-1",
+    "section": 4,
+    "source": {
+      "title": "Jorj Barber-Fashion stylists-Make-up artists from Iran 01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Jorj_Barber-Fashion_stylists-Make-up_artists_from_Iran_01.jpg",
+      "author": "Mostafameraji",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    "attributionRequired": false
+  },
+  "h1-practice-kit": {
+    "file": "assets/images/home-1/practice-kit",
+    "w": 1600,
+    "h": 1094,
+    "alt": "Makeup brush roll and foundation bottles laid out on a work table",
+    "page": "home-1",
+    "section": 4,
+    "source": {
+      "title": "Make-up kit (Unsplash).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Make-up_kit_(Unsplash).jpg",
+      "author": "Manu Camargo manucmg",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    "attributionRequired": false
+  },
+  "h1-practice-detail": {
+    "file": "assets/images/home-1/practice-detail",
+    "w": 1600,
+    "h": 2400,
+    "alt": "Artist applying makeup to a seated client, reflected in a mirror",
+    "page": "home-1",
+    "section": 4,
+    "source": {
+      "title": "Make-up artist Iranian Zeynab Rashti Canon Real Edit Mostafa Meraji Persian Women 01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Make-up_artist_Iranian_Zeynab_Rashti_Canon_Real_Edit_Mostafa_Meraji_Persian_Women_01.jpg",
+      "author": "Mostafameraji",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    "attributionRequired": false
+  },
+  "h1-cert-studio": {
+    "file": "assets/images/home-1/cert-studio",
+    "w": 1600,
+    "h": 2383,
+    "alt": "Makeup artist working on a model in a dark studio",
+    "page": "home-1",
+    "section": 5,
+    "source": {
+      "title": "Women in doing Makeups.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Women_in_doing_Makeups.jpg",
+      "author": "Alfredy Jackson",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "attributionRequired": true
+  },
+  "h1-work-peacock": {
+    "file": "assets/images/home-1/work-peacock",
+    "w": 1600,
+    "h": 2400,
+    "alt": "Model with peacock-inspired face and body paint in blue and gold",
+    "page": "home-1",
+    "section": 6,
+    "source": {
+      "title": "Peacock Dancer with Body Art -2.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Peacock_Dancer_with_Body_Art_-2.jpg",
+      "author": "TAPAS KUMAR HALDER",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "attributionRequired": true
+  },
+  "h1-work-eye": {
+    "file": "assets/images/home-1/work-eye",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Eye with teal and orange eyeshadow, three-quarter view",
+    "page": "home-1",
+    "section": 6,
+    "source": {
+      "title": "Blue yellow shadow three quarter.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Blue_yellow_shadow_three_quarter.jpg",
+      "author": "Deborah Austin",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "attributionRequired": true
+  },
+  "h1-work-color": {
+    "file": "assets/images/home-1/work-color",
+    "w": 1600,
+    "h": 970,
+    "alt": "Model with bold colour-blocked face makeup and rainbow painted arms",
+    "page": "home-1",
+    "section": 6,
+    "source": {
+      "title": "Woman with rainbow-hued body makeup (17659375763).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Woman_with_rainbow-hued_body_makeup_(17659375763).jpg",
+      "author": "Hernan Irastorza from Buenos Aires, Argentina",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "attributionRequired": true
+  },
+  "h1-work-lip": {
+    "file": "assets/images/home-1/work-lip",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Black-and-white photo of lip colour being applied with a brush",
+    "page": "home-1",
+    "section": 6,
+    "source": {
+      "title": "Lipstick in application (16013200849).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Lipstick_in_application_(16013200849).jpg",
+      "author": "Jimmy Baikovicius",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    "attributionRequired": true
+  },
+  "h1-work-editorial": {
+    "file": "assets/images/home-1/work-editorial",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Artist adjusting a gold hair accessory and eye makeup on a model",
+    "page": "home-1",
+    "section": 6,
+    "source": {
+      "title": "Bridal makeup in calabar.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Bridal_makeup_in_calabar.jpg",
+      "author": "Otomeonoge",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "attributionRequired": true
+  },
+  "h1-studio": {
+    "file": "assets/images/home-1/studio",
+    "w": 1600,
+    "h": 1068,
+    "alt": "Modern salon floor with black styling chairs and arched mirrors",
+    "page": "home-1",
+    "section": 7,
+    "source": {
+      "title": "Interior view of modern beauty salon.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Interior_view_of_modern_beauty_salon.jpg",
+      "author": "Shixart1985",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "attributionRequired": true
+  },
+  "h2-path-makeup": {
+    "file": "assets/images/home-2/path-makeup",
+    "w": 1600,
+    "h": 1068,
+    "alt": "Two artists applying makeup to a seated client with blue eyeshadow",
+    "page": "home-2",
+    "section": 1,
+    "source": {
+      "title": "Makeup Artist 001.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Makeup_Artist_001.jpg",
+      "author": "Amuzujoe",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "attributionRequired": true
+  },
+  "h2-path-skin": {
+    "file": "assets/images/home-2/path-skin",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Woman using a skincare tool on her face in front of a mirror",
+    "page": "home-2",
+    "section": 1,
+    "source": {
+      "title": "Woman uses a skincare tool while looking in a mirror.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Woman_uses_a_skincare_tool_while_looking_in_a_mirror.jpg",
+      "author": "Shixart1985",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "attributionRequired": true
+  },
+  "h2-path-hair": {
+    "file": "assets/images/home-2/path-hair",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Stylist blow-drying a client's hair in a salon",
+    "page": "home-2",
+    "section": 1,
+    "source": {
+      "title": "Seven Sisters hairdresser at work (close-up).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Seven_Sisters_hairdresser_at_work_(close-up).jpg",
+      "author": "James Ó Nuanáin",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "attributionRequired": true
+  },
+  "h2-path-nails": {
+    "file": "assets/images/home-2/path-nails",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Nail technician working on long decorated nails",
+    "page": "home-2",
+    "section": 1,
+    "source": {
+      "title": "Nail art in Makati (Metro Manila; 2023-08-18) E911a 04.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Nail_art_in_Makati_(Metro_Manila;_2023-08-18)_E911a_04.jpg",
+      "author": "E911a",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "attributionRequired": true
+  },
+  "h2-path-bridal": {
+    "file": "assets/images/home-2/path-bridal",
+    "w": 1600,
+    "h": 1163,
+    "alt": "Bride with red flowers in her updo while her hair is styled",
+    "page": "home-2",
+    "section": 1,
+    "source": {
+      "title": "Meribindiya Bridal Makeup.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Meribindiya_Bridal_Makeup.jpg",
+      "author": "Bridalglamguide",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "attributionRequired": true
+  },
+  "h2-day-demo": {
+    "file": "assets/images/home-2/day-demo",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Trainer demonstrating makeup on a student in a studio with lit mirrors",
+    "page": "home-2",
+    "section": 2,
+    "source": {
+      "title": "Dubai Makeup Artist.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Dubai_Makeup_Artist.jpg",
+      "author": "Homesalondubai",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+    },
+    "attributionRequired": true
+  },
+  "h2-day-bench": {
+    "file": "assets/images/home-2/day-bench",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Makeup brush applying colour to a model's cheek",
+    "page": "home-2",
+    "section": 2,
+    "source": {
+      "title": "Megan Lee - Photo Shoot (5622755677).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Megan_Lee_-_Photo_Shoot_(5622755677).jpg",
+      "author": "Don Le from USA",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "attributionRequired": true
+  },
+  "h2-day-skin": {
+    "file": "assets/images/home-2/day-skin",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Hands being cared for with cream, wearing a white robe",
+    "page": "home-2",
+    "section": 2,
+    "source": {
+      "title": "Woman showing hands in a bathroom closeup.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Woman_showing_hands_in_a_bathroom_closeup.jpg",
+      "author": "Shixart1985",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "attributionRequired": true
+  },
+  "h2-day-hair": {
+    "file": "assets/images/home-2/day-hair",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Hands braiding hair on a client with a comb",
+    "page": "home-2",
+    "section": 2,
+    "source": {
+      "title": "A woman braiding hair 01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:A_woman_braiding_hair_01.jpg",
+      "author": "Umshushima",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "attributionRequired": true
+  },
+  "h2-day-review": {
+    "file": "assets/images/home-2/day-review",
+    "w": 1600,
+    "h": 1068,
+    "alt": "Hand choosing a shade from an eyeshadow palette on a makeup counter",
+    "page": "home-2",
+    "section": 2,
+    "source": {
+      "title": "Hands of a makeup artist are shown holding a brush while colorful makeup palettes are arranged neatly on a clean table in a well-lit studio, highlighting creativity and artistry.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Hands_of_a_makeup_artist_are_shown_holding_a_brush_while_colorful_makeup_palettes_are_arranged_neatly_on_a_clean_table_in_a_well-lit_studio,_highlighting_creativity_and_artistry.jpg",
+      "author": "Shixart1985",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "attributionRequired": true
+  },
+  "h2-kit": {
+    "file": "assets/images/home-2/kit",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Flat lay of eyeshadow palettes and black brushes with rose-gold handles",
+    "page": "home-2",
+    "section": 4,
+    "source": {
+      "title": "Make Up Set, Palettes and Brushes - 50921483638.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Make_Up_Set,_Palettes_and_Brushes_-_50921483638.jpg",
+      "author": "geehairimages",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "attributionRequired": true
+  },
+  "h2-wall-lipbrush": {
+    "file": "assets/images/home-2/wall-lipbrush",
+    "w": 1600,
+    "h": 1071,
+    "alt": "Woman having lip colour applied with a brush",
+    "page": "home-2",
+    "section": 5,
+    "source": {
+      "title": "Lipstick in application (6065375905).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Lipstick_in_application_(6065375905).jpg",
+      "author": "borosjuli",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "attributionRequired": true
+  },
+  "h2-wall-liner": {
+    "file": "assets/images/home-2/wall-liner",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Close-up of eyeliner being applied to an eye",
+    "page": "home-2",
+    "section": 5,
+    "source": {
+      "title": "Bridal makeup for Indian Wedding.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Bridal_makeup_for_Indian_Wedding.jpg",
+      "author": "Yugaljoshi",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "attributionRequired": true
+  },
+  "h2-wall-bride": {
+    "file": "assets/images/home-2/wall-bride",
+    "w": 1600,
+    "h": 2400,
+    "alt": "Bride in a red veil with her hands pressed together",
+    "page": "home-2",
+    "section": 5,
+    "source": {
+      "title": "Nepali hindu bride.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Nepali_hindu_bride.JPG",
+      "author": "Nirmal Dulal",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "attributionRequired": true
+  },
+  "h2-wall-fx": {
+    "file": "assets/images/home-2/wall-fx",
+    "w": 1600,
+    "h": 2000,
+    "alt": "Character makeup: textured creature face on a model in a black cape",
+    "page": "home-2",
+    "section": 5,
+    "source": {
+      "title": "This is the version of the AFRICAN THING we created at our studio in Bugolobi at SCARLET STUDIOS.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:This_is_the_version_of_the_AFRICAN_THING_we_created_at_our_studio_in_Bugolobi_at_SCARLET_STUDIOS.jpg",
+      "author": "Lisa Sonia (Li)",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    "attributionRequired": false
+  },
+  "h2-wall-lipsticks": {
+    "file": "assets/images/home-2/wall-lipsticks",
+    "w": 1600,
+    "h": 1060,
+    "alt": "Rows of lipsticks in deep berry and plum shades",
+    "page": "home-2",
+    "section": 5,
+    "source": {
+      "title": "DifferentColorsOfLipsticks.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:DifferentColorsOfLipsticks.JPG",
+      "author": "Raysonho @ Open Grid Scheduler / Grid Engine",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    "attributionRequired": false
+  },
+  "h2-wall-detail": {
+    "file": "assets/images/home-2/wall-detail",
+    "w": 1600,
+    "h": 2401,
+    "alt": "Makeup artist in a headscarf and plaid shirt working on a seated client",
+    "page": "home-2",
+    "section": 5,
+    "source": {
+      "title": "Make-up artist Iranian Zeynab Rashti Canon Real Edit Mostafa Meraji Persian Women 02.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Make-up_artist_Iranian_Zeynab_Rashti_Canon_Real_Edit_Mostafa_Meraji_Persian_Women_02.jpg",
+      "author": "Mostafameraji",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    "attributionRequired": false
+  },
+  "h2-cert-class": {
+    "file": "assets/images/home-2/cert-class",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Trainees and an instructor gathered around a student working on a special-effects makeup piece",
+    "page": "home-2",
+    "section": 6,
+    "source": {
+      "title": "Team work at Scarlet Studios while working on Character Makeup located in Uganda, Bugolobi. 03.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Team_work_at_Scarlet_Studios_while_working_on_Character_Makeup_located_in_Uganda,_Bugolobi._03.jpg",
+      "author": "Lisa Sonia (Li)",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    "attributionRequired": false
+  },
+  "h2-visit": {
+    "file": "assets/images/home-2/visit",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Salon floor with stylists working with clients in front of round mirrors",
+    "page": "home-2",
+    "section": 7,
+    "source": {
+      "title": "Salon interior.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Salon_interior.jpg",
+      "author": "The original uploader was Wikidenizen at English Wikipedia.",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "attributionRequired": true
+  },
+  "ab-hero": {
+    "file": "assets/images/about/hero",
+    "w": 1600,
+    "h": 1192,
+    "alt": "Makeup artist lining a model's eye beside a bulb-lit backstage mirror",
+    "page": "about",
+    "section": 1,
+    "source": {
+      "title": "Make-up artist.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Make-up_artist.jpg",
+      "author": "Charlie Brewer from Sydney, Australia",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    "attributionRequired": true,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "ab-craft-portrait": {
+    "file": "assets/images/about/craft-portrait",
+    "w": 1600,
+    "h": 2400,
+    "alt": "Artist drawing a fine eyeliner line on a woman whose eyes are closed",
+    "page": "about",
+    "section": 2,
+    "source": {
+      "title": "Make-up artist Iranian Zeynab Rashti Canon Real Edit Mostafa Meraji Persian Women 05.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Make-up_artist_Iranian_Zeynab_Rashti_Canon_Real_Edit_Mostafa_Meraji_Persian_Women_05.jpg",
+      "author": "Mostafameraji",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    "attributionRequired": false,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "ab-craft-detail": {
+    "file": "assets/images/about/craft-detail",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Warm-toned eyeshadow palette with three brushes, lit from the side",
+    "page": "about",
+    "section": 2,
+    "source": {
+      "title": "Eye Makeup Palette and Brush Kit.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Eye_Makeup_Palette_and_Brush_Kit.jpg",
+      "author": "geehairimages",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "attributionRequired": true,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "ab-method-demo": {
+    "file": "assets/images/about/method-demo",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Makeup artist preparing a client in a studio lined with bulb-lit mirrors",
+    "page": "about",
+    "section": 3,
+    "source": {
+      "title": "Iranian Make-up artists canon Photo Mostafa Meraji 02.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Iranian_Make-up_artists_canon_Photo_Mostafa_Meraji_02.jpg",
+      "author": "Mostafameraji",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    "attributionRequired": false,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "ab-method-practise": {
+    "file": "assets/images/about/method-practise",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Makeup artist leaning in to apply eyeshadow from a palette to a seated client",
+    "page": "about",
+    "section": 3,
+    "source": {
+      "title": "Make up artist.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Make_up_artist.jpg",
+      "author": "Yemi festus",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "attributionRequired": true,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "ab-method-check": {
+    "file": "assets/images/about/method-check",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Brush blending base makeup along a client's nose, close view",
+    "page": "about",
+    "section": 3,
+    "source": {
+      "title": "Makeup Artist in Ghana 6.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Makeup_Artist_in_Ghana_6.jpg",
+      "author": "Fquasie",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "attributionRequired": true,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "ab-method-finish": {
+    "file": "assets/images/about/method-finish",
+    "w": 1440,
+    "h": 1428,
+    "alt": "Artist applying lip colour with a fine brush to a model in full evening makeup",
+    "page": "about",
+    "section": 3,
+    "source": {
+      "title": "Aaradhna Singh.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Aaradhna_Singh.jpg",
+      "author": "Aaradhnamakeupstudio",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "attributionRequired": true,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "ab-room-makeup": {
+    "file": "assets/images/about/room-makeup",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Makeup room with a long mirrored counter, bulb lights and products on open shelves",
+    "page": "about",
+    "section": 4,
+    "source": {
+      "title": "20180423 IETV - Makeup Room (1).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:20180423_IETV_-_Makeup_Room_(1).jpg",
+      "author": "TaBaZzz",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "attributionRequired": true,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "ab-room-hair": {
+    "file": "assets/images/about/room-hair",
+    "w": 1600,
+    "h": 2324,
+    "alt": "Long salon with styling chairs, mirrors and warm track lighting",
+    "page": "about",
+    "section": 4,
+    "source": {
+      "title": "Beauty salon interior by Gary Berkovich (Winnetka, Illinois).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Beauty_salon_interior_by_Gary_Berkovich_(Winnetka,_Illinois).jpg",
+      "author": "Gary Berkovich",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "attributionRequired": true,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "ab-room-skin": {
+    "file": "assets/images/about/room-skin",
+    "w": 1600,
+    "h": 1068,
+    "alt": "Skincare roller, sheet mask and cucumber slices laid out on a pink surface",
+    "page": "about",
+    "section": 4,
+    "source": {
+      "title": "Cucumber slices placed beside a green facial mask and a skincare applicator on a light pink background.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Cucumber_slices_placed_beside_a_green_facial_mask_and_a_skincare_applicator_on_a_light_pink_background.jpg",
+      "author": "Shixart1985",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "attributionRequired": true,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "ab-room-nails": {
+    "file": "assets/images/about/room-nails",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Client's hand in foam separators while nail polish is applied",
+    "page": "about",
+    "section": 4,
+    "source": {
+      "title": "Manikyr i engen.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Manikyr_i_engen.jpg",
+      "author": "Øyvind Holmstad",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "attributionRequired": true,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "ab-mentor-work": {
+    "file": "assets/images/about/mentor-work",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Makeup artist working on a client at a dressing table with bulb lights",
+    "page": "about",
+    "section": 5,
+    "source": {
+      "title": "Make-up.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Make-up.jpg",
+      "author": "Bob Bekian",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    "attributionRequired": true,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "ab-mentor-close": {
+    "file": "assets/images/about/mentor-close",
+    "w": 1600,
+    "h": 2400,
+    "alt": "Artist applying makeup to a man's face, seen in a studio mirror",
+    "page": "about",
+    "section": 5,
+    "source": {
+      "title": "Make-up artist Iranian Zeynab Rashti Canon Real Edit Mostafa Meraji Persian Women 06.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Make-up_artist_Iranian_Zeynab_Rashti_Canon_Real_Edit_Mostafa_Meraji_Persian_Women_06.jpg",
+      "author": "Mostafameraji",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    "attributionRequired": false,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "ab-vision": {
+    "file": "assets/images/about/vision",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Busy backstage room with rows of lit mirrors and artists preparing models",
+    "page": "about",
+    "section": 6,
+    "source": {
+      "title": "Fashion show backstage.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Fashion_show_backstage.jpg",
+      "author": "mandiberg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    "attributionRequired": true,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "ct-hero": {
+    "file": "assets/images/contact/hero",
+    "w": 1600,
+    "h": 1200,
+    "alt": "Beauty studio reception with red velvet chairs, a wall clock and flowers",
+    "page": "contact",
+    "section": 1,
+    "source": {
+      "title": "Mcbeautytherapy.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Mcbeautytherapy.jpg",
+      "author": "Raimonaranis",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "attributionRequired": true,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "ct-hero-detail": {
+    "file": "assets/images/contact/hero-detail",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Pink eyeshadow palette with its mirror open and brushes on a white throw",
+    "page": "contact",
+    "section": 1,
+    "source": {
+      "title": "Makeup brushes and eyeshadows (Unsplash).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Makeup_brushes_and_eyeshadows_(Unsplash).jpg",
+      "author": "freestocks.org freestocks",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    "attributionRequired": false,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "ct-info": {
+    "file": "assets/images/contact/info",
+    "w": 1600,
+    "h": 2397,
+    "alt": "Hand choosing a shade from a large eyeshadow palette at a makeup station",
+    "page": "contact",
+    "section": 2,
+    "source": {
+      "title": "Applying colorful eyeshadow during a makeup session at a beauty counter.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Applying_colorful_eyeshadow_during_a_makeup_session_at_a_beauty_counter.jpg",
+      "author": "Shixart1985",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "attributionRequired": true,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "ct-guide-makeup": {
+    "file": "assets/images/contact/guide-makeup",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Artist applying highlighter and powder to a model with long braids",
+    "page": "contact",
+    "section": 3,
+    "source": {
+      "title": "Makeup Artist in Ghana 4.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Makeup_Artist_in_Ghana_4.jpg",
+      "author": "Fquasie",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "attributionRequired": true,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "ct-guide-skin": {
+    "file": "assets/images/contact/guide-skin",
+    "w": 1600,
+    "h": 2400,
+    "alt": "Woman applying serum from a dropper, wearing under-eye patches",
+    "page": "contact",
+    "section": 3,
+    "source": {
+      "title": "Woman applying serum on her face closeup.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Woman_applying_serum_on_her_face_closeup.jpg",
+      "author": "Shixart1985",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "attributionRequired": true,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "ct-guide-hair": {
+    "file": "assets/images/contact/guide-hair",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Trainees in grey tunics watching hair colour being applied to a client",
+    "page": "contact",
+    "section": 3,
+    "source": {
+      "title": "Hair coloring, Barbershop From Iran 14.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Hair_coloring,_Barbershop_From_Iran_14.jpg",
+      "author": "Mostafameraji",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    "attributionRequired": false,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "ct-guide-nails": {
+    "file": "assets/images/contact/guide-nails",
+    "w": 1600,
+    "h": 1773,
+    "alt": "Hand with periwinkle nails painted with small red flowers",
+    "page": "contact",
+    "section": 3,
+    "source": {
+      "title": "Polished purple nails with nail art on.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Polished_purple_nails_with_nail_art_on.jpg",
+      "author": "Köttbulleledaren",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "attributionRequired": true,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "ct-guide-bridal": {
+    "file": "assets/images/contact/guide-bridal",
+    "w": 1600,
+    "h": 1103,
+    "alt": "Black-and-white photo of a stylist setting a bride's hair in a makeup studio",
+    "page": "contact",
+    "section": 3,
+    "source": {
+      "title": "Bride in makeup studio.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Bride_in_makeup_studio.jpg",
+      "author": "KelvinJM",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "attributionRequired": true,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "ct-form": {
+    "file": "assets/images/contact/form",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Makeup brush resting on pink and peach pressed powders",
+    "page": "contact",
+    "section": 4,
+    "source": {
+      "title": "Eyeshadow Application on Brush (Close Up) - 50922169001.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Eyeshadow_Application_on_Brush_(Close_Up)_-_50922169001.jpg",
+      "author": "geehairimages",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "attributionRequired": true,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "ct-visit": {
+    "file": "assets/images/contact/visit",
+    "w": 1600,
+    "h": 1043,
+    "alt": "Compact salon room with a styling chair, mirror and wood-panelled walls",
+    "page": "contact",
+    "section": 6,
+    "source": {
+      "title": "The Indian Maharaja, Deccan Odyssey - Beauty Salon.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Indian_Maharaja,_Deccan_Odyssey_-_Beauty_Salon.jpg",
+      "author": "Simon Pielow",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    "attributionRequired": true,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "cs-hero-a": {
+    "file": "assets/images/courses/hero-a",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Makeup artist applying eye makeup to a client in a salon",
+    "page": "courses",
+    "section": 1,
+    "source": {
+      "title": "MakeUp .jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:MakeUp_.jpg",
+      "author": "hamzasomroo23",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "attributionRequired": true,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "cs-hero-b": {
+    "file": "assets/images/courses/hero-b",
+    "w": 1600,
+    "h": 1068,
+    "alt": "Hand holding a makeup brush, ready to apply colour",
+    "page": "courses",
+    "section": 1,
+    "source": {
+      "title": "A hand confidently holds a makeup brush.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:A_hand_confidently_holds_a_makeup_brush.jpg",
+      "author": "Shixart1985",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "attributionRequired": true,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "cs-hero-c": {
+    "file": "assets/images/courses/hero-c",
+    "w": 1600,
+    "h": 1063,
+    "alt": "Braider weaving a client's hair at a salon",
+    "page": "courses",
+    "section": 1,
+    "source": {
+      "title": "Braider at a hair salon.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Braider_at_a_hair_salon.jpg",
+      "author": "Adaku Nwakanma",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "attributionRequired": true,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "cs-disc-makeup": {
+    "file": "assets/images/courses/disc-makeup",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Close-up of eyeshadow being applied with a fine brush",
+    "page": "courses",
+    "section": 2,
+    "source": {
+      "title": "Makeup (14671183).jpeg",
+      "url": "https://commons.wikimedia.org/wiki/File:Makeup_(14671183).jpeg",
+      "author": "Anna Logvinova",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+    },
+    "attributionRequired": true,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "cs-disc-skin": {
+    "file": "assets/images/courses/disc-skin",
+    "w": 1600,
+    "h": 1459,
+    "alt": "Client relaxing with a facial mask applied",
+    "page": "courses",
+    "section": 2,
+    "source": {
+      "title": "Facial mask.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Facial_mask.jpg",
+      "author": "Sérgio (Savaman) Savarese",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "attributionRequired": true,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "cs-disc-hair": {
+    "file": "assets/images/courses/disc-hair",
+    "w": 1600,
+    "h": 2076,
+    "alt": "Cornrow braids being styled on a client's head",
+    "page": "courses",
+    "section": 2,
+    "source": {
+      "title": "Cornrow Hairstyling.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Cornrow_Hairstyling.jpg",
+      "author": "Nwonwu Uchechukwu P",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "attributionRequired": true,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "cs-disc-nails": {
+    "file": "assets/images/courses/disc-nails",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Nail technician working at her station",
+    "page": "courses",
+    "section": 2,
+    "source": {
+      "title": "The Salonist.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:The_Salonist.jpg",
+      "author": "Isaiah Maghanga",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "attributionRequired": true,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "cs-disc-bridal": {
+    "file": "assets/images/courses/disc-bridal",
+    "w": 1600,
+    "h": 1071,
+    "alt": "Bride with soft curls and natural makeup in a white dress",
+    "page": "courses",
+    "section": 2,
+    "source": {
+      "title": "Trash The Dress 01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Trash_The_Dress_01.jpg",
+      "author": "Robert Bejil",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "attributionRequired": true,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "cs-practice-demo": {
+    "file": "assets/images/courses/practice-demo",
+    "w": 1600,
+    "h": 1064,
+    "alt": "Nail technician working on a client at a bench lined with colour charts",
+    "page": "courses",
+    "section": 4,
+    "source": {
+      "title": "DZ6 0587 A nail technician carefully files a customers nails at a salon surrounded by color samples and manicure tools.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:DZ6_0587_A_nail_technician_carefully_files_a_customers_nails_at_a_salon_surrounded_by_color_samples_and_manicure_tools.jpg",
+      "author": "PattayaPatrol",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "attributionRequired": true,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "cs-practice-detail": {
+    "file": "assets/images/courses/practice-detail",
+    "w": 1600,
+    "h": 914,
+    "alt": "Eyelash extension preparation with pads under the eyes",
+    "page": "courses",
+    "section": 4,
+    "source": {
+      "title": "Professional Eyelash Extension Preparation.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Professional_Eyelash_Extension_Preparation.jpg",
+      "author": "Jameswasswa",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "attributionRequired": true,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "cs-cta": {
+    "file": "assets/images/courses/cta",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Set of makeup brushes laid out on dark cloth",
+    "page": "courses",
+    "section": 6,
+    "source": {
+      "title": "Makeup brush set (Unsplash).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Makeup_brush_set_(Unsplash).jpg",
+      "author": "freestocks.org freestocks",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    "attributionRequired": false,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "ce-hero": {
+    "file": "assets/images/certification/hero",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Technician placing an under-eye pad before an eyelash extension treatment",
+    "page": "certification",
+    "section": 1,
+    "source": {
+      "title": "Artistry in Professional Eyelash Extension Prep.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Artistry_in_Professional_Eyelash_Extension_Prep.jpg",
+      "author": "Jameswasswa",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "attributionRequired": true,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "ce-req": {
+    "file": "assets/images/certification/req",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Hand holding an eyeshadow palette while makeup is applied",
+    "page": "certification",
+    "section": 2,
+    "source": {
+      "title": "Makeup-make-up-artist-make-up (23699179813).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Makeup-make-up-artist-make-up_(23699179813).jpg",
+      "author": "www.Pixel.la Free Stock Photos",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    "attributionRequired": false,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "ce-assess-prepare": {
+    "file": "assets/images/certification/assess-prepare",
+    "w": 1600,
+    "h": 2400,
+    "alt": "Hairdresser's hands sectioning hair with a comb",
+    "page": "certification",
+    "section": 3,
+    "source": {
+      "title": "Hairdressers from Iran, Mashhad City, Mostafa Meraji 05.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Hairdressers_from_Iran,_Mashhad_City,_Mostafa_Meraji_05.jpg",
+      "author": "Mostafameraji",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    "attributionRequired": false,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "ce-assess-perform": {
+    "file": "assets/images/certification/assess-perform",
+    "w": 1600,
+    "h": 1236,
+    "alt": "Therapist carrying out a microdermabrasion facial on a client",
+    "page": "certification",
+    "section": 3,
+    "source": {
+      "title": "Microdermabrasion cosmetic procedure.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Microdermabrasion_cosmetic_procedure.jpg",
+      "author": "NewAgeAesthetics",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "attributionRequired": true,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "ce-assess-review": {
+    "file": "assets/images/certification/assess-review",
+    "w": 1600,
+    "h": 2397,
+    "alt": "Woman checking her finish while applying powder with a brush",
+    "page": "certification",
+    "section": 3,
+    "source": {
+      "title": "Woman applying makeup powder on her face.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Woman_applying_makeup_powder_on_her_face.jpg",
+      "author": "Shixart1985",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "attributionRequired": true,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "ce-criteria": {
+    "file": "assets/images/certification/criteria",
+    "w": 1600,
+    "h": 1241,
+    "alt": "Bridal eye makeup in gold and red with false lashes",
+    "page": "certification",
+    "section": 4,
+    "source": {
+      "title": "Indian bride with false eyelashes.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Indian_bride_with_false_eyelashes.jpg",
+      "author": "Jodhsingh pabla",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "attributionRequired": true,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "ce-cta": {
+    "file": "assets/images/certification/cta",
+    "w": 1600,
+    "h": 2133,
+    "alt": "Braider at work in a bright pink salon",
+    "page": "certification",
+    "section": 6,
+    "source": {
+      "title": "Strands of Dedication The Art of Craftsmanship.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Strands_of_Dedication_The_Art_of_Craftsmanship.jpg",
+      "author": "TracyWeru",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "attributionRequired": true,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "lg-studio": {
+    "file": "assets/images/portal/studio",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Black-and-white photo of two makeup artists working on clients at a bulb-lit mirror",
+    "page": "login",
+    "section": 1,
+    "source": {
+      "title": "Makeup studio in working mode.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Makeup_studio_in_working_mode.jpg",
+      "author": "KelvinJM",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "attributionRequired": true,
+    "licenseCheck": "Commons API, 2026-11-10"
+  },
+  "db-course": {
+    "file": "assets/images/portal/course",
+    "w": 1600,
+    "h": 1067,
+    "alt": "Five rose-gold makeup brushes beside a warm eyeshadow palette on black",
+    "page": "dashboard",
+    "section": 1,
+    "source": {
+      "title": "Make Up Brushes & Eyeshadow Palette - 50888047576.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Make_Up_Brushes_%26_Eyeshadow_Palette_-_50888047576.jpg",
+      "author": "geehairimages",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    "attributionRequired": true,
+    "licenseCheck": "Commons API, 2026-11-10"
+  }
+}

@@ -1,0 +1,96 @@
+/* Footer - Atelier Notebook: inverted brand band, numbered folio columns, hairline rules, no cards */
+@layer components {
+  .site-footer {
+    background: var(--surface-brand);
+    color: var(--on-brand);
+    margin-block-start: 0;
+  }
+  .site-footer__inner { padding-block: 72px 32px; }
+  .site-footer__grid {
+    display: grid;
+    gap: 48px 32px;
+    grid-template-columns: 1fr;
+  }
+  .site-footer a { color: var(--on-brand-muted); text-decoration: none; }
+  .site-footer a:hover { color: var(--on-brand); text-decoration: underline; text-underline-offset: 5px; }
+  .site-footer :focus-visible { outline-color: var(--on-brand-accent); }
+
+  .site-footer .brand { color: var(--on-brand); }
+  .site-footer .brand__logo { height: 54px; color: var(--on-brand); }
+  .site-footer .logo-tag { fill: var(--on-brand-muted); }
+  .site-footer .logo-accent { fill: var(--on-brand-dot); }
+  .site-footer__intro { margin-block-start: 24px; max-width: 36ch; color: var(--on-brand-muted); }
+
+  .f-title {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    padding-block-end: 14px;
+    margin: 0 0 18px;
+    border-block-end: 1px solid var(--on-brand-line);
+    font-family: var(--font-display);
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--on-brand);
+  }
+  .f-title .folio { color: var(--on-brand-accent); }
+  .f-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+  .f-list a { display: inline-flex; align-items: center; min-height: 36px; font-size: 0.9375rem; }
+  .f-contact { font-style: normal; display: grid; gap: 10px; font-size: 0.9375rem; color: var(--on-brand-muted); }
+  .f-contact dt { font-family: var(--font-mono); font-size: 0.6875rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--on-brand-accent); }
+  .f-contact > div { position: relative; padding-inline-start: 32px; }
+  .f-contact dt .icon { position: absolute; inset-inline-start: 0; inset-block-start: -1px; width: 20px; height: 20px; color: var(--on-brand-accent); }
+  .f-contact dd { margin: 0 0 6px; color: var(--on-brand); }
+  .f-contact dd { overflow-wrap: anywhere; }
+  .site-footer__grid > * { min-width: 0; }
+
+  .site-footer__base {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px 24px;
+    margin-block-start: 64px;
+    padding-block-start: 24px;
+    border-block-start: 1px solid var(--on-brand-line);
+    font-size: 0.875rem;
+    color: var(--on-brand-muted);
+  }
+  .site-footer__base p { margin: 0; }
+  /* keep the fixed scroll-to-top button clear of the copyright line on small screens */
+  @media (max-width: 47.99rem) {
+    .site-footer__base { padding-inline-end: 64px; }
+  }
+
+  @media (min-width: 30rem) {
+    .site-footer__grid { grid-template-columns: repeat(2, 1fr); }
+    .site-footer__brand { grid-column: 1 / -1; }
+  }
+  @media (min-width: 48rem) {
+    .site-footer__grid { grid-template-columns: repeat(12, 1fr); }
+    .site-footer__brand { grid-column: 1 / -1; }
+    .f-col-nav, .f-col-courses { grid-column: span 4; }
+    .f-col-contact { grid-column: span 4; }
+  }
+  @media (min-width: 64rem) {
+    .site-footer__brand { grid-column: span 5; }
+    .f-col-nav, .f-col-courses { grid-column: span 2; }
+    .f-col-contact { grid-column: span 3; }
+  }
+}
+
+@layer components {
+  .f-socials { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0 0; padding: 0; }
+  .f-ico {
+    display: inline-grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border: 1.5px solid var(--on-brand-muted);
+    border-radius: 50%;
+    color: var(--on-brand);
+    transition: background-color 0.18s, color 0.18s, border-color 0.18s;
+  }
+  .site-footer a.f-ico { color: var(--on-brand); text-decoration: none; }
+  .site-footer a.f-ico:hover { background: var(--on-brand); border-color: var(--on-brand); color: var(--surface-brand); text-decoration: none; }
+  .f-ico .icon { width: 20px; height: 20px; }
+}

@@ -1,0 +1,23 @@
+/* Shared inner-page scaffolding (About, Contact and every later inner page).
+   .inner-hero  - every inner page's first section. Its height is ONE shared token, --inner-hero-h (tokens.css),
+                  so all inner heroes are the same height at the same viewport. The layout inside is page-specific;
+                  children must size themselves to 100% of this box (overflow is clipped, never scrolls).
+   .split-head  - section header with the heading on one side and a short lede on the other (desktop). */
+@layer components {
+  .inner-hero {
+    height: var(--inner-hero-h);
+    overflow: hidden;
+    padding-block: clamp(12px, 2.4svh, 28px);
+  }
+  .inner-hero > * { height: 100%; }
+
+  .ab-split-head { width: 100%; }
+  @media (min-width: 64rem) {
+    .ab-split-head { grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); align-items: end; column-gap: 64px; }
+    .ab-split-head .lede { justify-self: end; }
+  }
+
+  /* RTL: copy blocks centre as a whole (the text inside is centred by .rtl-center in sections.css) */
+  [dir="rtl"] :where(.page-about, .page-contact) .rtl-center { justify-items: center; }
+  [dir="rtl"] .ab-split-head .lede { justify-self: center; }
+}

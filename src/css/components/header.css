@@ -1,0 +1,186 @@
+/* Header, brand, primary nav, dropdown, mobile menu - Phase 1 §6 */
+@layer components {
+  .site-header {
+    position: sticky;
+    inset-block-start: 0;
+    z-index: 40;
+    background: var(--bg);
+    border-block-end: 1px solid var(--line);
+  }
+  .site-header__bar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    min-height: var(--header-h);
+  }
+  .site-header__actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-inline-start: auto;
+  }
+
+  /* Brand lockup. dir=ltr is set on the element so the mark never swaps sides in RTL. */
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--fg);
+    text-decoration: none;
+    flex: none;
+  }
+  /* Sorrel logo: inline SVG (outlined wordmark), colours come from theme tokens so it works in both themes. */
+  .brand__logo { display: block; height: 40px; width: auto; flex: none; color: var(--fg); overflow: visible; }
+  .brand--mark .brand__logo { width: 40px; }
+  .logo-ink-stroke { stroke: currentColor; }
+  .logo-ink { fill: currentColor; }
+  .logo-accent { fill: var(--accent); }
+  .logo-tag { fill: var(--muted); }
+
+  /* Very narrow phones (≤ 376px): slightly smaller logo so brand + controls fit without overflow */
+  @media (max-width: 23.5rem) {
+    .brand__logo { height: 34px; }
+    .brand--mark .brand__logo { width: 34px; }
+    .site-header__bar { gap: 12px; }
+  }
+
+  /* Primary navigation */
+  .site-nav { flex: 1; display: flex; justify-content: center; min-width: 0; }
+  .nav-list { display: flex; align-items: center; gap: 2px; list-style: none; margin: 0; padding: 0; }
+  .nav-link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 44px;
+    padding-inline: 12px;
+    border: 0;
+    background: none;
+    color: var(--fg);
+    font: inherit;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    line-height: 1;
+    white-space: nowrap;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    inset-inline: 12px;
+    inset-block-end: 8px;
+    height: 2px;
+    background: var(--line-input);
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.2s ease;
+  }
+  [dir="rtl"] .nav-link::after { transform-origin: right center; }
+  .nav-link:hover::after,
+  .nav-link:focus-visible::after { transform: scaleX(1); }
+  .nav-link[aria-current="page"]::after,
+  .nav-link[data-active="true"]::after { transform: scaleX(1); background: var(--accent); }
+  .nav-link .icon { width: 14px; height: 14px; transition: transform 0.2s; }
+  .nav-link[aria-expanded="true"] .icon { transform: rotate(180deg); }
+
+  /* Dropdown (click only; never hover) */
+  .nav-dd { position: relative; }
+  .nav-dd__panel {
+    position: absolute;
+    inset-block-start: calc(100% + 6px);
+    inset-inline-start: 0;
+    z-index: 50;
+    min-width: 168px;
+    padding: 6px;
+    margin: 0;
+    list-style: none;
+    background: var(--surface-raised);
+    border: 1px solid var(--line);
+    border-radius: var(--r-md);
+    box-shadow: var(--shadow-pop);
+  }
+  .nav-dd__link {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    padding-inline: 14px;
+    border-radius: var(--r-sm);
+    color: var(--fg);
+    font-size: 0.9375rem;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .nav-dd__link:hover { background: var(--surface-alt); }
+  .nav-dd__link[aria-current="page"] { background: var(--surface-alt); box-shadow: inset 3px 0 0 var(--accent); }
+  [dir="rtl"] .nav-dd__link[aria-current="page"] { box-shadow: inset -3px 0 0 var(--accent); }
+
+  .menu-btn { gap: 0; }
+
+  /* Mobile / tablet menu sheet */
+  .mobile-menu {
+    position: fixed;
+    inset: 0;
+    z-index: 70;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+  .mobile-menu[hidden] { display: none; }
+  .mobile-menu__bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: var(--header-h);
+    border-block-end: 1px solid var(--line);
+    flex: none;
+  }
+  .mobile-menu__body { flex: 1; padding-block: 8px 24px; }
+  .m-list { list-style: none; margin: 0; padding: 0; counter-reset: m; }
+  .m-item { border-block-end: 1px solid var(--line); }
+  .m-link {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    width: 100%;
+    min-height: 64px;
+    padding-block: 14px;
+    border: 0;
+    background: none;
+    color: var(--fg);
+    font-family: var(--font-display);
+    font-size: 1.875rem;
+    font-weight: 500;
+    line-height: 1.1;
+    text-align: start;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .m-link .folio { color: var(--muted); min-width: 2ch; }
+  .m-link .icon { width: 20px; height: 20px; margin-inline-start: auto; align-self: center; transition: transform 0.2s; }
+  .m-link[aria-expanded="true"] .icon { transform: rotate(180deg); }
+  .m-link[aria-current="page"] { color: var(--accent); }
+  .m-sub { list-style: none; margin: 0; padding: 0 0 12px; padding-inline-start: calc(2ch + 16px); }
+  .m-sub a {
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+    color: var(--fg);
+    font-size: 1.125rem;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .m-sub a[aria-current="page"] { color: var(--accent); text-decoration: underline; text-underline-offset: 6px; }
+  .mobile-menu__foot {
+    display: grid;
+    gap: 12px;
+    padding-block: 24px 32px;
+    border-block-start: 1px solid var(--line);
+    flex: none;
+  }
+  .mobile-menu__row { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  .mobile-menu__row .folio { color: var(--muted); }
+  html.menu-open { overflow: hidden; }
+}

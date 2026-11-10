@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <!--@include head-->
+  <title>Student Dashboard | {{site.fullName}}</title>
+  <meta name="description" content="Student dashboard for {{site.fullName}}: courses, schedule, practical logs and certificates.">
+  <meta name="robots" content="noindex">
+  <script type="module" src="{{root}}assets/js/pages/dashboard.js"></script>
+</head>
+<body data-page="dashboard" class="portal-body db-body">
+  <a class="skip-link" href="#db-main">Skip to dashboard content</a>
+
+  <div class="db">
+    <!-- Sidebar: fixed on desktop, slide-in drawer below 1024px -->
+    <aside class="db-side" id="db-side" data-db-side aria-label="Student portal navigation">
+      <div class="db-side__top">
+        <!--@include brand-->
+        <button type="button" class="icon-btn db-side__close" data-db-close aria-label="Close navigation">{{icon:close}}</button>
+      </div>
+      <nav class="db-nav" aria-label="Dashboard">
+        <ul>
+          <li><a href="#overview" data-view-link="overview">{{icon:grid}}<span>Overview</span></a></li>
+          <li><a href="#learning" data-view-link="learning">{{icon:book}}<span>My Learning</span></a></li>
+          <li><a href="#schedule" data-view-link="schedule">{{icon:calendar}}<span>Batch Schedule</span></a></li>
+          <li><a href="#logs" data-view-link="logs">{{icon:clipboard}}<span>Practical Logs</span></a></li>
+          <li><a href="#certificates" data-view-link="certificates">{{icon:award}}<span>Certificates</span></a></li>
+          <li><a href="#profile" data-view-link="profile">{{icon:user}}<span>Profile</span></a></li>
+        </ul>
+      </nav>
+      <div class="db-side__foot">
+        <div class="db-side__ctl">
+          <button type="button" class="icon-btn" data-theme-toggle aria-label="Switch to dark theme">{{icon:sun theme-icon-sun}}{{icon:moon theme-icon-moon}}</button>
+          <!--@include dir-toggle-->
+        </div>
+      </div>
+    </aside>
+    <div class="db-scrim" data-db-scrim hidden></div>
+
+    <div class="db-app">
+      <!-- Top bar -->
+      <header class="db-top">
+        <button type="button" class="icon-btn db-menu" data-db-open aria-controls="db-side" aria-expanded="false" aria-label="Open navigation">{{icon:menu}}</button>
+        <div class="db-title">
+          <p class="db-crumb"><span>Student portal</span><span aria-hidden="true">/</span><span data-crumb>Overview</span></p>
+          <h1 class="db-h1" tabindex="-1" data-view-title>Overview</h1>
+        </div>
+
+        <div class="db-search" data-search>
+          <label class="sr-only" for="db-q">Search the portal</label>
+          <span class="db-search__ico">{{icon:search}}</span>
+          <input id="db-q" class="db-search__input" type="search" placeholder="Search the portal" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="db-q-results" aria-autocomplete="list">
+          <ul class="db-search__results db-pop" id="db-q-results" role="listbox" aria-label="Search results" hidden></ul>
+        </div>
+
+        <div class="db-actions">
+          <button type="button" class="icon-btn db-search-btn" data-search-toggle aria-expanded="false" aria-controls="db-q" aria-label="Search">{{icon:search}}</button>
+
+          <div class="db-drop" data-drop>
+            <button type="button" class="icon-btn db-bell" data-drop-btn aria-expanded="false" aria-controls="db-notes" aria-label="Notifications">{{icon:bell}}</button>
+            <div class="db-pop db-notes" id="db-notes" data-drop-panel hidden>
+              <div class="db-pop__head"><h2>Notifications</h2></div>
+              <div class="db-empty db-empty--sm">{{icon:bell}}<b>No notifications.</b></div>
+            </div>
+          </div>
+
+          <div class="db-drop" data-drop>
+            <button type="button" class="db-me" data-drop-btn aria-expanded="false" aria-controls="db-menu"><span class="sr-only">Profile menu:</span>
+              <span class="db-avatar" aria-hidden="true">{{icon:user}}</span>
+              <span class="db-me__txt"><b>Student</b></span>
+              {{icon:chevron-down db-me__chev}}
+            </button>
+            <div class="db-pop db-menu-pop" id="db-menu" data-drop-panel hidden>
+              <ul>
+                <li><a href="#profile" data-view-link="profile">{{icon:user}}<span>Profile</span></a></li>
+                <li><a href="#certificates" data-view-link="certificates">{{icon:award}}<span>Certificates</span></a></li>
+                <li><a href="login.html">{{icon:log-out icon-dir}}<span>Back to login</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main id="db-main" class="db-main" tabindex="-1">
+
+        <!-- ================= OVERVIEW ================= -->
+        <section class="db-view" id="overview" data-view="overview" aria-label="Overview">
+          <div class="db-welcome">
+            <div>
+              <h2 class="db-welcome__title">Welcome to your student portal.</h2>
+              <p class="db-welcome__sub">Your courses, schedule, practical logs and certificates will appear here.</p>
+            </div>
+          </div>
+
+          <div class="db-grid">
+            <article class="panel db-course span-8">
+              <div class="media db-course__img">{{img:db-course|sizes=(min-width:1280px) 280px, (min-width:640px) 40vw, 100vw}}</div>
+              <div class="db-course__body">
+                <p class="db-label">Current course</p>
+                <h2 class="db-course__name">No courses available yet.</h2>
+                <p class="db-course__meta">Your enrolled course will appear here.</p>
+                <a class="btn btn-primary btn-sm" href="courses.html">Browse courses {{icon:arrow-right icon-dir}}</a>
+              </div>
+            </article>
+
+            <div class="db-stats span-4">
+              <div class="panel stat">
+                <p class="db-label">Practical hours</p>
+                <p class="stat__num">&ndash;</p>
+              </div>
+              <div class="panel stat">
+                <p class="db-label">Skills signed off</p>
+                <p class="stat__num">&ndash;</p>
+              </div>
+              <div class="panel stat">
+                <p class="db-label">Next assessment</p>
+                <p class="stat__num stat__num--sm">&ndash;</p>
+                <p class="stat__note">Nothing scheduled.</p>
+              </div>
+            </div>
+
+            <article class="panel span-7">
+              <div class="panel__head"><h2>Upcoming sessions</h2><a class="db-textbtn" href="#schedule" data-view-link="schedule">Full schedule {{icon:arrow-right icon-dir}}</a></div>
+              <div class="db-empty">{{icon:calendar}}<b>No upcoming sessions.</b></div>
+            </article>
+
+            <article class="panel span-5 db-certmini">
+              <div class="panel__head"><h2>Certificate status</h2><a class="db-textbtn" href="#certificates" data-view-link="certificates">Details {{icon:arrow-right icon-dir}}</a></div>
+              <div class="db-empty">{{icon:award}}<b>No certificates available.</b></div>
+            </article>
+
+            <article class="panel span-7">
+              <div class="panel__head"><h2>Practical progress</h2><a class="db-textbtn" href="#logs" data-view-link="logs">Practical logs {{icon:arrow-right icon-dir}}</a></div>
+              <div class="db-empty">{{icon:clipboard}}<b>No practical records available.</b></div>
+            </article>
+
+            <article class="panel span-5">
+              <div class="panel__head"><h2>Recent activity</h2></div>
+              <div class="db-empty">{{icon:clock}}<b>No recent activity.</b></div>
+            </article>
+          </div>
+        </section>
+
+        <!-- ================= MY LEARNING ================= -->
+        <section class="db-view" id="learning" data-view="learning" aria-label="My Learning" hidden>
+          <div class="panel db-learn-head">
+            <div class="db-learn-head__main">
+              <p class="db-label">Enrolled course</p>
+              <h2 class="db-learn-head__name">No courses available yet.</h2>
+              <p class="db-course__meta">Your enrolled course and its modules will appear here.</p>
+            </div>
+            <a class="btn btn-primary btn-sm" href="courses.html">Browse courses {{icon:arrow-right icon-dir}}</a>
+          </div>
+
+          <div class="db-toolbar">
+            <h2 class="db-h2">Modules</h2>
+          </div>
+          <div class="panel"><div class="db-empty">{{icon:book}}<b>No modules available.</b></div></div>
+        </section>
+
+        <!-- ================= BATCH SCHEDULE ================= -->
+        <section class="db-view" id="schedule" data-view="schedule" aria-label="Batch Schedule" hidden>
+          <div class="panel db-batch">
+            <div class="db-empty">{{icon:calendar}}<b>No batch assigned yet.</b><span>Your batch details will appear here.</span></div>
+          </div>
+
+          <div class="db-toolbar">
+            <h2 class="db-h2">Weekly schedule</h2>
+          </div>
+          <div class="panel"><div class="db-empty">{{icon:calendar}}<b>No upcoming sessions.</b></div></div>
+        </section>
+
+        <!-- ================= PRACTICAL LOGS ================= -->
+        <section class="db-view" id="logs" data-view="logs" aria-label="Practical Logs" hidden>
+          <div class="db-tiles">
+            <div class="panel stat"><p class="db-label">Hours logged</p><p class="stat__num">&ndash;</p></div>
+            <div class="panel stat"><p class="db-label">Signed off</p><p class="stat__num">&ndash;</p></div>
+            <div class="panel stat"><p class="db-label">Awaiting review</p><p class="stat__num">&ndash;</p></div>
+            <div class="panel stat"><p class="db-label">Needs rework</p><p class="stat__num">&ndash;</p></div>
+          </div>
+
+          <div class="db-toolbar">
+            <h2 class="db-h2">Log entries</h2>
+          </div>
+          <div class="panel"><div class="db-empty">{{icon:clipboard}}<b>No practical records available.</b></div></div>
+        </section>
+
+        <!-- ================= CERTIFICATES ================= -->
+        <section class="db-view" id="certificates" data-view="certificates" aria-label="Certificates" hidden>
+          <div class="panel"><div class="db-empty">{{icon:award}}<b>No certificates available.</b><span>A certificate appears here after a course is completed and assessed.</span></div></div>
+        </section>
+
+        <!-- ================= PROFILE ================= -->
+        <section class="db-view" id="profile" data-view="profile" aria-label="Profile" hidden>
+          <div class="db-grid">
+            <article class="panel span-4 db-me-card">
+              <span class="db-avatar db-avatar--lg" aria-hidden="true">{{icon:user}}</span>
+              <h2>Student</h2>
+              <p>Profile details are not available yet.</p>
+            </article>
+            <article class="panel span-8">
+              <div class="panel__head"><h2>Student details</h2></div>
+              <div class="db-empty">{{icon:user}}<b>No profile details available.</b></div>
+            </article>
+            <article class="panel span-12">
+              <div class="panel__head"><h2>Display preferences</h2></div>
+              <div class="db-prefs">
+                <div class="db-prefs__item"><div><b>Theme</b><span>Light or dark. Saved in this browser only.</span></div><button type="button" class="btn btn-outline btn-sm" data-theme-toggle aria-label="Switch to dark theme">{{icon:sun theme-icon-sun}}{{icon:moon theme-icon-moon}}<span data-theme-text>Switch theme</span></button></div>
+                <div class="db-prefs__item"><div><b>Layout direction</b><span>Mirror the layout. Saved in this browser only.</span></div><!--@include dir-toggle--></div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <p class="db-foot">&copy; {{year}} {{site.fullName}}</p>
+      </main>
+    </div>
+
+    <div class="db-toast" role="status" aria-live="polite" data-toast-region></div>
+  </div>
+</body>
+</html>

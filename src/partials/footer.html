@@ -1,0 +1,43 @@
+<!-- Contact details and social handles are FICTIONAL demonstration data from src/config/site.json -->
+<footer class="site-footer" data-site-footer>
+  <div class="site-footer__inner container-wide">
+    <div class="site-footer__grid">
+      <div class="site-footer__brand">
+        <!--@include brand-->
+        <ul class="f-socials" aria-label="Social media">
+          {{@footer-social}}
+        </ul>
+        <p class="site-footer__intro">{{site.intro}}</p>
+      </div>
+
+      <nav class="f-col-nav" aria-labelledby="f-nav-title">
+        <p class="f-title" id="f-nav-title"><span class="folio">01</span> Explore</p>
+        <ul class="f-list">
+          {{@footer-nav}}
+        </ul>
+      </nav>
+
+      <nav class="f-col-courses" aria-labelledby="f-courses-title">
+        <p class="f-title" id="f-courses-title"><span class="folio">02</span> Courses</p>
+        <ul class="f-list">
+          {{@footer-courses}}
+        </ul>
+      </nav>
+
+      <div class="f-col-contact">
+        <p class="f-title"><span class="folio">03</span> Visit &amp; contact</p>
+        <dl class="f-contact">
+          <div><dt>{{icon:map-pin}}Address</dt><dd>{{site.contact.address}}</dd></div>
+          <div><dt>{{icon:phone}}Phone</dt><dd><bdi>{{site.contact.phone}}</bdi></dd></div>
+          <div><dt>{{icon:mail}}Email</dt><dd><bdi>{{site.contact.email}}</bdi></dd></div>
+          <div><dt>{{icon:clock}}Hours</dt><dd>{{site.contact.hours}}</dd></div>
+        </dl>
+
+      </div>
+    </div>
+
+    <div class="site-footer__base">
+      <p>&copy; {{year}} {{site.fullName}}. All rights reserved.</p>
+    </div>
+  </div>
+</footer>

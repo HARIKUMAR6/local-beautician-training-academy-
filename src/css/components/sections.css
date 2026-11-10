@@ -1,0 +1,91 @@
+/* Shared homepage scaffolding: sections, eyebrow labels, media frames, captions, RTL centring helper. */
+@layer components {
+  .hs { padding-block: clamp(64px, 8vw, 120px); }
+  .hs--alt { background: var(--surface-alt); }
+  /* Dark teal band: the same teal in both themes (the dark page background is too close to the dark footer teal) */
+  .hs--brand {
+    --band: #12403b; --on-brand: #f6f1ea; --on-brand-muted: #b9cbc7; --on-brand-line: rgb(246 241 234 / 0.22); --on-brand-accent: #d9b466; --on-brand-dot: #e8957a;
+    background: var(--band);
+    color: var(--on-brand);
+  }
+  .hs--brand :where(p, li, dd) { color: var(--on-brand-muted); }
+  .hs--brand a:not(.btn), .hs--brand .btn-link { color: var(--on-brand); }
+  .hs--brand .btn-link:hover { color: var(--on-brand-dot); }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 16px;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    line-height: 1.2;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--brass);
+  }
+  .eyebrow .chip { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); flex: none; }
+  .hs--brand .eyebrow { color: var(--on-brand-accent); }
+  .hs--brand .eyebrow .chip { background: var(--on-brand-dot); }
+
+  .lede { font-size: 1.1875rem; line-height: 1.6; color: var(--muted); max-width: 46ch; margin: 0; }
+  .btn-row { display: flex; flex-wrap: wrap; gap: 12px 16px; }
+  .sec-title { font-size: var(--text-h2); line-height: 1.12; margin: 0; max-width: 20ch; }
+  .sec-head { display: grid; gap: 20px; justify-items: start; margin-block-end: clamp(32px, 5vw, 64px); }
+  .sec-head p { margin: 0; }
+
+  /* Image frame: tonal fallback if the file is missing, no distortion (object-fit), dark-theme dimming. */
+  .media { position: relative; overflow: hidden; background: var(--surface-alt); border-radius: var(--r-md); margin: 0; }
+  .media > img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  [data-theme="dark"] .media > img { filter: brightness(0.9) contrast(1.03); }
+  .media.is-broken > img { visibility: hidden; }
+  .media.is-broken::after {
+    content: attr(data-alt);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    padding: 16px;
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--muted);
+  }
+  .arch { border-radius: 999px 999px 12px 12px; }
+
+  .note {
+    margin: 10px 0 0;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .hs--brand .note { color: var(--on-brand-muted); }
+  .cap {
+    position: absolute;
+    inset-inline-start: 12px;
+    inset-block-end: 12px;
+    max-width: calc(100% - 24px);
+    padding: 6px 10px;
+    background: var(--bg);
+    color: var(--fg);
+    border-radius: var(--r-sm);
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    line-height: 1.3;
+  }
+
+  /* In RTL the layout mirrors and text blocks next to centred headings are centred too. */
+  [dir="rtl"] .rtl-center,
+  [dir="rtl"] .rtl-center :where(p, dd, dt, h1, h2, h3, li, span, b, figcaption) { text-align: center; }
+  [dir="rtl"] .rtl-center :where(.btn-row, .eyebrow) { justify-content: center; }
+  [dir="rtl"] .rtl-center .sec-head { justify-items: center; }
+  [dir="rtl"] .rtl-center :where(.sec-title, .lede) { margin-inline: auto; }
+
+  .swatches { display: flex; gap: 8px; }
+  .swatches span { width: 14px; height: 14px; border-radius: 50%; border: 1px solid var(--line-input); }
+
+}

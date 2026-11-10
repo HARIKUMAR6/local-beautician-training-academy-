@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <!--@include head-->
+  <title>Contact | {{site.fullName}}</title>
+  <meta name="description" content="Call, email or visit {{site.fullName}}, or send a course enquiry.">
+  <script type="module" src="{{root}}assets/js/pages/contact.js"></script>
+</head>
+<body data-page="contact">
+  <!--@include header-->
+
+  <main id="main" tabindex="-1" class="page-contact">
+
+    <!-- 1 · Hero: copy with three direct channels beside a framed reception photo (inner-page hero height) -->
+    <section class="inner-hero ct-hero" aria-labelledby="ct-title">
+      <div class="container-x ct-hero__grid">
+        <div class="ct-hero__copy rtl-center">
+          <p class="eyebrow"><span class="chip" aria-hidden="true"></span>Contact</p>
+          <h1 id="ct-title" class="ct-hero__title">Let&rsquo;s talk about your <em>training.</em></h1>
+          <p class="lede">Ask about a course, book a studio visit or check the next intake.</p>
+          <ul class="quick">
+            <li><a href="{{site.contact.phoneHref}}">{{icon:phone}}<span><span class="folio">Call</span><b>{{site.contact.phone}}</b></span></a></li>
+            <li><a href="mailto:{{site.contact.email}}">{{icon:mail}}<span><span class="folio">Email</span><b>{{site.contact.email}}</b></span></a></li>
+            <li><a href="#enquiry">{{icon:arrow-right icon-dir}}<span><span class="folio">Online</span><b>Send an enquiry</b></span></a></li>
+          </ul>
+        </div>
+        <div class="ct-hero__art">
+          <figure class="media ct-hero__main">{{img:ct-hero|eager|sizes=(min-width:1024px) 46vw, 92vw}}</figure>
+          <figure class="media ct-hero__inset">{{img:ct-hero-detail|alt=|sizes=(min-width:1024px) 16vw, 34vw}}</figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 · Contact information: a directory of four channels beside a tall photo -->
+    <section class="hs ct-info" aria-labelledby="ct-info-title">
+      <div class="container-x ct-info__grid">
+        <div class="ct-info__main">
+          <div class="sec-head rtl-center">
+            <p class="eyebrow"><span class="chip" aria-hidden="true"></span>02 · Reach us</p>
+            <h2 id="ct-info-title" class="sec-title">Four ways to get in touch.</h2>
+          </div>
+          <div class="directory">
+            <div class="directory__item">
+              <span class="directory__ico">{{icon:map-pin}}</span>
+              <h3>Visit</h3>
+              <p>{{site.contact.address}}</p>
+              <a class="btn btn-link" href="#visit">Plan a visit {{icon:arrow-right icon-dir}}</a>
+            </div>
+            <div class="directory__item">
+              <span class="directory__ico">{{icon:phone}}</span>
+              <h3>Call</h3>
+              <p dir="ltr" class="directory__value">{{site.contact.phone}}</p>
+              <a class="btn btn-link" href="{{site.contact.phoneHref}}">Call admissions {{icon:arrow-right icon-dir}}</a>
+            </div>
+            <div class="directory__item">
+              <span class="directory__ico">{{icon:mail}}</span>
+              <h3>Email</h3>
+              <p class="directory__value">{{site.contact.email}}</p>
+              <a class="btn btn-link" href="mailto:{{site.contact.email}}">Write to us {{icon:arrow-right icon-dir}}</a>
+            </div>
+            <div class="directory__item">
+              <span class="directory__ico">{{icon:clock}}</span>
+              <h3>Opening hours</h3>
+              <p>{{site.contact.hours}}</p>
+              <a class="btn btn-link" href="#enquiry">Ask a question {{icon:arrow-right icon-dir}}</a>
+            </div>
+          </div>
+          <ul class="handles" aria-label="Social media">{{@social-handles}}</ul>
+        </div>
+        <figure class="ct-info__fig">
+          <div class="media">{{img:ct-info|sizes=(min-width:1024px) 30vw, 92vw}}</div>
+          <figcaption class="note">Colour station</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 3 · Course enquiry guidance: five discipline tiles that pre-fill the form -->
+    <section class="hs hs--alt ct-guide" aria-labelledby="ct-guide-title">
+      <div class="container-x">
+        <div class="sec-head ab-split-head rtl-center">
+          <div>
+            <p class="eyebrow"><span class="chip" aria-hidden="true"></span>03 · Before you ask</p>
+            <h2 id="ct-guide-title" class="sec-title">Not sure which course? Start with a discipline.</h2>
+          </div>
+          <p class="lede">Pick one and we&rsquo;ll add it to your enquiry. Ask about intakes, kit and practice hours.</p>
+        </div>
+        <ul class="tiles">
+          <li class="tile">
+            <div class="media tile__img">{{img:ct-guide-makeup|sizes=(min-width:1024px) 22vw, (min-width:480px) 46vw, 92vw}}</div>
+            <div class="tile__body rtl-center"><h3>Makeup Artistry</h3><p>Ask about kit lists and studio hours.</p>
+            <button type="button" class="btn btn-outline btn-sm" data-ask="Makeup Artistry">Ask about makeup {{icon:arrow-right icon-dir}}</button></div>
+          </li>
+          <li class="tile">
+            <div class="media tile__img">{{img:ct-guide-skin|sizes=(min-width:1024px) 22vw, (min-width:480px) 46vw, 92vw}}</div>
+            <div class="tile__body rtl-center"><h3>Skin Care</h3><p>Ask about treatments and the skin lab.</p>
+            <button type="button" class="btn btn-outline btn-sm" data-ask="Skin Care">Ask about skin {{icon:arrow-right icon-dir}}</button></div>
+          </li>
+          <li class="tile">
+            <div class="media tile__img">{{img:ct-guide-hair|sizes=(min-width:1024px) 22vw, (min-width:480px) 46vw, 92vw}}</div>
+            <div class="tile__body rtl-center"><h3>Hair Styling</h3><p>Ask about colour, cutting and models.</p>
+            <button type="button" class="btn btn-outline btn-sm" data-ask="Hair Styling">Ask about hair {{icon:arrow-right icon-dir}}</button></div>
+          </li>
+          <li class="tile">
+            <div class="media tile__img">{{img:ct-guide-nails|sizes=(min-width:1024px) 22vw, (min-width:480px) 46vw, 92vw}}</div>
+            <div class="tile__body rtl-center"><h3>Nail Technology</h3><p>Ask about structure and nail art.</p>
+            <button type="button" class="btn btn-outline btn-sm" data-ask="Nail Technology">Ask about nails {{icon:arrow-right icon-dir}}</button></div>
+          </li>
+          <li class="tile tile--wide">
+            <div class="media tile__img">{{img:ct-guide-bridal|sizes=(min-width:1024px) 22vw, 92vw}}</div>
+            <div class="tile__body rtl-center"><h3>Bridal Artistry</h3><p>Ask about entry skills and trials.</p>
+            <button type="button" class="btn btn-outline btn-sm" data-ask="Bridal Artistry">Ask about bridal {{icon:arrow-right icon-dir}}</button></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 4 · Enquiry form (front-end only: validates in the browser, sends nothing) -->
+    <section id="enquiry" class="hs ct-form" aria-labelledby="ct-form-title">
+      <div class="container-x ct-form__grid">
+        <div class="ct-form__side rtl-center">
+          <p class="eyebrow"><span class="chip" aria-hidden="true"></span>04 · Enquiry</p>
+          <h2 id="ct-form-title" class="sec-title">Send us your questions.</h2>
+          <figure class="media ct-form__img">{{img:ct-form|sizes=(min-width:1024px) 34vw, 92vw}}</figure>
+          <ol class="next">
+            <li><b>Tell us your interest</b><span>Choose a course and add your questions.</span></li>
+            <li><b>Admissions replies</b><span>With dates, fees and a visit time.</span></li>
+            <li><b>Visit the studio</b><span>Meet a trainer before you enrol.</span></li>
+          </ol>
+        </div>
+
+        <form class="eq" data-contact-form novalidate aria-labelledby="ct-form-title">
+          <p class="eq__intro">All fields are required.</p>
+          <div class="eq__row">
+            <div class="field">
+              <label class="field-label" for="cf-name">Full name</label>
+              <input class="input" id="cf-name" name="name" type="text" autocomplete="name" placeholder="e.g. Amara Okafor" required aria-describedby="cf-name-err">
+              <span class="field-error" id="cf-name-err" hidden>Please enter your full name.</span>
+            </div>
+            <div class="field">
+              <label class="field-label" for="cf-email">Email address</label>
+              <input class="input" id="cf-email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="name@example.com" dir="auto" required aria-describedby="cf-email-err">
+              <span class="field-error" id="cf-email-err" hidden>Please enter a valid email address, like name@example.com.</span>
+            </div>
+          </div>
+          <div class="eq__row">
+            <div class="field">
+              <label class="field-label" for="cf-phone">Phone number</label>
+              <input class="input" id="cf-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="e.g. +44 20 7946 0000" dir="auto" required aria-describedby="cf-phone-err">
+              <span class="field-error" id="cf-phone-err" hidden>Please enter a phone number (7 to 15 digits).</span>
+            </div>
+            <div class="field">
+              <label class="field-label" for="cf-course">Course of interest</label>
+              <div class="select"><select class="select-input" id="cf-course" name="course" required aria-describedby="cf-course-err">
+                <option value="" selected disabled>Choose a course</option>
+                {{@course-options}}
+                <option value="Not sure yet">Not sure yet</option>
+              </select></div>
+              <span class="field-error" id="cf-course-err" hidden>Please choose a course, or &ldquo;Not sure yet&rdquo;.</span>
+            </div>
+          </div>
+          <div class="field">
+            <label class="field-label" for="cf-msg">Message</label>
+            <textarea class="textarea" id="cf-msg" name="message" rows="5" placeholder="What would you like to know? Intake dates, fees, kit, visits&hellip;" required aria-describedby="cf-msg-err"></textarea>
+            <span class="field-error" id="cf-msg-err" hidden>Please write a short message (at least 10 characters).</span>
+          </div>
+          <div class="eq__foot">
+            <button type="submit" class="btn btn-primary btn-lg">Send enquiry {{icon:arrow-right icon-dir}}</button>
+            <p class="eq__note">Demonstration form: it checks your details in this browser only. Nothing is sent or stored.</p>
+          </div>
+          <div class="eq__status" role="status" aria-live="polite" data-contact-status></div>
+        </form>
+      </div>
+    </section>
+
+    <!-- 5 · Map: heading above an interactive OpenStreetMap -->
+    <section class="ct-map" aria-labelledby="ct-map-title">
+      <div class="container-wide">
+        <div class="sec-head ct-map__head rtl-center">
+          <h2 id="ct-map-title" class="sec-title">Find Our Location</h2>
+        </div>
+        <div class="ct-map__frame">
+          <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-0.1420%2C51.5060%2C-0.1080%2C51.5220&amp;layer=mapnik" title="Interactive street map from OpenStreetMap" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 · Final call to action: centred invitation over a panoramic studio photo -->
+    <section id="visit" class="hs ct-visit" aria-labelledby="ct-visit-title">
+      <div class="container-x">
+        <div class="ct-visit__head">
+          <p class="eyebrow"><span class="chip" aria-hidden="true"></span>06 · Visit</p>
+          <h2 id="ct-visit-title" class="ct-visit__title">Your first class starts with a conversation.</h2>
+          <p class="ct-visit__lede">Come and see the rooms, meet a trainer and ask anything.</p>
+          <div class="btn-row ct-visit__btns">
+            <a class="btn btn-accent" href="#enquiry">Book a visit {{icon:arrow-right icon-dir}}</a>
+            <a class="btn btn-outline ct-visit__call" href="{{site.contact.phoneHref}}">{{icon:phone}} Call us</a>
+          </div>
+        </div>
+        <div class="ct-visit__pano">
+          <div class="media">{{img:ct-visit|sizes=(min-width:1280px) 1200px, 100vw}}</div>
+          <dl class="ct-visit__tab">
+            <div><dt>Hours</dt><dd>{{site.contact.hours}}</dd></div>
+            <div><dt>Address</dt><dd>{{site.contact.address}}</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!--@include footer-->
+  <!--@include scroll-top-->
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "beautician-training-academy",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Sorrel Academy of Beauty - static site, Tailwind CSS v4 + vanilla JS",
+  "type": "module",
+  "scripts": {
+    "build:css": "tailwindcss -i src/css/main.css -o public/assets/css/styles.css --minify",
+    "build:pages": "node scripts/build-pages.mjs",
+    "build": "npm run build:css && npm run build:pages",
+    "dev": "node scripts/dev.mjs",
+    "serve": "node scripts/serve.mjs"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.5",
+    "tailwindcss": "^4.3.5"
+  }
+}

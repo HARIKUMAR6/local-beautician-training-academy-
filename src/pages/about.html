@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <!--@include head-->
+  <title>About | {{site.fullName}}</title>
+  <meta name="description" content="How {{site.fullName}} teaches: a working studio, a four-step method, small groups and trainers at the chair.">
+</head>
+<body data-page="about">
+  <!--@include header-->
+
+  <main id="main" tabindex="-1" class="page-about">
+
+    <!-- 1 · Cover story: full-frame photograph with a notched copy panel (inner-page hero height) -->
+    <section class="inner-hero ab-hero" aria-labelledby="ab-title">
+      <div class="container-wide ab-hero__frame">
+        <div class="media ab-hero__media">{{img:ab-hero|eager|sizes=(min-width:1536px) 1440px, 100vw}}</div>
+        <span class="cap ab-hero__cap">Backstage · Eye detail</span>
+        <div class="ab-hero__panel rtl-center">
+          <p class="eyebrow"><span class="chip" aria-hidden="true"></span>About Sorrel</p>
+          <h1 id="ab-title" class="ab-hero__title">A working studio that teaches the <em>craft.</em></h1>
+          <p class="lede">We train makeup, skin, hair and nail artists the way the trade works: at the chair, on real faces.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="{{root}}courses.html">Explore courses {{icon:arrow-right icon-dir}}</a>
+            <a class="btn btn-outline" href="{{root}}contact.html">Visit the studio</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 · Identity and philosophy: stacked prints beside a pull statement and three beliefs -->
+    <section class="hs ab-id" aria-labelledby="ab-id-title">
+      <div class="container-x ab-id__grid">
+        <div class="ab-id__prints">
+          <figure class="ab-id__tall"><div class="media">{{img:ab-craft-portrait|sizes=(min-width:1024px) 34vw, 70vw}}</div></figure>
+          <figure class="ab-id__small"><div class="media">{{img:ab-craft-detail|sizes=(min-width:1024px) 22vw, 50vw}}</div></figure>
+        </div>
+        <div class="ab-id__copy rtl-center">
+          <p class="eyebrow"><span class="chip" aria-hidden="true"></span>02 · Who we are</p>
+          <h2 id="ab-id-title" class="ab-id__quote">We don&rsquo;t teach looks. We teach the <em>hands</em> that make them.</h2>
+          <p class="lede">Sorrel is a beauty school built like a studio. Trends change; technique lasts.</p>
+          <ol class="beliefs">
+            <li><span class="beliefs__n" aria-hidden="true">i</span><b>Technique first</b><span>Skin prep, colour and structure before style.</span></li>
+            <li><span class="beliefs__n" aria-hidden="true">ii</span><b>Hands on, every week</b><span>Practice fills most of the timetable.</span></li>
+            <li><span class="beliefs__n" aria-hidden="true">iii</span><b>Honest feedback</b><span>Clear notes on every piece of work.</span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 · Teaching method: four photo frames set as a rising staircase -->
+    <section class="hs hs--alt" aria-labelledby="ab-method-title">
+      <div class="container-x">
+        <div class="sec-head ab-split-head rtl-center">
+          <div>
+            <p class="eyebrow"><span class="chip" aria-hidden="true"></span>03 · How we teach</p>
+            <h2 id="ab-method-title" class="sec-title">One method, four steps, every lesson.</h2>
+          </div>
+          <p class="lede">The same rhythm runs through every discipline, so progress is easy to see.</p>
+        </div>
+        <ol class="stairs">
+          <li class="stairs__step">
+            <figure class="media stairs__img">{{img:ab-method-demo|sizes=(min-width:1024px) 26vw, (min-width:480px) 46vw, 92vw}}</figure>
+            <div class="stairs__txt rtl-center"><span class="folio">Step 01</span><h3>Watch</h3><p>A trainer demonstrates live, step by step.</p></div>
+          </li>
+          <li class="stairs__step">
+            <figure class="media stairs__img">{{img:ab-method-practise|sizes=(min-width:1024px) 26vw, (min-width:480px) 46vw, 92vw}}</figure>
+            <div class="stairs__txt rtl-center"><span class="folio">Step 02</span><h3>Practise</h3><p>You repeat it on a model at your own station.</p></div>
+          </li>
+          <li class="stairs__step">
+            <figure class="media stairs__img">{{img:ab-method-check|sizes=(min-width:1024px) 26vw, (min-width:480px) 46vw, 92vw}}</figure>
+            <div class="stairs__txt rtl-center"><span class="folio">Step 03</span><h3>Check</h3><p>Your trainer reviews the detail with you.</p></div>
+          </li>
+          <li class="stairs__step">
+            <figure class="media stairs__img">{{img:ab-method-finish|sizes=(min-width:1024px) 26vw, (min-width:480px) 46vw, 92vw}}</figure>
+            <div class="stairs__txt rtl-center"><span class="folio">Step 04</span><h3>Finish</h3><p>The finished look goes into your portfolio.</p></div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 4 · Learning environment: four rooms as an asymmetric floor plan on the brand band -->
+    <section class="hs hs--brand ab-rooms" aria-labelledby="ab-rooms-title">
+      <div class="container-x">
+        <div class="sec-head ab-split-head rtl-center">
+          <div>
+            <p class="eyebrow"><span class="chip" aria-hidden="true"></span>04 · The studio</p>
+            <h2 id="ab-rooms-title" class="sec-title">Four rooms, one studio floor.</h2>
+          </div>
+          <p class="lede">Each discipline has its own room, set up like a professional workplace.</p>
+        </div>
+        <div class="plan">
+          <figure class="plan__room plan__room--a">
+            <div class="media">{{img:ab-room-makeup|sizes=(min-width:1024px) 50vw, 95vw}}</div>
+            <figcaption><span class="folio">Room A</span><b>Makeup room</b><span>Bulb-lit mirror stations.</span></figcaption>
+          </figure>
+          <figure class="plan__room plan__room--b">
+            <div class="media">{{img:ab-room-hair|sizes=(min-width:1024px) 24vw, 46vw}}</div>
+            <figcaption><span class="folio">Room B</span><b>Hair studio</b><span>Styling chairs and wash area.</span></figcaption>
+          </figure>
+          <figure class="plan__room plan__room--c">
+            <div class="media">{{img:ab-room-skin|sizes=(min-width:1024px) 24vw, 46vw}}</div>
+            <figcaption><span class="folio">Room C</span><b>Skin lab</b><span>Treatment beds and tools.</span></figcaption>
+          </figure>
+          <figure class="plan__room plan__room--d">
+            <div class="media">{{img:ab-room-nails|sizes=(min-width:1024px) 24vw, 95vw}}</div>
+            <figcaption><span class="folio">Room D</span><b>Nail bench</b><span>Ventilated, well-lit benches.</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 · Mentors: mentoring principles beside two frames of different heights -->
+    <section class="hs ab-mentor" aria-labelledby="ab-mentor-title">
+      <div class="container-x ab-mentor__grid">
+        <div class="ab-mentor__copy rtl-center">
+          <p class="eyebrow"><span class="chip" aria-hidden="true"></span>05 · Mentors</p>
+          <h2 id="ab-mentor-title" class="sec-title">Taught by artists who still work the chair.</h2>
+          <dl class="mentor-list">
+            <div><dt>Small groups</dt><dd>Your trainer sees every piece of work.</dd></div>
+            <div><dt>Feedback at the chair</dt><dd>Corrections happen while you work, not after.</dd></div>
+            <div><dt>One mentor per term</dt><dd>A named trainer follows your progress.</dd></div>
+          </dl>
+        </div>
+        <div class="ab-mentor__frames">
+          <figure class="ab-mentor__wide"><div class="media">{{img:ab-mentor-work|sizes=(min-width:1024px) 38vw, 92vw}}</div><figcaption class="note">Studio session · Base work</figcaption></figure>
+          <figure class="ab-mentor__tall"><div class="media">{{img:ab-mentor-close|sizes=(min-width:1024px) 18vw, 40vw}}</div><figcaption class="note">Mirror check</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 · Student journey and vision: five-stop route, then a wide photograph with a vision card -->
+    <section class="hs hs--alt ab-journey" aria-labelledby="ab-journey-title">
+      <div class="container-x">
+        <div class="sec-head rtl-center">
+          <p class="eyebrow"><span class="chip" aria-hidden="true"></span>06 · Your journey</p>
+          <h2 id="ab-journey-title" class="sec-title">From first visit to your own clients.</h2>
+        </div>
+        <ol class="route">
+          <li><span class="route__dot" aria-hidden="true"></span><b>Visit</b><span>See the studio and ask questions.</span></li>
+          <li><span class="route__dot" aria-hidden="true"></span><b>Foundations</b><span>Core skills in your discipline.</span></li>
+          <li><span class="route__dot" aria-hidden="true"></span><b>Studio practice</b><span>Real models, real timings.</span></li>
+          <li><span class="route__dot" aria-hidden="true"></span><b>Assessment</b><span>Practical work and portfolio.</span></li>
+          <li><span class="route__dot" aria-hidden="true"></span><b>Certified</b><span>Ready to work with clients.</span></li>
+        </ol>
+        <div class="vision">
+          <div class="media vision__img">{{img:ab-vision|sizes=(min-width:1280px) 1200px, 100vw}}</div>
+          <div class="vision__card rtl-center">
+            <p class="eyebrow"><span class="chip" aria-hidden="true"></span>Our vision</p>
+            <p class="vision__text">A beauty trade full of artists who were taught properly.</p>
+            <div class="btn-row">
+              <a class="btn btn-accent" href="{{root}}courses.html">Find your course {{icon:arrow-right icon-dir}}</a>
+              <a class="btn btn-outline vision__btn" href="{{root}}contact.html">Contact us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!--@include footer-->
+  <!--@include scroll-top-->
+</body>
+</html>

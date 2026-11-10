@@ -1,0 +1,167 @@
+/* Courses - "The Catalogue": 1 course index + staggered film strip, 2 discipline tiles, 3 sticky-rail catalogue of spec sheets,
+   4 a training-week timetable with overlapping photos, 5 progression lanes, 6 teal enquiry band. */
+@layer components {
+  /* ---------- 1 Hero (height = shared --inner-hero-h via .inner-hero) ---------- */
+  .cs-hero__grid { display: grid; grid-template-rows: minmax(0, 1fr) auto; gap: clamp(12px, 2.2svh, 22px); min-height: 0; }
+  .cs-hero__copy { grid-row: 2; display: grid; gap: clamp(10px, 1.6svh, 18px); justify-items: start; align-content: center; min-height: 0; }
+  .cs-hero__copy .eyebrow { margin: 0; }
+  .cs-hero__title { margin: 0; font-size: clamp(1.9rem, min(1rem + 3.6vw, 7.6svh), 4.5rem); line-height: 1.02; letter-spacing: -0.015em; max-width: 14ch; }
+  .cs-hero__title em { font-style: italic; color: var(--accent); }
+  .cs-hero .lede { font-size: clamp(1rem, 0.9rem + 0.45vw, 1.1875rem); }
+  .cs-stats { display: none; margin: 0; gap: 0 28px; grid-template-columns: repeat(3, auto); padding-block-start: 12px; border-block-start: 1px solid var(--line); }
+  .cs-stats dt { font-family: var(--font-mono); font-size: 0.6875rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+  .cs-stats dd { margin: 2px 0 0; font-family: var(--font-display); font-size: 1.375rem; }
+  .cs-strip { grid-row: 1; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; min-height: 0; }
+  .cs-strip__item { position: relative; margin: 0; min-height: 0; }
+  .cs-strip__item .media { height: 100%; border-radius: var(--r-md); }
+  .cs-strip__item--a { padding-block-end: 12%; }
+  .cs-strip__item--b { padding-block-start: 6%; padding-block-end: 6%; }
+  .cs-strip__item--c { padding-block-start: 12%; }
+  .cs-strip__item--a img { object-position: 60% 50%; }
+  .cs-strip__item .cap { inset-block-end: auto; inset-block-start: 10px; }
+  .cs-strip__item--a .cap { inset-block-start: 10px; }
+  @media (max-width: 47.99rem) {
+    .cs-hero .btn-row .btn-outline { display: none; }
+  }
+  @media (min-width: 64rem) {
+    .cs-hero__grid { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); grid-template-rows: 100%; column-gap: clamp(40px, 5vw, 80px); align-items: center; }
+    .cs-hero__copy { grid-row: 1; }
+    .cs-strip { grid-row: 1; height: 100%; gap: 14px; }
+    .cs-stats { display: grid; }
+  }
+  @media (min-width: 64rem) and (max-height: 720px) { .cs-stats { display: none; } }
+
+  /* ---------- 2 Discipline tiles ---------- */
+  .cs-disc { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .cs-disc li:last-child { grid-column: 1 / -1; }
+  .cs-tile { display: grid; grid-template-columns: auto 1fr; align-items: baseline; gap: 10px 10px; color: var(--fg); text-decoration: none; }
+  .cs-tile .media { grid-column: 1 / -1; aspect-ratio: 3 / 4; border-radius: var(--r-md) var(--r-md) 0 0; border-block-end: 4px solid var(--accent); }
+  .cs-disc li:last-child .cs-tile .media { aspect-ratio: 16 / 9; }
+  .cs-tile .media img { transition: transform 0.5s ease; }
+  .cs-tile:hover .media img { transform: scale(1.04); }
+  .cs-tile__n { color: var(--muted); }
+  .cs-tile b { font-family: var(--font-display); font-weight: 500; font-size: 1.5rem; line-height: 1.1; }
+  .cs-tile__meta { grid-column: 1 / -1; display: inline-flex; align-items: center; gap: 6px; font-size: 0.875rem; color: var(--muted); }
+  .cs-tile__meta .icon { width: 16px; height: 16px; transition: transform 0.2s; }
+  .cs-tile:hover .cs-tile__meta { color: var(--accent); }
+  @media (min-width: 48rem) { .cs-disc { grid-template-columns: repeat(3, minmax(0, 1fr)); } .cs-disc li:last-child { grid-column: auto; } .cs-disc li:last-child .cs-tile .media { aspect-ratio: 3 / 4; } }
+  @media (min-width: 64rem) { .cs-disc { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 20px; } }
+
+  /* ---------- 3 Catalogue ---------- */
+  .cs-note { margin: 0; font-size: 0.875rem; color: var(--muted); }
+  .cs-cat { display: grid; gap: 32px; }
+  .cs-rail { display: grid; gap: 20px; align-content: start; }
+  .cs-rail__list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 16px; border-block: 1px solid var(--line); padding-block: 10px; }
+  .cs-rail__list a { display: inline-flex; align-items: baseline; gap: 8px; min-height: 40px; align-items: center; color: var(--fg); text-decoration: none; font-weight: 500; }
+  .cs-rail__list a:hover { color: var(--accent); }
+  .cs-rail__list a[aria-current="true"] { color: var(--accent); }
+  .cs-rail__list .folio { color: var(--muted); }
+  .cs-filter { display: grid; gap: 12px; }
+  .cs-groups { display: grid; gap: 48px; min-width: 0; }
+  .cs-group { display: grid; gap: 0; }
+  .cs-group[hidden] { display: none; }
+  .cs-group__title { display: flex; align-items: baseline; gap: 12px; margin: 0; padding-block-end: 12px; border-block-end: 2px solid var(--fg); font-size: clamp(1.75rem, 1.2rem + 1.6vw, 2.5rem); line-height: 1.1; }
+  .cs-group__title .folio { color: var(--accent); font-size: 0.875rem; }
+  .cs-course { display: grid; gap: 12px; padding-block: 24px; border-block-end: 1px solid var(--line); }
+  .cs-course[hidden] { display: none; }
+  .cs-course__head { display: grid; gap: 10px; }
+  .cs-course h4 { margin: 0; font-size: 1.375rem; line-height: 1.2; }
+  .cs-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .cs-course > p { margin: 0; color: var(--muted); max-width: 60ch; }
+  .cs-learn { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+  .cs-learn li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.9375rem; }
+  .cs-learn .icon { flex: none; width: 18px; height: 18px; margin-block-start: 3px; color: var(--success); }
+  .cs-entry { margin: 0; display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; font-size: 0.875rem; color: var(--muted); }
+  .cs-entry .folio { color: var(--brass); }
+  @media (min-width: 48rem) {
+    .cs-course { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 32px; }
+    .cs-course__head, .cs-course > p { grid-column: 1; }
+    .cs-learn { grid-column: 2; grid-row: 1 / span 3; align-self: start; padding: 14px 16px; background: var(--surface-alt); border-radius: var(--r-md); }
+    .cs-entry { grid-column: 1; }
+  }
+  @media (min-width: 64rem) {
+    .cs-cat { grid-template-columns: 240px minmax(0, 1fr); gap: 56px; align-items: start; }
+    .cs-rail { position: sticky; inset-block-start: calc(var(--header-h) + 24px); }
+    .cs-rail__list { display: grid; gap: 0; padding: 0; border: 0; border-block-start: 1px solid var(--fg); }
+    .cs-rail__list a { width: 100%; min-height: 48px; border-block-end: 1px solid var(--line); }
+  }
+
+  /* ---------- 4 Training week ---------- */
+  .cs-week__grid { display: grid; gap: 40px; align-items: center; }
+  .cs-week__photos { position: relative; padding-block-end: 18%; padding-inline-end: 12%; }
+  .cs-week__big { aspect-ratio: 4 / 3; }
+  .cs-week__small { position: absolute; inset-inline-end: 0; inset-block-end: 0; width: 46%; aspect-ratio: 4 / 3; border: 6px solid var(--surface-alt); border-radius: var(--r-md); }
+  .cs-week__copy { display: grid; gap: 14px; justify-items: start; min-width: 0; }
+  .cs-week__copy .eyebrow { margin: 0; }
+  .tt { width: 100%; display: grid; gap: 4px; margin-block-start: 8px; }
+  .tt__row { display: grid; grid-template-columns: 4.5rem repeat(5, minmax(0, 1fr)); gap: 4px; }
+  .tt__head span { font-family: var(--font-mono); font-size: 0.6875rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); text-align: center; }
+  .tt__label { font-family: var(--font-mono); font-size: 0.6875rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); align-self: center; }
+  .tt__c { display: grid; place-items: center; min-height: 44px; padding: 4px; border-radius: var(--r-sm); font-size: 0.75rem; font-weight: 600; text-align: center; overflow-wrap: anywhere; }
+  .tt--practice { background: var(--primary); color: var(--primary-fg); }
+  .tt--demo { background: var(--accent); color: var(--accent-fg); }
+  .tt--theory { background: var(--surface-raised); color: var(--fg); box-shadow: inset 0 0 0 1px var(--line-input); }
+  .tt--review { background: var(--brass); color: var(--bg); }
+  .tt__legend { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 0.875rem; color: var(--muted); }
+  .tt__legend li { display: inline-flex; align-items: center; gap: 8px; }
+  .tt__sw { width: 14px; height: 14px; border-radius: 3px; }
+  @media (max-width: 29.99rem) { .tt__row { grid-template-columns: 3.4rem repeat(5, minmax(0, 1fr)); gap: 3px; } .tt__c { font-size: 0.625rem; min-height: 40px; padding: 2px; } }
+  @media (min-width: 64rem) { .cs-week__grid { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 72px; } }
+
+  /* ---------- 5 Progression lanes ---------- */
+  .lanes { display: grid; gap: 14px; }
+  .lanes__head { display: none; }
+  .lane { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+  .lane__name { font-family: var(--font-display); font-size: 1.375rem; font-weight: 500; padding-block: 8px 2px; border-block-start: 1px solid var(--fg); }
+  .node { position: relative; display: grid; gap: 2px; padding: 12px 14px; border: 1px solid var(--line-input); border-radius: var(--r-md); background: var(--surface-raised); }
+  .node b { font-weight: 600; font-size: 0.9375rem; line-height: 1.3; }
+  .node span { font-family: var(--font-mono); font-size: 0.6875rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+  .node--sp { border-color: var(--accent); }
+  .node--empty { display: none; }
+  @media (min-width: 64rem) {
+    .lanes__head { display: grid; grid-template-columns: 7rem repeat(3, minmax(0, 1fr)); gap: 40px; font-family: var(--font-mono); font-size: 0.6875rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+    .lane { grid-template-columns: 7rem repeat(3, minmax(0, 1fr)); gap: 40px; align-items: center; }
+    .lane__name { border: 0; padding: 0; }
+    .node--empty { display: block; visibility: hidden; }
+    .node:not(.node--empty) + .node:not(.node--empty)::before {
+      content: "";
+      position: absolute;
+      inset-inline-end: calc(100% + 6px);
+      inset-block-start: 50%;
+      width: 28px;
+      height: 2px;
+      background: var(--line-input);
+    }
+    .node:not(.node--empty) + .node--empty + .node:not(.node--empty)::before {
+      content: "";
+      position: absolute;
+      inset-inline-end: calc(100% + 6px);
+      inset-block-start: 50%;
+      width: calc(100% + 68px);
+      height: 2px;
+      background: repeating-linear-gradient(90deg, var(--line-input) 0 6px, transparent 6px 12px);
+    }
+  }
+  .cs-facts { display: grid; gap: 0; margin: 40px 0 0; border-block-start: 1px solid var(--line); }
+  .cs-facts div { display: grid; grid-template-columns: 7rem 1fr; gap: 16px; padding-block: 12px; border-block-end: 1px solid var(--line); }
+  .cs-facts dt { font-family: var(--font-mono); font-size: 0.6875rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); padding-block-start: 3px; }
+  .cs-facts dd { margin: 0; }
+  @media (min-width: 48rem) { .cs-facts { grid-template-columns: repeat(3, 1fr); column-gap: 32px; } }
+
+  /* ---------- 6 Enquiry band ---------- */
+  .cs-cta__grid { display: grid; gap: 0; align-items: center; }
+  .cs-cta__copy { position: relative; z-index: 1; display: grid; gap: 16px; justify-items: start; padding: clamp(28px, 5vw, 56px); border-radius: var(--r-lg); }
+  .cs-cta__copy .eyebrow { margin: 0; }
+  .cs-cta .lede { color: var(--on-brand-muted); }
+  .cs-cta__fig { margin: 0; padding-inline: 16px; margin-block-start: -24px; }
+  .cs-cta__fig .media { aspect-ratio: 3 / 2; border-radius: var(--r-lg); }
+  .cs-cta__fig .note { padding-inline-start: 4px; }
+  @media (min-width: 64rem) {
+    .cs-cta__grid { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); }
+    .cs-cta__copy { grid-column: 1; grid-row: 1; margin-inline-end: -96px; }
+    .cs-cta__fig { grid-column: 2; grid-row: 1; padding: 0; margin: 0; }
+    .cs-cta__fig .media { aspect-ratio: 4 / 3; }
+  }
+
+  [dir="rtl"] .page-courses .rtl-center { justify-items: center; }
+}

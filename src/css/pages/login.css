@@ -1,0 +1,111 @@
+/* Student login portal - its own focused layout (no public header/footer).
+   >= 1024: split screen, teal brand panel (sticky) + sign-in column.  < 1024: compact teal brand band on top, form below. */
+@layer components {
+  .portal-body { min-height: 100svh; }
+  .lg { display: grid; min-height: 100svh; }
+
+  /* ---------- brand panel (fixed brand teal in both themes, like the site's teal bands) ---------- */
+  .lg-panel {
+    --band: #12403b; --on-brand: #f6f1ea; --on-brand-muted: #b9cbc7; --on-brand-accent: #d9b466; --on-brand-dot: #e8957a;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: center;
+    gap: 8px 20px;
+    padding: 16px var(--gutter);
+    background: var(--band);
+    color: var(--on-brand);
+  }
+  .lg-panel .brand, .lg-panel .brand__logo { color: var(--on-brand); }
+  .lg-panel .logo-tag { fill: var(--on-brand-muted); }
+  .lg-panel .logo-accent { fill: var(--on-brand-dot); }
+  .lg-panel__art, .lg-panel__list, .lg-panel__kicker { display: none; }
+  .lg-panel__copy { justify-self: end; }
+  .lg-panel__title { margin: 0; font-family: var(--font-display); font-size: 1rem; line-height: 1.3; color: var(--on-brand-muted); text-align: end; }
+  @media (max-width: 29.99rem) { .lg-panel__copy { display: none; } }
+
+  @media (min-width: 64rem) {
+    .lg { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); }
+    .lg-panel {
+      position: sticky;
+      inset-block-start: 0;
+      height: 100svh;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto minmax(0, 1fr) auto;
+      align-items: stretch;
+      gap: clamp(20px, 3.5svh, 36px);
+      padding: clamp(24px, 4svh, 44px) clamp(28px, 3.5vw, 56px);
+    }
+    .lg-panel__art { display: block; margin: 0; min-height: 0; }
+    .lg-panel__img { height: 100%; border-radius: 999px 999px var(--r-lg) var(--r-lg); background: rgb(255 255 255 / 0.08); }
+    .lg-panel__img img { filter: grayscale(1) contrast(1.05); object-position: 35% 50%; }
+    .lg-panel__img::after { content: ""; position: absolute; inset: 0; background: rgb(18 64 59 / 0.28); mix-blend-mode: multiply; pointer-events: none; }
+    .lg-panel__copy { justify-self: stretch; display: grid; gap: 12px; }
+    .lg-panel__kicker { display: block; margin: 0; font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--on-brand-accent); }
+    .lg-panel__title { font-size: clamp(1.75rem, 1rem + 1.6vw, 2.5rem); line-height: 1.1; color: var(--on-brand); text-align: start; max-width: 16ch; }
+    .lg-panel__list { display: grid; grid-template-columns: repeat(2, minmax(0, max-content)); gap: 10px 28px; list-style: none; margin: 6px 0 0; padding: 0; }
+    .lg-panel__list li { display: flex; align-items: center; gap: 10px; font-size: 0.9375rem; color: var(--on-brand-muted); }
+    .lg-panel__list .icon { color: var(--on-brand-dot); }
+  }
+  @media (min-width: 64rem) and (max-height: 640px) { .lg-panel__list { display: none; } }
+
+  /* ---------- sign-in column ---------- */
+  .lg-main { display: grid; grid-template-rows: auto 1fr auto; gap: 24px; padding: 16px var(--gutter) 24px; min-width: 0; }
+  .lg-main:focus { outline: none; }
+  .lg-tools { display: flex; justify-content: flex-end; align-items: center; }
+  .lg-tools__ctl { display: flex; align-items: center; gap: 10px; }
+  .lg-box { width: 100%; max-width: 440px; margin-inline: auto; align-self: center; display: grid; gap: 22px; }
+  .lg-head { display: grid; gap: 10px; justify-items: start; }
+  .lg-head .eyebrow { margin: 0; }
+  .lg-title { margin: 0; font-size: clamp(2.125rem, 1.6rem + 2vw, 3rem); line-height: 1.05; letter-spacing: -0.01em; }
+  .lg-sub { margin: 0; color: var(--muted); }
+
+  .lg-social { display: grid; gap: 10px; }
+  @media (min-width: 26rem) { .lg-social { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .lg-sso {
+    display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+    height: 48px; padding-inline: 14px;
+    background: var(--surface-raised); color: var(--fg);
+    border: 1.5px solid var(--line-input); border-radius: var(--r-sm);
+    font: inherit; font-size: 0.9375rem; font-weight: 600; white-space: nowrap; cursor: pointer;
+    transition: border-color 0.18s, background-color 0.18s;
+  }
+  .lg-sso:hover { border-color: var(--fg); background: var(--surface-alt); }
+  .lg-sso__logo { width: 20px; height: 20px; flex: none; }
+
+  .lg-or { display: flex; align-items: center; gap: 14px; margin: 0; font-size: 0.8125rem; color: var(--muted); }
+  .lg-or::before, .lg-or::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+
+  .lg-form { display: grid; gap: 18px; }
+  .lg-label-row { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  .lg-pass { position: relative; }
+  .lg-pass .input { padding-inline-end: 56px; }
+  .lg-pass__toggle {
+    position: absolute; inset-block-start: 4px; inset-inline-end: 4px;
+    display: grid; place-items: center; width: 44px; height: 44px;
+    border: 0; border-radius: var(--r-sm); background: transparent; color: var(--muted); cursor: pointer;
+  }
+  .lg-pass__toggle:hover { color: var(--fg); background: var(--surface-alt); }
+  .lg-pass__toggle[aria-pressed="false"] .lg-eye-off,
+  .lg-pass__toggle[aria-pressed="true"] .lg-eye { display: none; }
+
+  .lg-link {
+    padding: 2px 0; border: 0; background: none; cursor: pointer;
+    font: inherit; font-size: 0.875rem; font-weight: 600; color: var(--fg);
+    text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px;
+  }
+  .lg-link:hover { color: var(--accent); text-decoration-thickness: 2px; }
+  .lg-note { display: flex; gap: 10px; align-items: flex-start; margin: 0; font-size: 0.8125rem; line-height: 1.5; color: var(--muted); }
+  .lg-note .icon { color: var(--brass); margin-block-start: 1px; }
+  .lg-create { margin: 0; text-align: center; font-size: 0.9375rem; color: var(--muted); }
+  .lg-status { font-size: 0.875rem; line-height: 1.5; border-radius: var(--r-sm); }
+  .lg-status.is-info:not(:empty) { padding: 12px 14px; background: var(--surface-alt); border-inline-start: 3px solid var(--brass); color: var(--fg); }
+  .lg-foot { margin: 0; text-align: center; font-size: 0.8125rem; color: var(--muted); }
+
+  /* RTL: headings centre (base rule); the head block centres with them, form rows stay mirrored */
+  [dir="rtl"] .lg-head { justify-items: center; }
+  [dir="rtl"] .lg-head :where(p) { text-align: center; }
+}
+
+@layer components {
+  [dir="rtl"] :where(.lg-link, .lg-sso span, .field-label) { unicode-bidi: plaintext; }
+}

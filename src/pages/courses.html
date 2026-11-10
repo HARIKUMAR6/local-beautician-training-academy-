@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <!--@include head-->
+  <title>Courses | {{site.fullName}}</title>
+  <meta name="description" content="Eight practical courses across makeup, skin, hair, nails and bridal: levels, lengths, formats and what you will learn at {{site.fullName}}.">
+  <script type="module" src="{{root}}assets/js/pages/courses.js"></script>
+</head>
+<body data-page="courses">
+  <!--@include header-->
+
+  <main id="main" tabindex="-1" class="page-courses">
+
+    <!-- 1 · Hero: course index beside a staggered three-print film strip (inner-page hero height) -->
+    <section class="inner-hero cs-hero" aria-labelledby="cs-title">
+      <div class="container-x cs-hero__grid">
+        <div class="cs-hero__copy rtl-center">
+          <p class="eyebrow"><span class="chip" aria-hidden="true"></span>Courses</p>
+          <h1 id="cs-title" class="cs-hero__title">Find the course that fits your <em>craft.</em></h1>
+          <p class="lede">Practical courses in makeup, skin, hair, nails and bridal, taught at the chair.</p>
+          <dl class="cs-stats">
+            <div><dt>Courses</dt><dd>8</dd></div>
+            <div><dt>Length</dt><dd>4–12 wks</dd></div>
+            <div><dt>Levels</dt><dd>2</dd></div>
+          </dl>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="#catalogue">Browse the catalogue {{icon:arrow-right icon-dir}}</a>
+            <a class="btn btn-outline" href="{{root}}contact.html#enquiry">Ask admissions</a>
+          </div>
+        </div>
+        <div class="cs-strip" aria-hidden="false">
+          <figure class="cs-strip__item cs-strip__item--a"><div class="media">{{img:cs-hero-a|eager|sizes=(min-width:1024px) 16vw, 32vw}}</div><figcaption class="cap">Makeup</figcaption></figure>
+          <figure class="cs-strip__item cs-strip__item--b"><div class="media">{{img:cs-hero-b|eager|sizes=(min-width:1024px) 16vw, 32vw}}</div><figcaption class="cap">Tools</figcaption></figure>
+          <figure class="cs-strip__item cs-strip__item--c"><div class="media">{{img:cs-hero-c|eager|sizes=(min-width:1024px) 16vw, 32vw}}</div><figcaption class="cap">Hair</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 · Disciplines: five tall portrait tiles that jump to their catalogue group -->
+    <section class="hs hs--alt" aria-labelledby="cs-disc-title">
+      <div class="container-x">
+        <div class="sec-head ab-split-head rtl-center">
+          <div>
+            <p class="eyebrow"><span class="chip" aria-hidden="true"></span>02 · Disciplines</p>
+            <h2 id="cs-disc-title" class="sec-title">Five disciplines to choose from.</h2>
+          </div>
+          <p class="lede">Pick a discipline to jump straight to its courses.</p>
+        </div>
+        <ul class="cs-disc">
+          <li><a class="cs-tile" href="#makeup"><div class="media">{{img:cs-disc-makeup|sizes=(min-width:1024px) 230px, 46vw}}</div><span class="cs-tile__n folio">01</span><b>Makeup</b><span class="cs-tile__meta">2 courses {{icon:arrow-right icon-dir}}</span></a></li>
+          <li><a class="cs-tile" href="#skin"><div class="media">{{img:cs-disc-skin|sizes=(min-width:1024px) 230px, 46vw}}</div><span class="cs-tile__n folio">02</span><b>Skin</b><span class="cs-tile__meta">2 courses {{icon:arrow-right icon-dir}}</span></a></li>
+          <li><a class="cs-tile" href="#hair"><div class="media">{{img:cs-disc-hair|sizes=(min-width:1024px) 230px, 46vw}}</div><span class="cs-tile__n folio">03</span><b>Hair</b><span class="cs-tile__meta">1 course {{icon:arrow-right icon-dir}}</span></a></li>
+          <li><a class="cs-tile" href="#nails"><div class="media">{{img:cs-disc-nails|sizes=(min-width:1024px) 230px, 46vw}}</div><span class="cs-tile__n folio">04</span><b>Nails</b><span class="cs-tile__meta">2 courses {{icon:arrow-right icon-dir}}</span></a></li>
+          <li><a class="cs-tile" href="#bridal"><div class="media">{{img:cs-disc-bridal|sizes=(min-width:1024px) 230px, 92vw}}</div><span class="cs-tile__n folio">05</span><b>Bridal</b><span class="cs-tile__meta">1 course {{icon:arrow-right icon-dir}}</span></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 3 · Catalogue: sticky discipline rail + level filter beside ruled course spec sheets -->
+    <section id="catalogue" class="hs" aria-labelledby="cs-cat-title">
+      <div class="container-x">
+        <div class="sec-head rtl-center">
+          <p class="eyebrow"><span class="chip" aria-hidden="true"></span>03 · Catalogue</p>
+          <h2 id="cs-cat-title" class="sec-title">Every course, what it teaches.</h2>
+          <p class="cs-note">Course details are provisional and will be confirmed in each course handbook.</p>
+        </div>
+        <div class="cs-cat">
+          <aside class="cs-rail" aria-label="Catalogue controls">
+            <nav aria-label="Disciplines in the catalogue">
+              <ol class="cs-rail__list">
+                <li><a href="#makeup"><span class="folio">01</span>Makeup</a></li>
+                <li><a href="#skin"><span class="folio">02</span>Skin</a></li>
+                <li><a href="#hair"><span class="folio">03</span>Hair</a></li>
+                <li><a href="#nails"><span class="folio">04</span>Nails</a></li>
+                <li><a href="#bridal"><span class="folio">05</span>Bridal</a></li>
+              </ol>
+            </nav>
+            <form class="cs-filter" data-level-form>
+              <fieldset class="chips">
+                <legend>Level</legend>
+                <label><input type="radio" name="level" value="any" checked><span>All</span></label>
+                <label><input type="radio" name="level" value="foundation"><span>Foundation</span></label>
+                <label><input type="radio" name="level" value="advanced"><span>Advanced</span></label>
+              </fieldset>
+              <p class="finder__count" role="status" aria-live="polite" data-level-count>8 courses</p>
+            </form>
+          </aside>
+
+          <div class="cs-groups">
+            <section class="cs-group" id="makeup" aria-labelledby="g-makeup">
+              <h3 id="g-makeup" class="cs-group__title"><span class="folio">01</span>Makeup</h3>
+              <article class="cs-course" data-level="foundation">
+                <header class="cs-course__head"><h4>Professional Makeup Artistry</h4><div class="cs-tags"><span class="tag">Foundation</span><span class="tag">12 weeks</span><span class="tag">Full-time</span></div></header>
+                <p>A complete makeup skill set, from skin prep to a camera-ready finish.</p>
+                <ul class="cs-learn" aria-label="You will learn"><li>{{icon:check}}Skin prep and colour matching</li><li>{{icon:check}}Day, evening and photographic looks</li><li>{{icon:check}}Hygiene and kit care</li></ul>
+                <p class="cs-entry"><span class="folio">Entry</span>No previous training needed</p>
+              </article>
+              <article class="cs-course" data-level="advanced">
+                <header class="cs-course__head"><h4>Editorial and Photographic Makeup</h4><div class="cs-tags"><span class="tag">Advanced</span><span class="tag">8 weeks</span><span class="tag">Part-time</span></div></header>
+                <p>Looks designed for camera, catwalk and print.</p>
+                <ul class="cs-learn" aria-label="You will learn"><li>{{icon:check}}Base that works under studio light</li><li>{{icon:check}}Editorial colour and texture</li><li>{{icon:check}}Working to a creative brief</li></ul>
+                <p class="cs-entry"><span class="folio">Entry</span>Professional Makeup Artistry or equivalent</p>
+              </article>
+            </section>
+
+            <section class="cs-group" id="skin" aria-labelledby="g-skin">
+              <h3 id="g-skin" class="cs-group__title"><span class="folio">02</span>Skin</h3>
+              <article class="cs-course" data-level="foundation">
+                <header class="cs-course__head"><h4>Skin Therapy Essentials</h4><div class="cs-tags"><span class="tag">Foundation</span><span class="tag">10 weeks</span><span class="tag">Full-time</span></div></header>
+                <p>Analyse skin and deliver professional facials.</p>
+                <ul class="cs-learn" aria-label="You will learn"><li>{{icon:check}}Skin analysis and consultation</li><li>{{icon:check}}Cleansing, exfoliation and masks</li><li>{{icon:check}}Aftercare advice</li></ul>
+                <p class="cs-entry"><span class="folio">Entry</span>No previous training needed</p>
+              </article>
+              <article class="cs-course" data-level="advanced">
+                <header class="cs-course__head"><h4>Advanced Facial Treatments</h4><div class="cs-tags"><span class="tag">Advanced</span><span class="tag">6 weeks</span><span class="tag">Part-time</span></div></header>
+                <p>Targeted treatments planned around each client.</p>
+                <ul class="cs-learn" aria-label="You will learn"><li>{{icon:check}}Treatment planning</li><li>{{icon:check}}Exfoliation techniques covered in class</li><li>{{icon:check}}Contraindication checks</li></ul>
+                <p class="cs-entry"><span class="folio">Entry</span>Skin Therapy Essentials or equivalent</p>
+              </article>
+            </section>
+
+            <section class="cs-group" id="hair" aria-labelledby="g-hair">
+              <h3 id="g-hair" class="cs-group__title"><span class="folio">03</span>Hair</h3>
+              <article class="cs-course" data-level="foundation">
+                <header class="cs-course__head"><h4>Hair Styling Foundations</h4><div class="cs-tags"><span class="tag">Foundation</span><span class="tag">12 weeks</span><span class="tag">Full-time</span></div></header>
+                <p>Blow-drying, braiding and finishing for everyday and occasion styles.</p>
+                <ul class="cs-learn" aria-label="You will learn"><li>{{icon:check}}Sectioning and blow-dry</li><li>{{icon:check}}Braids and cornrows</li><li>{{icon:check}}Up-styles and finishing</li></ul>
+                <p class="cs-entry"><span class="folio">Entry</span>No previous training needed</p>
+              </article>
+            </section>
+
+            <section class="cs-group" id="nails" aria-labelledby="g-nails">
+              <h3 id="g-nails" class="cs-group__title"><span class="folio">04</span>Nails</h3>
+              <article class="cs-course" data-level="foundation">
+                <header class="cs-course__head"><h4>Nail Technology Certificate</h4><div class="cs-tags"><span class="tag">Foundation</span><span class="tag">8 weeks</span><span class="tag">Full-time</span></div></header>
+                <p>Natural nail care, extensions and a lasting polish.</p>
+                <ul class="cs-learn" aria-label="You will learn"><li>{{icon:check}}Manicure and pedicure</li><li>{{icon:check}}Gel application and safe removal</li><li>{{icon:check}}Hygiene and tool care</li></ul>
+                <p class="cs-entry"><span class="folio">Entry</span>No previous training needed</p>
+              </article>
+              <article class="cs-course" data-level="advanced">
+                <header class="cs-course__head"><h4>Nail Art Studio</h4><div class="cs-tags"><span class="tag">Advanced</span><span class="tag">4 weeks</span><span class="tag">Part-time</span></div></header>
+                <p>Detailed hand-painted and embellished nail art.</p>
+                <ul class="cs-learn" aria-label="You will learn"><li>{{icon:check}}Freehand design</li><li>{{icon:check}}Stamping and embellishment</li><li>{{icon:check}}Client-ready sets</li></ul>
+                <p class="cs-entry"><span class="folio">Entry</span>Nail Technology Certificate or equivalent</p>
+              </article>
+            </section>
+
+            <section class="cs-group" id="bridal" aria-labelledby="g-bridal">
+              <h3 id="g-bridal" class="cs-group__title"><span class="folio">05</span>Bridal</h3>
+              <article class="cs-course" data-level="advanced">
+                <header class="cs-course__head"><h4>Bridal Artistry Intensive</h4><div class="cs-tags"><span class="tag">Advanced</span><span class="tag">6 weeks</span><span class="tag">Part-time</span></div></header>
+                <p>Makeup and hair for the wedding day, from trial to final look.</p>
+                <ul class="cs-learn" aria-label="You will learn"><li>{{icon:check}}Bridal consultation and trials</li><li>{{icon:check}}Long-wear makeup</li><li>{{icon:check}}Bridal up-styles</li></ul>
+                <p class="cs-entry"><span class="folio">Entry</span>A Makeup or Hair foundation course</p>
+              </article>
+            </section>
+            <p class="finder__empty" data-level-empty hidden>No courses at this level.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 · Practice: a typical training week as a timetable, beside two overlapping photos -->
+    <section class="hs hs--alt cs-week" aria-labelledby="cs-week-title">
+      <div class="container-x cs-week__grid">
+        <div class="cs-week__photos">
+          <figure class="media cs-week__big">{{img:cs-practice-demo|sizes=(min-width:1024px) 36vw, 90vw}}</figure>
+          <figure class="media cs-week__small">{{img:cs-practice-detail|sizes=(min-width:1024px) 20vw, 50vw}}</figure>
+        </div>
+        <div class="cs-week__copy rtl-center">
+          <p class="eyebrow"><span class="chip" aria-hidden="true"></span>04 · Practice</p>
+          <h2 id="cs-week-title" class="sec-title">A typical training week.</h2>
+          <p class="lede">Most of every day is spent working on models, with a trainer at the chair.</p>
+          <div class="tt" role="table" aria-label="Typical full-time week (provisional)">
+            <div class="tt__row tt__head" role="row"><span role="columnheader"><span class="sr-only">Session</span></span><span role="columnheader">Mon</span><span role="columnheader">Tue</span><span role="columnheader">Wed</span><span role="columnheader">Thu</span><span role="columnheader">Fri</span></div>
+            <div class="tt__row" role="row"><span class="tt__label" role="rowheader">Morning</span><span class="tt__c tt--demo" role="cell">Demo</span><span class="tt__c tt--practice" role="cell">Practice</span><span class="tt__c tt--demo" role="cell">Demo</span><span class="tt__c tt--practice" role="cell">Practice</span><span class="tt__c tt--practice" role="cell">Practice</span></div>
+            <div class="tt__row" role="row"><span class="tt__label" role="rowheader">Midday</span><span class="tt__c tt--practice" role="cell">Practice</span><span class="tt__c tt--practice" role="cell">Practice</span><span class="tt__c tt--practice" role="cell">Practice</span><span class="tt__c tt--practice" role="cell">Practice</span><span class="tt__c tt--practice" role="cell">Practice</span></div>
+            <div class="tt__row" role="row"><span class="tt__label" role="rowheader">Late</span><span class="tt__c tt--practice" role="cell">Practice</span><span class="tt__c tt--theory" role="cell">Theory</span><span class="tt__c tt--practice" role="cell">Practice</span><span class="tt__c tt--theory" role="cell">Theory</span><span class="tt__c tt--review" role="cell">Review</span></div>
+          </div>
+          <ul class="tt__legend" aria-label="Key">
+            <li><span class="tt__sw tt--practice"></span>Practice on models</li>
+            <li><span class="tt__sw tt--demo"></span>Trainer demo</li>
+            <li><span class="tt__sw tt--theory"></span>Theory</li>
+            <li><span class="tt__sw tt--review"></span>Portfolio review</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 · Structure: progression lanes from foundation to advanced and specialist -->
+    <section class="hs" aria-labelledby="cs-path-title">
+      <div class="container-x">
+        <div class="sec-head ab-split-head rtl-center">
+          <div>
+            <p class="eyebrow"><span class="chip" aria-hidden="true"></span>05 · Structure</p>
+            <h2 id="cs-path-title" class="sec-title">How the courses connect.</h2>
+          </div>
+          <p class="lede">Start with a foundation course, then build on it.</p>
+        </div>
+        <div class="lanes">
+          <div class="lanes__head" aria-hidden="true"><span></span><span>Foundation</span><span>Advanced</span><span>Specialist</span></div>
+          <ol class="lane" aria-label="Makeup pathway"><li class="lane__name">Makeup</li><li class="node"><b>Professional Makeup Artistry</b><span>12 weeks</span></li><li class="node"><b>Editorial and Photographic</b><span>8 weeks</span></li><li class="node node--sp"><b>Bridal Artistry Intensive</b><span>6 weeks</span></li></ol>
+          <ol class="lane" aria-label="Skin pathway"><li class="lane__name">Skin</li><li class="node"><b>Skin Therapy Essentials</b><span>10 weeks</span></li><li class="node"><b>Advanced Facial Treatments</b><span>6 weeks</span></li><li class="node node--empty" aria-hidden="true"></li></ol>
+          <ol class="lane" aria-label="Hair pathway"><li class="lane__name">Hair</li><li class="node"><b>Hair Styling Foundations</b><span>12 weeks</span></li><li class="node node--empty" aria-hidden="true"></li><li class="node node--sp"><b>Bridal Artistry Intensive</b><span>6 weeks</span></li></ol>
+          <ol class="lane" aria-label="Nails pathway"><li class="lane__name">Nails</li><li class="node"><b>Nail Technology Certificate</b><span>8 weeks</span></li><li class="node"><b>Nail Art Studio</b><span>4 weeks</span></li><li class="node node--empty" aria-hidden="true"></li></ol>
+        </div>
+        <dl class="cs-facts">
+          <div><dt>Full-time</dt><dd>Weekdays, daytime</dd></div>
+          <div><dt>Part-time</dt><dd>Two days a week</dd></div>
+          <div><dt>Intakes</dt><dd>January, May and September</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- 6 · Enquiry: teal band with the photo framed inside it -->
+    <section class="hs hs--alt cs-cta" aria-labelledby="cs-cta-title">
+      <div class="container-x cs-cta__grid">
+        <div class="cs-cta__copy hs--brand rtl-center">
+          <p class="eyebrow"><span class="chip" aria-hidden="true"></span>06 · Next step</p>
+          <h2 id="cs-cta-title" class="sec-title">Not sure where to start?</h2>
+          <p class="lede">Tell us what you want to do and we will suggest a course and a start date.</p>
+          <div class="btn-row">
+            <a class="btn btn-accent" href="{{root}}contact.html#enquiry">Ask admissions {{icon:arrow-right icon-dir}}</a>
+            <a class="btn btn-link" href="{{root}}certification.html">How certification works {{icon:arrow-right icon-dir}}</a>
+          </div>
+        </div>
+        <figure class="cs-cta__fig"><div class="media">{{img:cs-cta|sizes=(min-width:1024px) 44vw, 92vw}}</div><figcaption class="note">The working kit</figcaption></figure>
+      </div>
+    </section>
+
+  </main>
+
+  <!--@include footer-->
+  <!--@include scroll-top-->
+</body>
+</html>

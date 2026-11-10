@@ -1,0 +1,123 @@
+{
+  "_fictional": "DEMONSTRATION DATA. The academy name, address, phone, email, hours and social handles below are FICTIONAL and are not verified business information. Phone uses a UK drama-reserved number range, email uses a reserved .example domain, the postcode is deliberately invalid, and social handles are display text only (no URLs) so they cannot point at a real account. Replace everything in this file with real details before launch.",
+  "name": "Sorrel",
+  "fullName": "Sorrel Academy of Beauty",
+  "tagline": "Academy of Beauty",
+  "intro": "Professional training in makeup, skin, hair and nail artistry. Learned at the bench, certified on the record.",
+  "contact": {
+    "address": "Unit 3, Larkspur Yard, 21 Quill Street, Aldermere ZZ1 0AA, United Kingdom",
+    "city": "Aldermere",
+    "country": "United Kingdom",
+    "phone": "+44 20 7946 0173",
+    "phoneHref": "tel:+442079460173",
+    "email": "admissions@sorrelacademy.example",
+    "hours": "Mon to Fri 9:00 to 18:00, Sat 10:00 to 16:00, Sun closed"
+  },
+  "social": [
+    {
+      "label": "Instagram",
+      "handle": "@sorrel.academy",
+      "url": ""
+    },
+    {
+      "label": "Facebook",
+      "handle": "Sorrel Academy of Beauty",
+      "url": ""
+    },
+    {
+      "label": "YouTube",
+      "handle": "@SorrelAcademy",
+      "url": ""
+    },
+    {
+      "label": "LinkedIn",
+      "handle": "Sorrel Academy of Beauty",
+      "url": ""
+    }
+  ],
+  "nav": [
+    {
+      "label": "Home",
+      "key": "home",
+      "children": [
+        {
+          "label": "Home 1",
+          "key": "home-1",
+          "href": "index.html"
+        },
+        {
+          "label": "Home 2",
+          "key": "home-2",
+          "href": "home-2.html"
+        }
+      ]
+    },
+    {
+      "label": "About",
+      "key": "about",
+      "href": "about.html"
+    },
+    {
+      "label": "Courses",
+      "key": "courses",
+      "href": "courses.html"
+    },
+    {
+      "label": "Certification",
+      "key": "certification",
+      "href": "certification.html"
+    },
+    {
+      "label": "Contact",
+      "key": "contact",
+      "href": "contact.html"
+    },
+    {
+      "label": "Dashboard",
+      "key": "dashboard",
+      "href": "dashboard.html"
+    }
+  ],
+  "actions": {
+    "login": {
+      "label": "Student Login",
+      "key": "login",
+      "href": "login.html"
+    },
+    "enquire": {
+      "label": "Enquire",
+      "key": "contact",
+      "href": "contact.html"
+    },
+    "dashboard": {
+      "label": "Student Dashboard",
+      "key": "dashboard",
+      "href": "dashboard.html"
+    }
+  },
+  "footerCourses": {
+    "_note": "PROVISIONAL categories from the Phase 1 plan; replace with the real course list.",
+    "items": [
+      {
+        "label": "Makeup Artistry",
+        "href": "courses.html#makeup"
+      },
+      {
+        "label": "Skin Care",
+        "href": "courses.html#skin"
+      },
+      {
+        "label": "Hair Styling",
+        "href": "courses.html#hair"
+      },
+      {
+        "label": "Nail Technology",
+        "href": "courses.html#nails"
+      },
+      {
+        "label": "Bridal Artistry",
+        "href": "courses.html#bridal"
+      }
+    ]
+  }
+}

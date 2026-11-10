@@ -1,0 +1,90 @@
+/* Buttons - Phase 1 §6. Fixed heights: sm 40 / md 48 / lg 56. Radius 4. */
+@layer components {
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 48px;
+    padding-inline: 24px;
+    border: 1.5px solid transparent;
+    border-radius: var(--r-sm);
+    font-family: var(--font-sans);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    line-height: 1;
+    white-space: nowrap;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.18s, color 0.18s, border-color 0.18s, transform 0.12s;
+  }
+  .btn:active { transform: translateY(1px); }
+  .btn:disabled, .btn[aria-disabled="true"] { opacity: 0.45; cursor: not-allowed; pointer-events: none; }
+  .btn-sm { height: 40px; padding-inline: 18px; }
+  .btn-lg { height: 56px; padding-inline: 32px; font-size: 1rem; }
+  .btn-block { width: 100%; }
+
+  .btn-primary { background: var(--primary); color: var(--primary-fg); }
+  .btn-primary:hover { background: var(--primary-hover); }
+  .btn-accent { background: var(--accent); color: var(--accent-fg); }
+  .btn-accent:hover { background: var(--accent-hover); }
+  /* Secondary */
+  .btn-outline { background: transparent; color: var(--fg); border-color: var(--fg); }
+  .btn-outline:hover { background: var(--fg); color: var(--bg); }
+
+  .btn-link {
+    height: auto;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    color: var(--fg);
+    background: none;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 6px;
+  }
+  .btn-link:hover { text-decoration-thickness: 2px; color: var(--accent); }
+
+  .icon-btn {
+    display: inline-grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border: 1.5px solid var(--line-input);
+    border-radius: 50%;
+    background: transparent;
+    color: var(--fg);
+    cursor: pointer;
+    transition: background-color 0.18s, border-color 0.18s;
+  }
+  .icon-btn:hover { background: var(--surface-alt); border-color: var(--fg); }
+  .icon-btn .icon { width: 20px; height: 20px; }
+
+  /* Direction toggle: text labels only. dir=ltr on the element keeps "LTR | RTL" order in both modes. */
+  .dir-toggle {
+    display: inline-flex;
+    height: 40px;
+    padding: 3px;
+    border: 1.5px solid var(--line-input);
+    border-radius: var(--r-sm);
+  }
+  .dir-toggle button {
+    min-width: 44px;
+    padding-inline: 10px;
+    border: 0;
+    border-radius: 2px;
+    background: transparent;
+    color: var(--fg);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+  }
+  .dir-toggle button:hover { background: var(--surface-alt); }
+  .dir-toggle button[aria-pressed="true"] { background: var(--primary); color: var(--primary-fg); }
+
+  /* Theme icon swap */
+  [data-theme="dark"] .theme-icon-moon { display: none; }
+  :root:not([data-theme="dark"]) .theme-icon-sun { display: none; }
+}

@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <!--@include head-->
+  <title>The Studio Tour | {{site.fullName}}</title>
+  <meta name="description" content="Choose a path, follow a day at the academy, browse the course matrix and see the kit. {{site.fullName}}.">
+  <script type="module" src="{{root}}assets/js/pages/home-2.js"></script>
+</head>
+<body data-page="home-2" class="page-h2">
+  <!--@include header-->
+
+  <main id="main" tabindex="-1">
+
+    <!-- 1 · Choose your path: five expanding studio panels -->
+    <section id="path" class="h2-hero" aria-labelledby="h2-title" data-section>
+      <div class="h2-hero__top container-wide rtl-center">
+        <div>
+          <p class="eyebrow"><span class="chip" aria-hidden="true"></span>The Studio Tour</p>
+          <h1 id="h2-title" class="h2-hero__title">Pick a path. Step into the studio.</h1>
+        </div>
+        <p class="lede">Open a panel to see the discipline, then find its courses.</p>
+      </div>
+      <div class="h2-hero__panels container-wide" data-panels>
+        <article class="pan is-open" data-pan="makeup">
+          <div class="media pan__media">{{img:h2-path-makeup|eager|sizes=(min-width:1024px) 60vw, 100vw}}</div>
+          <button type="button" class="pan__btn" id="pan-makeup-btn" aria-expanded="true" aria-controls="pan-makeup"><span class="pan__label"><span class="folio">01</span><b>Makeup</b></span></button>
+          <div class="pan__body" id="pan-makeup" role="region" aria-labelledby="pan-makeup-btn">
+            <p>Skin prep, colour theory and flawless finishes.</p>
+            <div class="tags"><span class="tag">12 weeks</span><span class="tag">Studio practice</span></div>
+            <button type="button" class="btn btn-primary btn-sm" data-find="makeup">Find makeup courses {{icon:arrow-right icon-dir}}</button>
+          </div>
+        </article>
+        <article class="pan" data-pan="skin">
+          <div class="media pan__media">{{img:h2-path-skin|sizes=(min-width:1024px) 60vw, 100vw}}</div>
+          <button type="button" class="pan__btn" id="pan-skin-btn" aria-expanded="false" aria-controls="pan-skin"><span class="pan__label"><span class="folio">02</span><b>Skin</b></span></button>
+          <div class="pan__body" id="pan-skin" role="region" aria-labelledby="pan-skin-btn" hidden>
+            <p>Skin analysis, facials and treatment planning.</p>
+            <div class="tags"><span class="tag">10 weeks</span><span class="tag">Skin lab</span></div>
+            <button type="button" class="btn btn-primary btn-sm" data-find="skin">Find skin courses {{icon:arrow-right icon-dir}}</button>
+          </div>
+        </article>
+        <article class="pan" data-pan="hair">
+          <div class="media pan__media">{{img:h2-path-hair|sizes=(min-width:1024px) 60vw, 100vw}}</div>
+          <button type="button" class="pan__btn" id="pan-hair-btn" aria-expanded="false" aria-controls="pan-hair"><span class="pan__label"><span class="folio">03</span><b>Hair</b></span></button>
+          <div class="pan__body" id="pan-hair" role="region" aria-labelledby="pan-hair-btn" hidden>
+            <p>Cutting, braiding and finishing, from blow-dry to updo.</p>
+            <div class="tags"><span class="tag">12 weeks</span><span class="tag">Hair studio</span></div>
+            <button type="button" class="btn btn-primary btn-sm" data-find="hair">Find hair courses {{icon:arrow-right icon-dir}}</button>
+          </div>
+        </article>
+        <article class="pan" data-pan="nails">
+          <div class="media pan__media">{{img:h2-path-nails|sizes=(min-width:1024px) 60vw, 100vw}}</div>
+          <button type="button" class="pan__btn" id="pan-nails-btn" aria-expanded="false" aria-controls="pan-nails"><span class="pan__label"><span class="folio">04</span><b>Nails</b></span></button>
+          <div class="pan__body" id="pan-nails" role="region" aria-labelledby="pan-nails-btn" hidden>
+            <p>Nail care, structure and detailed nail art.</p>
+            <div class="tags"><span class="tag">8 weeks</span><span class="tag">Nail bench</span></div>
+            <button type="button" class="btn btn-primary btn-sm" data-find="nails">Find nail courses {{icon:arrow-right icon-dir}}</button>
+          </div>
+        </article>
+        <article class="pan" data-pan="bridal">
+          <div class="media pan__media">{{img:h2-path-bridal|sizes=(min-width:1024px) 60vw, 100vw}}</div>
+          <button type="button" class="pan__btn" id="pan-bridal-btn" aria-expanded="false" aria-controls="pan-bridal"><span class="pan__label"><span class="folio">05</span><b>Bridal</b></span></button>
+          <div class="pan__body" id="pan-bridal" role="region" aria-labelledby="pan-bridal-btn" hidden>
+            <p>Makeup and hair for weddings, from trial to the big day.</p>
+            <div class="tags"><span class="tag">6 weeks</span><span class="tag">Advanced</span></div>
+            <button type="button" class="btn btn-primary btn-sm" data-find="bridal">Find bridal courses {{icon:arrow-right icon-dir}}</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 2 · A day at Sorrel: staggered photo timeline on a dark sheet -->
+    <section id="day" class="hs hs--brand sheet day2" aria-labelledby="h2-day-title" data-section>
+      <div class="container-x">
+        <div class="day2__bar rtl-center">
+          <div>
+            <p class="eyebrow"><span class="chip" aria-hidden="true"></span>02 · A day</p>
+            <h2 id="h2-day-title" class="sec-title">A day at Sorrel, hour by hour.</h2>
+          </div>
+          <div class="day2__nav">
+            <button type="button" class="icon-btn" data-day-prev aria-label="Previous">{{icon:arrow-right icon-flip}}</button>
+            <button type="button" class="icon-btn" data-day-next aria-label="Next">{{icon:arrow-right icon-dir}}</button>
+          </div>
+        </div>
+      </div>
+      <div class="tl" data-day-track tabindex="0" role="region" aria-label="A day at Sorrel, scrollable timeline">
+        <ol class="tl__list">
+          <li class="tl__item"><time class="tl__time">09:00</time><div class="media">{{img:h2-day-demo|sizes=340px}}</div><h3>Demonstration</h3><p>A trainer shows the technique live.</p></li>
+          <li class="tl__item tl__item--low"><time class="tl__time">11:00</time><div class="media">{{img:h2-day-bench|sizes=340px}}</div><h3>Bench practice</h3><p>You repeat it on a model.</p></li>
+          <li class="tl__item"><time class="tl__time">13:30</time><div class="media">{{img:h2-day-skin|sizes=340px}}</div><h3>Skin lab</h3><p>Treatments, analysis and care.</p></li>
+          <li class="tl__item tl__item--low"><time class="tl__time">15:00</time><div class="media">{{img:h2-day-hair|sizes=340px}}</div><h3>Hair studio</h3><p>Braiding, styling and finishing.</p></li>
+          <li class="tl__item"><time class="tl__time">16:45</time><div class="media">{{img:h2-day-review|sizes=340px}}</div><h3>Portfolio review</h3><p>Work is checked and signed off.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 3 · Course matrix -->
+    <section id="finder" class="hs sheet" aria-labelledby="h2-finder-title" data-section>
+      <div class="container-x">
+        <div class="sec-head rtl-center">
+          <p class="eyebrow"><span class="chip" aria-hidden="true"></span>03 · Courses</p>
+          <h2 id="h2-finder-title" class="sec-title">Every course, one grid.</h2>
+        </div>
+        <form class="mx-bar" data-finder-form>
+          <fieldset class="chips">
+            <legend>Discipline</legend>
+            <label><input type="radio" name="d" value="all" checked><span>All</span></label>
+            <label><input type="radio" name="d" value="makeup"><span>Makeup</span></label>
+            <label><input type="radio" name="d" value="skin"><span>Skin</span></label>
+            <label><input type="radio" name="d" value="hair"><span>Hair</span></label>
+            <label><input type="radio" name="d" value="nails"><span>Nails</span></label>
+            <label><input type="radio" name="d" value="bridal"><span>Bridal</span></label>
+          </fieldset>
+          <fieldset class="chips">
+            <legend>Level</legend>
+            <label><input type="radio" name="level" value="any" checked><span>Any</span></label>
+            <label><input type="radio" name="level" value="foundation"><span>Foundation</span></label>
+            <label><input type="radio" name="level" value="advanced"><span>Advanced</span></label>
+          </fieldset>
+          <p class="finder__count" role="status" aria-live="polite" data-finder-count>8 courses</p>
+        </form>
+        <table class="mx" role="table">
+          <caption class="sr-only">Courses by discipline and level</caption>
+          <thead role="rowgroup"><tr role="row"><th scope="col" role="columnheader"><span class="sr-only">Discipline</span></th><th scope="col" role="columnheader">Foundation</th><th scope="col" role="columnheader">Advanced</th></tr></thead>
+          <tbody role="rowgroup">
+            <tr role="row" data-row="makeup"><th scope="row" role="rowheader"><span class="folio">01</span>Makeup</th>
+              <td role="cell" data-label="Foundation"><a class="mcell" data-d="makeup" data-l="foundation" href="{{root}}courses.html#makeup"><b>Professional Makeup Artistry</b><span>12 weeks · Full-time</span></a></td>
+              <td role="cell" data-label="Advanced"><a class="mcell" data-d="makeup" data-l="advanced" href="{{root}}courses.html#makeup"><b>Editorial and Photographic Makeup</b><span>8 weeks · Part-time</span></a></td></tr>
+            <tr role="row" data-row="skin"><th scope="row" role="rowheader"><span class="folio">02</span>Skin</th>
+              <td role="cell" data-label="Foundation"><a class="mcell" data-d="skin" data-l="foundation" href="{{root}}courses.html#skin"><b>Skin Therapy Essentials</b><span>10 weeks · Full-time</span></a></td>
+              <td role="cell" data-label="Advanced"><a class="mcell" data-d="skin" data-l="advanced" href="{{root}}courses.html#skin"><b>Advanced Facial Treatments</b><span>6 weeks · Part-time</span></a></td></tr>
+            <tr role="row" data-row="hair"><th scope="row" role="rowheader"><span class="folio">03</span>Hair</th>
+              <td role="cell" data-label="Foundation"><a class="mcell" data-d="hair" data-l="foundation" href="{{root}}courses.html#hair"><b>Hair Styling Foundations</b><span>12 weeks · Full-time</span></a></td>
+              <td role="cell" data-label="Advanced"><span class="mcell mcell--none">No advanced course yet</span></td></tr>
+            <tr role="row" data-row="nails"><th scope="row" role="rowheader"><span class="folio">04</span>Nails</th>
+              <td role="cell" data-label="Foundation"><a class="mcell" data-d="nails" data-l="foundation" href="{{root}}courses.html#nails"><b>Nail Technology Certificate</b><span>8 weeks · Full-time</span></a></td>
+              <td role="cell" data-label="Advanced"><a class="mcell" data-d="nails" data-l="advanced" href="{{root}}courses.html#nails"><b>Nail Art Studio</b><span>4 weeks · Part-time</span></a></td></tr>
+            <tr role="row" data-row="bridal"><th scope="row" role="rowheader"><span class="folio">05</span>Bridal</th>
+              <td role="cell" data-label="Foundation"><span class="mcell mcell--none">Start with Makeup or Hair</span></td>
+              <td role="cell" data-label="Advanced"><a class="mcell" data-d="bridal" data-l="advanced" href="{{root}}courses.html#bridal"><b>Bridal Artistry Intensive</b><span>6 weeks · Part-time</span></a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 4 · The kit: annotated specimen -->
+    <section id="kit" class="hs hs--alt sheet" aria-labelledby="h2-kit-title" data-section>
+      <div class="container-x">
+        <div class="sec-head rtl-center">
+          <p class="eyebrow"><span class="chip" aria-hidden="true"></span>04 · The kit</p>
+          <h2 id="h2-kit-title" class="sec-title">Learn on professional tools.</h2>
+        </div>
+        <figure class="spec" data-kit-stage>
+          <div class="media spec__img">{{img:h2-kit|sizes=(min-width:1024px) 1000px, 95vw}}</div>
+          <button type="button" class="pin is-on" style="--x:34%;--y:46%" data-kit="palettes" aria-pressed="true" aria-label="Palettes"><span class="pin__n">1</span><span class="pin__tag">Palettes</span></button>
+          <button type="button" class="pin" style="--x:64%;--y:40%" data-kit="brushes" aria-pressed="false" aria-label="Brushes"><span class="pin__n">2</span><span class="pin__tag">Brushes</span></button>
+          <button type="button" class="pin pin--flip" style="--x:82%;--y:89%" data-kit="glitter" aria-pressed="false" aria-label="Colour play"><span class="pin__n">3</span><span class="pin__tag">Colour play</span></button>
+          <button type="button" class="pin" style="--x:21%;--y:23%" data-kit="pigment" aria-pressed="false" aria-label="Pigments"><span class="pin__n">4</span><span class="pin__tag">Pigments</span></button>
+        </figure>
+        <div class="spec__note rtl-center" role="status" aria-live="polite">
+          <span class="folio" data-kit-count>01 / 04</span>
+          <h3 data-kit-title>Palettes</h3>
+          <p data-kit-text>Colour matching, blending and layering.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 · The board: pinned prints -->
+    <section id="work" class="hs sheet board" aria-labelledby="h2-wall-title" data-section>
+      <div class="container-x">
+        <div class="sec-head rtl-center">
+          <p class="eyebrow"><span class="chip" aria-hidden="true"></span>05 · The board</p>
+          <h2 id="h2-wall-title" class="sec-title">The standard we set.</h2>
+          <p class="lede">Reference looks pinned to the studio board. Select one to see it larger.</p>
+        </div>
+        <div class="board__grid" data-wall>
+          <button type="button" class="print p1 wall__btn" data-caption="Lip work"><div class="media">{{img:h2-wall-lipbrush|sizes=(min-width:768px) 32vw, 46vw}}</div><span class="print__cap">Lip work</span></button>
+          <button type="button" class="print p2 wall__btn" data-caption="Character makeup"><div class="media">{{img:h2-wall-fx|sizes=(min-width:768px) 26vw, 46vw}}</div><span class="print__cap">Character</span></button>
+          <button type="button" class="print p3 wall__btn" data-caption="Liner detail"><div class="media">{{img:h2-wall-liner|sizes=(min-width:768px) 32vw, 46vw}}</div><span class="print__cap">Liner</span></button>
+          <button type="button" class="print p4 wall__btn" data-caption="Bridal look"><div class="media">{{img:h2-wall-bride|sizes=(min-width:768px) 24vw, 46vw}}</div><span class="print__cap">Bridal</span></button>
+          <button type="button" class="print p5 wall__btn" data-caption="Colour range"><div class="media">{{img:h2-wall-lipsticks|sizes=(min-width:768px) 32vw, 46vw}}</div><span class="print__cap">Colour range</span></button>
+          <button type="button" class="print p6 wall__btn" data-caption="Studio detail"><div class="media">{{img:h2-wall-detail|sizes=(min-width:768px) 24vw, 46vw}}</div><span class="print__cap">Studio</span></button>
+        </div>
+      </div>
+      <dialog class="lightbox" data-lightbox aria-label="Image viewer">
+        <img alt="" data-lightbox-img>
+        <div class="lightbox__bar"><p data-lightbox-cap></p><button type="button" class="icon-btn" data-lightbox-close aria-label="Close image">{{icon:close}}</button></div>
+      </dialog>
+    </section>
+
+    <!-- 6 · Certificate specimen -->
+    <section id="certify" class="hs hs--alt sheet" aria-labelledby="h2-cert-title" data-section>
+      <div class="container-x cert2">
+        <div class="cert2__stage">
+          <div class="cert" data-cert aria-label="Sample certificate">
+            <span class="cert__sample">Sample</span>
+            <div class="cert__frame">
+              <!--@include logo-mark-->
+              <p class="cert__kicker">{{site.fullName}}</p>
+              <h3 class="cert__title">Certificate of Completion</h3>
+              <p class="cert__line">This certifies that</p>
+              <p class="cert__name" data-part="enrol">Student Name</p>
+              <p class="cert__line">has completed the professional programme in</p>
+              <p class="cert__course">Makeup Artistry</p>
+              <dl class="cert__facts">
+                <div data-part="log"><dt>Practical hours</dt><dd>120 logged</dd></div>
+                <div data-part="assess"><dt>Assessment</dt><dd>Practical and portfolio</dd></div>
+                <div data-part="issue"><dt>Verification ID</dt><dd>SRL-2026-0001</dd></div>
+              </dl>
+            </div>
+          </div>
+          <figure class="cert2__photo media">{{img:h2-cert-class|sizes=(min-width:1024px) 22vw, 50vw}}</figure>
+        </div>
+        <div class="cert2__copy rtl-center">
+          <p class="eyebrow"><span class="chip" aria-hidden="true"></span>06 · Certificate</p>
+          <h2 id="h2-cert-title" class="sec-title">Four steps to your certificate.</h2>
+          <ol class="stepper" data-steps>
+            <li><button type="button" class="stp" data-part="enrol" aria-pressed="true"><span class="stp__n">1</span><span class="stp__t"><b>Enrol and assess</b><span>We check your starting skills and set your plan.</span></span></button></li>
+            <li><button type="button" class="stp" data-part="log" aria-pressed="false"><span class="stp__n">2</span><span class="stp__t"><b>Train and log</b><span>Every practical hour is logged and signed off.</span></span></button></li>
+            <li><button type="button" class="stp" data-part="assess" aria-pressed="false"><span class="stp__n">3</span><span class="stp__t"><b>Practical assessment</b><span>Show your technique and your portfolio.</span></span></button></li>
+            <li><button type="button" class="stp" data-part="issue" aria-pressed="false"><span class="stp__n">4</span><span class="stp__t"><b>Certificate issued</b><span>Your certificate carries a verification ID.</span></span></button></li>
+          </ol>
+          <a class="btn btn-link" href="{{root}}certification.html">How certification works {{icon:arrow-right icon-dir}}</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7 · Intake calendar + enquiry -->
+    <section id="visit" class="hs sheet visit2" aria-labelledby="h2-visit-title" data-section>
+      <div class="container-x visit2__grid">
+        <figure class="visit2__fig">
+          <div class="media">{{img:h2-visit|sizes=(min-width:1024px) 42vw, 95vw}}</div>
+          <figcaption class="note">The studio floor</figcaption>
+        </figure>
+        <div class="visit2__copy rtl-center">
+          <p class="eyebrow"><span class="chip" aria-hidden="true"></span>07 · Intakes</p>
+          <h2 id="h2-visit-title" class="sec-title">Three intakes a year.</h2>
+          <div class="months" role="list">
+            <div class="month" role="listitem"><b>Jan</b><ul><li>Makeup</li><li>Skin</li><li>Hair</li><li>Nails</li></ul></div>
+            <div class="month" role="listitem"><b>May</b><ul><li>Makeup</li><li>Skin</li><li>Nails</li><li>Bridal</li></ul></div>
+            <div class="month" role="listitem"><b>Sep</b><ul><li>Makeup</li><li>Skin</li><li>Hair</li><li>Nails</li><li>Bridal</li></ul></div>
+          </div>
+          <form class="enquiry" data-enquiry novalidate>
+            <h3>Send an enquiry</h3>
+            <div class="enquiry__row">
+              <div class="field">
+                <label class="field-label" for="eq-name">Full name</label>
+                <input class="input" id="eq-name" name="name" type="text" autocomplete="name" required aria-describedby="eq-name-err">
+                <span class="field-error" id="eq-name-err" hidden>Please enter your name.</span>
+              </div>
+              <div class="field">
+                <label class="field-label" for="eq-email">Email</label>
+                <input class="input" id="eq-email" name="email" type="email" autocomplete="email" required dir="auto" aria-describedby="eq-email-err">
+                <span class="field-error" id="eq-email-err" hidden>Please enter a valid email address.</span>
+              </div>
+            </div>
+            <div class="field">
+              <label class="field-label" for="eq-int">Interested in</label>
+              <div class="select"><select class="select-input" id="eq-int" name="interest"><option>Makeup</option><option>Skin</option><option>Hair</option><option>Nails</option><option>Bridal</option></select></div>
+            </div>
+            <button type="submit" class="btn btn-primary">Send enquiry {{icon:arrow-right icon-dir}}</button>
+            <p class="enquiry__status" role="status" data-enquiry-status hidden></p>
+          </form>
+          <p class="visit2__addr">{{site.contact.address}}</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!--@include footer-->
+  <!--@include scroll-top-->
+</body>
+</html>

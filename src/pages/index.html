@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <!--@include head-->
+  <title>{{site.fullName}} | Professional beauty training</title>
+  <meta name="description" content="Hands-on makeup, skin, hair and nail training, certified on the record. {{site.fullName}}.">
+  <script type="module" src="{{root}}assets/js/pages/home-1.js"></script>
+</head>
+<body data-page="home-1">
+  <!--@include header-->
+
+  <main id="main" tabindex="-1">
+
+    <!-- 1 · Cover -->
+    <section class="h1-hero" aria-labelledby="h1-title">
+      <div class="container-x h1-hero__grid">
+        <div class="h1-hero__copy rtl-center">
+          <p class="eyebrow"><span class="chip" aria-hidden="true"></span>Prospectus No. 01</p>
+          <h1 id="h1-title" class="h1-hero__title">Where beauty becomes a <em>profession.</em></h1>
+          <p class="lede">Hands-on training in makeup, skin, hair and nails. Certified on the record.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="{{root}}courses.html">Explore courses {{icon:arrow-right icon-dir}}</a>
+            <a class="btn btn-outline" href="{{root}}contact.html">Book a visit</a>
+          </div>
+          <dl class="meta-strip">
+            <div><dt>Disciplines</dt><dd>Five</dd></div>
+            <div><dt>Learning</dt><dd>Bench first</dd></div>
+            <div><dt>Outcome</dt><dd>Certificate</dd></div>
+          </dl>
+        </div>
+        <figure class="h1-hero__figure">
+          <div class="media arch">{{img:h1-hero|eager|sizes=(min-width:1024px) 440px, 90vw}}</div>
+          <div class="h1-hero__foot">
+            <figcaption class="note">Colour blending · Bench practical</figcaption>
+            <div class="swatches" aria-hidden="true"><span style="background:#12403b"></span><span style="background:#a8472b"></span><span style="background:#7a5c1e"></span><span style="background:#f6f1ea"></span></div>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 2 · Philosophy -->
+    <section class="hs hs--brand h1-phil" aria-labelledby="h1-phil-title">
+      <span class="h1-phil__num" aria-hidden="true">02</span>
+      <div class="container-x rtl-center">
+        <p class="eyebrow"><span class="chip" aria-hidden="true"></span>02 · Philosophy</p>
+        <h2 id="h1-phil-title" class="h1-phil__text">We teach beauty as a craft: <span class="inline-img">{{img:h1-philosophy-brushes|alt=|sizes=160px}}</span> learned at the bench, <span class="inline-img">{{img:h1-philosophy-eye|alt=|sizes=160px}}</span> proven in the portfolio, certified on the record.</h2>
+        <ul class="rule-list">
+          <li><span class="folio">01</span><b>Bench first</b><span>Most of every week is hands-on practice.</span></li>
+          <li><span class="folio">02</span><b>Small groups</b><span>Trainers see every student's work.</span></li>
+          <li><span class="folio">03</span><b>Portfolio proof</b><span>You leave with finished work to show.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 3 · Courses -->
+    <section class="hs hs--alt" aria-labelledby="h1-courses-title">
+      <div class="container-x">
+        <div class="sec-head rtl-center">
+          <p class="eyebrow"><span class="chip" aria-hidden="true"></span>03 · Courses</p>
+          <h2 id="h1-courses-title" class="sec-title">Five disciplines, one standard.</h2>
+          <a class="btn btn-link" href="{{root}}courses.html">All courses {{icon:arrow-right icon-dir}}</a>
+        </div>
+        <ol class="ledger" data-ledger>
+          <li class="ledger__row is-active" data-course="makeup">
+            <a class="ledger__link" href="{{root}}courses.html#makeup"><span class="folio ledger__n">01</span><span class="ledger__main"><span class="ledger__name">Makeup Artistry</span><span class="ledger__desc">Skin prep to editorial finish.</span></span><span class="ledger__meta">12 weeks</span>{{icon:arrow-right icon-dir}}</a>
+            <figure class="media ledger__fig">{{img:h1-course-makeup|sizes=(min-width:1024px) 38vw, 90vw}}</figure>
+          </li>
+          <li class="ledger__row" data-course="skin">
+            <a class="ledger__link" href="{{root}}courses.html#skin"><span class="folio ledger__n">02</span><span class="ledger__main"><span class="ledger__name">Skin Care</span><span class="ledger__desc">Facials, analysis and treatment plans.</span></span><span class="ledger__meta">10 weeks</span>{{icon:arrow-right icon-dir}}</a>
+            <figure class="media ledger__fig">{{img:h1-course-skin|sizes=(min-width:1024px) 38vw, 90vw}}</figure>
+          </li>
+          <li class="ledger__row" data-course="hair">
+            <a class="ledger__link" href="{{root}}courses.html#hair"><span class="folio ledger__n">03</span><span class="ledger__main"><span class="ledger__name">Hair Styling</span><span class="ledger__desc">Braiding, finishing and occasion styles.</span></span><span class="ledger__meta">12 weeks</span>{{icon:arrow-right icon-dir}}</a>
+            <figure class="media ledger__fig">{{img:h1-course-hair|sizes=(min-width:1024px) 38vw, 90vw}}</figure>
+          </li>
+          <li class="ledger__row" data-course="nails">
+            <a class="ledger__link" href="{{root}}courses.html#nails"><span class="folio ledger__n">04</span><span class="ledger__main"><span class="ledger__name">Nail Technology</span><span class="ledger__desc">Care, structure and nail art.</span></span><span class="ledger__meta">8 weeks</span>{{icon:arrow-right icon-dir}}</a>
+            <figure class="media ledger__fig">{{img:h1-course-nails|sizes=(min-width:1024px) 38vw, 90vw}}</figure>
+          </li>
+          <li class="ledger__row" data-course="bridal">
+            <a class="ledger__link" href="{{root}}courses.html#bridal"><span class="folio ledger__n">05</span><span class="ledger__main"><span class="ledger__name">Bridal Artistry</span><span class="ledger__desc">Makeup and hair for the big day.</span></span><span class="ledger__meta">6 weeks</span>{{icon:arrow-right icon-dir}}</a>
+            <figure class="media ledger__fig">{{img:h1-course-bridal|sizes=(min-width:1024px) 38vw, 90vw}}</figure>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 4 · Practice -->
+    <section class="hs" aria-labelledby="h1-practice-title">
+      <div class="container-x">
+        <div class="sec-head rtl-center">
+          <p class="eyebrow"><span class="chip" aria-hidden="true"></span>04 · Practice</p>
+          <h2 id="h1-practice-title" class="sec-title">Learning happens at the mirror.</h2>
+        </div>
+        <div class="collage">
+          <figure class="collage__a"><div class="media">{{img:h1-practice-studio|sizes=(min-width:1024px) 58vw, 95vw}}</div><figcaption class="note">Studio floor · Guided practice</figcaption></figure>
+          <figure class="collage__b"><div class="media">{{img:h1-practice-hair|sizes=(min-width:1024px) 30vw, 80vw}}</div><figcaption class="note">Cutting · Precision work</figcaption></figure>
+          <figure class="collage__c"><div class="media">{{img:h1-practice-kit|sizes=(min-width:1024px) 30vw, 70vw}}</div><figcaption class="note">The working kit</figcaption></figure>
+          <div class="collage__text rtl-center">
+            <h3>How we teach</h3>
+            <ul>
+              <li><b>Demonstrate</b>A trainer shows it live.</li>
+              <li><b>Practise</b>You repeat it on a model.</li>
+              <li><b>Sign off</b>Every skill is checked and logged.</li>
+            </ul>
+          </div>
+          <figure class="collage__d"><div class="media">{{img:h1-practice-detail|sizes=(min-width:1024px) 30vw, 80vw}}</div><figcaption class="note">Base work · Close detail</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 · Certification -->
+    <section class="hs hs--brand" aria-labelledby="h1-cert-title">
+      <div class="container-x h1-cert__grid">
+        <div class="rtl-center">
+          <p class="eyebrow"><span class="chip" aria-hidden="true"></span>05 · Certification</p>
+          <h2 id="h1-cert-title" class="sec-title">From first lesson to certified.</h2>
+          <ol class="path">
+            <li><b>Enrol</b><span>Choose your discipline.</span></li>
+            <li><b>Train</b><span>Bench-led classes.</span></li>
+            <li><b>Log</b><span>Every hour signed off.</span></li>
+            <li><b>Assess</b><span>Practical and portfolio review.</span></li>
+            <li><b>Certify</b><span>Certificate on completion.</span></li>
+          </ol>
+          <p style="margin-block-start:32px"><a class="btn btn-link" href="{{root}}certification.html">How certification works {{icon:arrow-right icon-dir}}</a></p>
+        </div>
+        <figure class="h1-cert__fig" style="margin:0">
+          <div class="media">{{img:h1-cert-studio|sizes=(min-width:1024px) 32vw, 90vw}}</div>
+          <figcaption class="note">Studio session · Finishing touches</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 6 · Portfolio -->
+    <section class="hs" aria-labelledby="h1-work-title">
+      <div class="container-x">
+        <div class="sec-head rtl-center">
+          <p class="eyebrow"><span class="chip" aria-hidden="true"></span>06 · Portfolio</p>
+          <h2 id="h1-work-title" class="sec-title">The looks we train toward.</h2>
+          <p class="lede">Reference imagery for the standard of finish every student builds toward.</p>
+        </div>
+        <div class="mosaic">
+          <figure class="mosaic__a"><div class="media">{{img:h1-work-peacock|sizes=(min-width:1024px) 30vw, 50vw}}<span class="cap">Body art</span></div></figure>
+          <figure class="mosaic__b"><div class="media">{{img:h1-work-eye|sizes=(min-width:1024px) 42vw, 100vw}}<span class="cap">Colour work</span></div></figure>
+          <figure class="mosaic__c"><div class="media">{{img:h1-work-color|sizes=(min-width:1024px) 24vw, 50vw}}<span class="cap">Editorial colour</span></div></figure>
+          <figure class="mosaic__d"><div class="media">{{img:h1-work-lip|sizes=(min-width:1024px) 24vw, 50vw}}<span class="cap">Lip finish</span></div></figure>
+          <figure class="mosaic__e"><div class="media">{{img:h1-work-editorial|sizes=(min-width:1024px) 40vw, 50vw}}<span class="cap">Hair and makeup</span></div></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7 · Visit -->
+    <section class="hs hs--alt" aria-labelledby="h1-visit-title">
+      <div class="container-x h1-visit__grid">
+        <figure class="h1-visit__fig" style="margin:0">
+          <div class="media">{{img:h1-studio|sizes=(min-width:1024px) 55vw, 95vw}}</div>
+          <figcaption class="note">Makeup room · Mirrored workstations</figcaption>
+        </figure>
+        <div class="h1-visit__copy rtl-center">
+          <p class="eyebrow"><span class="chip" aria-hidden="true"></span>07 · Visit</p>
+          <h2 id="h1-visit-title" class="sec-title">Come and see the studio.</h2>
+          <dl class="facts">
+            <div><dt>Address</dt><dd>{{site.contact.address}}</dd></div>
+            <div><dt>Hours</dt><dd>{{site.contact.hours}}</dd></div>
+            <div><dt>Intakes</dt><dd>January, May and September</dd></div>
+          </dl>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="{{root}}contact.html">Enquire now {{icon:arrow-right icon-dir}}</a>
+            <a class="btn btn-outline" href="{{root}}login.html">Student login</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!--@include footer-->
+  <!--@include scroll-top-->
+</body>
+</html>
